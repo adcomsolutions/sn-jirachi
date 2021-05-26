@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDaca1ca77f13f6890b41ff5b2930e8cda</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name>
+        <serialized_content>{"FlowDesigner:FDaca1ca77f13f6890b41ff5b2930e8cda":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDaca1ca77f13f6890b41ff5b2930e8cda.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Option Values\",\"mandatory\":\"true\",\"child_name\":\"Option_Value\",\"uiUniqueId\":\"159f50cb-683a-4ac7-b572-ac2629665ded\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FDaca1ca77f13f6890b41ff5b2930e8cda\",\"child_label\":\"Option Value\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"37d4dde0-55ab-4628-933f-68cd5663a66f\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-05 14:19:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>20a1ca771b3f68908b08419ead4bcbdb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>FDaca1ca77f13f6890b41ff5b2930e8cda</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_complex_object_20a1ca771b3f68908b08419ead4bcbdb</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-05 16:05:31</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

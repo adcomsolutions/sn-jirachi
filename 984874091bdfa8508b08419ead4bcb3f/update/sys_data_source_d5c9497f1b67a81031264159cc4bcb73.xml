@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_source">
+    <sys_data_source action="INSERT_OR_UPDATE">
+        <batch_size>1000</batch_size>
+        <category/>
+        <connection_timeout>0</connection_timeout>
+        <connection_url/>
+        <connection_url_parameters/>
+        <csv_delimiter/>
+        <data_in_single_column>false</data_in_single_column>
+        <data_loader><![CDATA[(function loadData(import_set_table) {
+
+	// Add your code here to insert data to import_set_table
+
+})(import_set_table);]]></data_loader>
+        <data_stream_action display_value="Get Jira Projects Data">deeb34371b27a81031264159cc4bcbb8</data_stream_action>
+        <data_stream_action_inputs/>
+        <database_name/>
+        <database_port/>
+        <discard_arrays>true</discard_arrays>
+        <expand_node_children>false</expand_node_children>
+        <file_path/>
+        <file_retrieval_method>Attachment</file_retrieval_method>
+        <format>CSV</format>
+        <glide_keystore>false</glide_keystore>
+        <header_row>0</header_row>
+        <import_set_table_label>Jira Projects</import_set_table_label>
+        <import_set_table_name>u_jira_projects</import_set_table_name>
+        <instance_name/>
+        <jdbc_password/>
+        <jdbc_server/>
+        <jdbc_user_name/>
+        <jpath_root_node/>
+        <last_run_database_field/>
+        <last_run_datetime/>
+        <last_success_import_time/>
+        <ldap_target/>
+        <ldapprobe_result_set_rows>200</ldapprobe_result_set_rows>
+        <limit/>
+        <maximum_rows/>
+        <mid_server/>
+        <name>Jira Projects Import</name>
+        <offset>0</offset>
+        <oracle_port>1521</oracle_port>
+        <oracle_sid>orcl</oracle_sid>
+        <parsing_script><![CDATA[// The input value can be accessed through the variables named "line", "lineNumber" and "result"
+// The function uses result variable to return parse result back. 
+(function(line,lineNumber,result) {
+	// add code here
+})(line,lineNumber,result);]]></parsing_script>
+        <properties/>
+        <query>All Rows from Table</query>
+        <query_timeout>0</query_timeout>
+        <request_action/>
+        <scp_authentication>Username and Password</scp_authentication>
+        <scp_password/>
+        <scp_port/>
+        <scp_server/>
+        <scp_user_name/>
+        <sheet_number>0</sheet_number>
+        <sql_statement/>
+        <ssh_keyfile_path/>
+        <support_pagination>false</support_pagination>
+        <sys_class_name>sys_data_source</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-23 00:02:23</sys_created_on>
+        <sys_id>d5c9497f1b67a81031264159cc4bcb73</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Jira Projects Import</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_data_source_d5c9497f1b67a81031264159cc4bcb73</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-23 00:02:50</sys_updated_on>
+        <table_name/>
+        <type>data_stream</type>
+        <use_batch_import>false</use_batch_import>
+        <use_integrated_authentication>false</use_integrated_authentication>
+        <use_last_run_datetime>false</use_last_run_datetime>
+        <xpath_root_node/>
+        <zipped>false</zipped>
+    </sys_data_source>
+    <sys_variable_value action="delete_multiple" query="document_key=d5c9497f1b67a81031264159cc4bcb73"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_data_source</document>
+        <document_key>d5c9497f1b67a81031264159cc4bcb73</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-23 00:02:50</sys_created_on>
+        <sys_id>5a6a4d7f1b67a81031264159cc4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-23 00:02:50</sys_updated_on>
+        <value>629ad2bfdb1893005963ff041d961971</value>
+        <variable display_value="Credential Alias">953ac5ff1b67a81031264159cc4bcb3c</variable>
+    </sys_variable_value>
+</record_update>

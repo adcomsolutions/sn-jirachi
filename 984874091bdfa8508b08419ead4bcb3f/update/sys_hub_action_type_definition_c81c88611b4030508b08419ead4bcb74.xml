@@ -1,0 +1,3180 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>true</ih_action>
+        <internal_name>edit_jira_issue_fields</internal_name>
+        <label_cache>[{"name":"{{action.notifyusers}}","label":"action➛Notify Users","type":"action","ref":""},{"name":"{{action.overridescreensecurity}}","label":"action➛Ignore Screen Security","type":"action","ref":""},{"name":"{{action.overrideeditableflag}}","label":"action➛Ignore Editable Flag","type":"action","ref":""},{"name":"{{action.issueidorkey}}","label":"action➛issueIdOrKey","type":"action","ref":""},{"name":"{{action.issueupdatedetails}}","label":"action➛IssueUpdateDetails","type":"action","ref":""},{"name":"{{action.jira_issue}}","label":"action➛Jira Issue","type":"action","ref":""},{"name":"{{action.connectino_alias}}","label":"action➛Connectino Alias","type":"action","ref":""},{"name":"{{action.connection_alias}}","label":"action➛Connection Alias","type":"action","ref":""},{"name":"{{action.jira_issue.u_jira_id}}","label":"action➛Jira Issue➛Jira ID","type":"action","ref":""},{"name":"{{action.fields}}","label":"action➛Fields","type":"action","ref":""},{"name":"{{action.fields.Field_ID}}","label":"action➛Fields➛Field ID","type":"action","ref":""},{"name":"{{action.fields.Field}}","label":"action➛Fields➛Field","type":"action","ref":""},{"name":"{{action.fields.Field.Field_ID}}","label":"action➛Fields➛Field➛Field ID","type":"action","ref":""},{"name":"{{action.fields.Field.ID}}","label":"action➛Fields➛Field➛ID","type":"action","ref":""},{"name":"{{action.fields.Field.Value}}","label":"action➛Fields➛Field➛Value","type":"action","ref":""},{"name":"{{action.fields.Field.value}}","label":"action➛Fields➛Field➛Value","type":"action","ref":""},{"name":"{{action.fields.Field.id}}","label":"action➛Fields➛Field➛ID","type":"action","ref":""},{"name":"{{action.fields.Field.FIeld_Type}}","label":"action➛Fields➛Field➛FIeld Type","type":"action","ref":""},{"name":"{{action.fields.Field.type}}","label":"action➛Fields➛Field➛FIeld Type","type":"action","ref":""},{"name":"{{action.fields.Field.fields_field_type}}","label":"action➛Fields➛Field➛FIeld Type","type":"action","ref":""},{"name":"{{step[0e8c20cd-d3b0-42ad-b89f-293bdd85674c].variable}}","label":"step➛Prepare Payload➛variable","type":"step","ref":""},{"name":"{{step[0e8c20cd-d3b0-42ad-b89f-293bdd85674c].payload}}","label":"step➛Prepare Payload➛Payload","type":"step","ref":""},{"name":"{{step[1701cdf5-82d1-41f4-a273-b991ed08616f].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":""},{"name":"{{step[1701cdf5-82d1-41f4-a273-b991ed08616f].error_message}}","label":"step➛REST step➛Error Message","type":"step","ref":""}]</label_cache>
+        <master_snapshot>909010e11b8030508b08419ead4bcbfb</master_snapshot>
+        <name>Edit Jira Issue Fields</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:15:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c81c88611b4030508b08419ead4bcb74</sys_id>
+        <sys_mod_count>47</sys_mod_count>
+        <sys_name>Edit Jira Issue Fields</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_c81c88611b4030508b08419ead4bcb74</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 22:46:45</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_variable_value action="delete_multiple" query="document_key=c81c88611b4030508b08419ead4bcb74"/>
+    <sys_element_mapping action="delete_multiple" query="id=c81c88611b4030508b08419ead4bcb74"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>c81c88611b4030508b08419ead4bcb74</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:10</sys_created_on>
+        <sys_id>089010e11b8030508b08419ead4bcb94</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:10</sys_updated_on>
+        <table>var__m_sys_hub_action_output_c81c88611b4030508b08419ead4bcb74</table>
+        <value>{{step[1701cdf5-82d1-41f4-a273-b991ed08616f].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>c81c88611b4030508b08419ead4bcb74</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:10</sys_created_on>
+        <sys_id>cc9010e11b8030508b08419ead4bcb94</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:10</sys_updated_on>
+        <table>var__m_sys_hub_action_output_c81c88611b4030508b08419ead4bcb74</table>
+        <value>{{step[1701cdf5-82d1-41f4-a273-b991ed08616f].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=c81c88611b4030508b08419ead4bcb74^sys_idNOT IN4ecdcc291b4030508b08419ead4bcb0e,abdec82d1b4030508b08419ead4bcb02"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Edit Jira Issue Fields">c81c88611b4030508b08419ead4bcb74</action>
+        <cid>1701cdf5-82d1-41f4-a273-b991ed08616f</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:01</sys_created_on>
+        <sys_id>4ecdcc291b4030508b08419ead4bcb0e</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 22:46:42</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4ecdcc291b4030508b08419ead4bcb0e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4ecdcc291b4030508b08419ead4bcb0e</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>12cdcc291b4030508b08419ead4bcb6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4ecdcc291b4030508b08419ead4bcb0e</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>16cdcc291b4030508b08419ead4bcb68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <value>517cb4691ba32c508b08419ead4bcb65</value>
+        <variable display_value="API Source">c346f4d7c7312300a150effeeb976366</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4ecdcc291b4030508b08419ead4bcb0e</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>16cdcc291b4030508b08419ead4bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <value>put</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4ecdcc291b4030508b08419ead4bcb0e</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>52cdcc291b4030508b08419ead4bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enable Retry Policy">321e31fd87803300a8cc7d5e27cb0b7a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4ecdcc291b4030508b08419ead4bcb0e</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>5ecdcc291b4030508b08419ead4bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4ecdcc291b4030508b08419ead4bcb0e</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>9acdcc291b4030508b08419ead4bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4ecdcc291b4030508b08419ead4bcb0e</document_key>
+        <order>16</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>9ecdcc291b4030508b08419ead4bcb68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <value>d28c34a91ba32c508b08419ead4bcbd1</value>
+        <variable display_value="API Operation">29c75782c7822300a150effeeb976338</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4ecdcc291b4030508b08419ead4bcb0e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>d2cdcc291b4030508b08419ead4bcb6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <value>{"notifyusers":{"name":"notifyUsers","allowEmptyValue":false,"allowReserved":false,"explode":true,"required":false,"style":"form","schema":{"glideType":"boolean","deprecated":false,"name":"notifyUsers2620899348","default":"true","type":"boolean"}},"overridescreensecurity":{"name":"overrideScreenSecurity","allowEmptyValue":false,"allowReserved":false,"explode":true,"required":false,"style":"form","schema":{"glideType":"boolean","deprecated":false,"name":"overrideScreenSecurity7032186082","default":"false","type":"boolean"}},"overrideeditableflag":{"name":"overrideEditableFlag","allowEmptyValue":false,"allowReserved":false,"explode":true,"required":false,"style":"form","schema":{"glideType":"boolean","deprecated":false,"name":"overrideEditableFlag2689271767","default":"false","type":"boolean"}},"issueidorkey":{"name":"issueIdOrKey","allowEmptyValue":false,"allowReserved":false,"explode":false,"required":true,"style":"simple","schema":{"glideType":"string","deprecated":false,"name":"issueIdOrKey7530498343","type":"string"}},"issueupdatedetails":{"complexObjectParameter":{"id":"","label":"IssueUpdateDetails","name":"IssueUpdateDetails","type":"object","type_label":"Object","order":0,"extended":false,"mandatory":false,"readonly":false,"maxsize":0,"children":[{"id":"","label":"historyMetadata","name":"historyMetadata","type":"object","type_label":"Object","order":0,"extended":false,"mandatory":false,"readonly":false,"maxsize":0,"children":[{"id":"","label":"actor","name":"actor","type":"object","type_label":"Object","order":0,"extended":false,"mandatory":false,"readonly":false,"maxsize":0,"children":[],"data_structure":"","reference":"","reference_display":"","ref_qual":"","choiceOption":"","table":"","columnName":"","defaultValue":"","defaultDisplayValue":"","use_dependent":false,"dependent_on":"","internal_link":"","show_ref_finder":false,"local":false,"attributes":{},"sys_class_name":"","fieldFacetMap":{},"uiDisplayType":"object","uiDisplayTypeLabel":"Object","value":"","scriptActive":false,"script":{},"display_value":""},{"id":"","label":"emailDescription","name":"emailDescription","type":"string","type_label":"String","order":0,"extended":false,"mandatory":false,"readonly":false,"maxsize":0,"children":[],"data_structure":"","reference":"","reference_display":"","ref_qual":"","choiceOption":"","table":"","columnName":"","defaultValue":"","defaultDisplayValue":"","use_dependent":false,"dependent_on":"","internal_link":"","show_ref_finder":false,"local":false,"attributes":{},"sys_class_name":"","fieldFacetMap":{},"uiDisplayType":"string","uiDisplayTypeLabel":"String","value":"","scriptActive":false,"script":{},"display_value":""},{"id":"","label":"extraData","name":"extraData","type":"object","type_label":"Object","order":0,"extended":false,"mandatory":false,"readonly":false,"maxsize":0,"children":[],"data_structure":"","reference":"","reference_display":"","ref_qual":"","choiceOption":"","table":"","columnName":"","defaultValue":"","defaultDisplayValue":"","use_dependent":false,"dependent_on":"","internal_link":"","show_ref_finder":false,"local":false,"attributes":{},"sys_class_name":"","fieldFacetMap":{},"uiDisplayType":"object","uiDisplayTypeLabel":"Object","value":"","scriptActive":false,"script":{},"display_value":""},{"id":"","label":"activityDescriptionKey","name":"activityDescriptionKey","type":"string","type_label":"String","order":0,"extended":false,"mandatory":false,"readonly":false,"maxsize":0,"children":[],"data_structure":"","reference":"","reference_display":"","ref_qual":"","choiceOption":"","table":"","columnName":"","defaultValue":"","defaultDisplayValue":"","use_dependent":false,"dependent_on":"","internal_link":"","show_ref_finder":false,"local":false,"attributes":{},"sys_class_name":"","fieldFacetMap":{},"uiDisplayType":"string","uiDisplayTypeLabel":"String","value":"","scriptActive":false,"script":{},"display_value":""},{"id":"","label":"emailDescriptionKey","name":"emailDescriptionKey","type":"string","type_</value>
+        <variable display_value="REST Metadata">3c4d7367c7d32300a150effeeb9763a4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4ecdcc291b4030508b08419ead4bcb0e</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>d6cdcc291b4030508b08419ead4bcb69</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 17:18:13</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Accept","value":"application/json"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4ecdcc291b4030508b08419ead4bcb0e</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>dacdcc291b4030508b08419ead4bcb68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <value>from_openapi</value>
+        <variable display_value="Build Request">bb61fcd3c7312300a150effeeb97638e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4ecdcc291b4030508b08419ead4bcb0e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>api_operation</field>
+        <id>4ecdcc291b4030508b08419ead4bcb0e</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>d6cdcc291b4030508b08419ead4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>api_source</field>
+        <id>4ecdcc291b4030508b08419ead4bcb0e</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>5ecdcc291b4030508b08419ead4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>4ecdcc291b4030508b08419ead4bcb0e</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>1ecdcc291b4030508b08419ead4bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>body</field>
+        <id>4ecdcc291b4030508b08419ead4bcb0e</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:27:46</sys_created_on>
+        <sys_id>77dec82d1b4030508b08419ead4bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:27:46</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[0e8c20cd-d3b0-42ad-b89f-293bdd85674c].payload}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>build_request</field>
+        <id>4ecdcc291b4030508b08419ead4bcb0e</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>16cdcc291b4030508b08419ead4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>4ecdcc291b4030508b08419ead4bcb0e</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>5acdcc291b4030508b08419ead4bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>4ecdcc291b4030508b08419ead4bcb0e</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>12cdcc291b4030508b08419ead4bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{action.connection_alias}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>enable_retry_policy</field>
+        <id>4ecdcc291b4030508b08419ead4bcb0e</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>9acdcc291b4030508b08419ead4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>4ecdcc291b4030508b08419ead4bcb0e</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>96cdcc291b4030508b08419ead4bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>4ecdcc291b4030508b08419ead4bcb0e</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>5ecdcc291b4030508b08419ead4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>4ecdcc291b4030508b08419ead4bcb0e</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>decdcc291b4030508b08419ead4bcb67</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 17:57:54</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"notifyUsers","value":"{{action.notifyusers}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"overrideEditableFlag","value":"{{action.overrideeditableflag}}","attributes":{"omit_if_empty":true,"mandatory":false}},{"name":"overrideScreenSecurity","value":"{{action.overridescreensecurity}}","attributes":{"omit_if_empty":true,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>4ecdcc291b4030508b08419ead4bcb0e</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>d2cdcc291b4030508b08419ead4bcb67</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 22:46:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>/rest/api/2/issue/{{action.jira_issue.u_jira_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>rest_metadata</field>
+        <id>4ecdcc291b4030508b08419ead4bcb0e</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:02</sys_created_on>
+        <sys_id>92cdcc291b4030508b08419ead4bcb68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=4ecdcc291b4030508b08419ead4bcb0e^sys_idNOT INdacdcc291b4030508b08419ead4bcb4c"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=f07e239b-6c54-46dc-8bd8-5e64b00575c8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">4ecdcc291b4030508b08419ead4bcb0e</model>
+        <model_id>4ecdcc291b4030508b08419ead4bcb0e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_4ecdcc291b4030508b08419ead4bcb0e</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:01</sys_created_on>
+        <sys_id>dacdcc291b4030508b08419ead4bcb4c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:27:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Edit Jira Issue Fields">c81c88611b4030508b08419ead4bcb74</action>
+        <cid>0e8c20cd-d3b0-42ad-b89f-293bdd85674c</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Prepare Payload</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:27:45</sys_created_on>
+        <sys_id>abdec82d1b4030508b08419ead4bcb02</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 21:50:44</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=abdec82d1b4030508b08419ead4bcb02"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>abdec82d1b4030508b08419ead4bcb02</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:27:46</sys_created_on>
+        <sys_id>7fdec82d1b4030508b08419ead4bcb32</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 21:50:44</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  var updateObj = inputs.fields.reduce(function(obj, next){
+    if (next.fields_field_type === 'choice'){
+      // Choice fields expect this particular format
+      obj[next.id] = {value: next.value};
+    } else {
+      obj[next.id] = next.value;
+    }
+    return obj;
+  }, {});
+  
+  outputs.payload = JSON.stringify({fields: updateObj});
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>abdec82d1b4030508b08419ead4bcb02</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:27:46</sys_created_on>
+        <sys_id>bbdec82d1b4030508b08419ead4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:27:46</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=abdec82d1b4030508b08419ead4bcb02"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>abdec82d1b4030508b08419ead4bcb02</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:27:46</sys_created_on>
+        <sys_id>77dec82d1b4030508b08419ead4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:27:46</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>abdec82d1b4030508b08419ead4bcb02</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:27:46</sys_created_on>
+        <sys_id>fbdec82d1b4030508b08419ead4bcb33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:27:46</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_abdec82d1b4030508b08419ead4bcb02</table>
+        <value>{{action.fields}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>abdec82d1b4030508b08419ead4bcb02</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:27:46</sys_created_on>
+        <sys_id>3bdec82d1b4030508b08419ead4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:27:46</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=abdec82d1b4030508b08419ead4bcb02^sys_idNOT IN63dec82d1b4030508b08419ead4bcb16"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Prepare Payload">abdec82d1b4030508b08419ead4bcb02</model>
+        <model_id>abdec82d1b4030508b08419ead4bcb02</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_abdec82d1b4030508b08419ead4bcb02</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:27:46</sys_created_on>
+        <sys_id>63dec82d1b4030508b08419ead4bcb16</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:29:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=abdec82d1b4030508b08419ead4bcb02^sys_idNOT INa3dec82d1b4030508b08419ead4bcb1c"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=07e7b4d4-1be3-4d4b-b39b-bd928b8dedfb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>payload</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Payload</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Prepare Payload">abdec82d1b4030508b08419ead4bcb02</model>
+        <model_id>abdec82d1b4030508b08419ead4bcb02</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_abdec82d1b4030508b08419ead4bcb02</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:27:46</sys_created_on>
+        <sys_id>a3dec82d1b4030508b08419ead4bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:27:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=c81c88611b4030508b08419ead4bcb74^sys_idNOT IN02cd8c291b4030508b08419ead4bcbf6,46cd8c291b4030508b08419ead4bcbe3,4ecd8c291b4030508b08419ead4bcbee,86cdcc291b4030508b08419ead4bcb04,c2cd8c291b4030508b08419ead4bcb98,c2cd8c291b4030508b08419ead4bcbfd"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=cc1d0c8d-8336-4e47-be08-313a4bfed958</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>overridescreensecurity</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Ignore Screen Security</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Edit Jira Issue Fields">c81c88611b4030508b08419ead4bcb74</model>
+        <model_id>c81c88611b4030508b08419ead4bcb74</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_c81c88611b4030508b08419ead4bcb74</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:01</sys_created_on>
+        <sys_id>02cd8c291b4030508b08419ead4bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=ed177432-b367-41ec-b9ce-97549676e1b8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>u_jira_issue</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>jira_issue</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Jira Issue</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Edit Jira Issue Fields">c81c88611b4030508b08419ead4bcb74</model>
+        <model_id>c81c88611b4030508b08419ead4bcb74</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_c81c88611b4030508b08419ead4bcb74</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="u_jira_issue">u_jira_issue</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:00</sys_created_on>
+        <sys_id>46cd8c291b4030508b08419ead4bcbe3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=45e592a0-b3bd-40ca-bda2-da6685cf46ec</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>notifyusers</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Notify Users</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Edit Jira Issue Fields">c81c88611b4030508b08419ead4bcb74</model>
+        <model_id>c81c88611b4030508b08419ead4bcb74</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_c81c88611b4030508b08419ead4bcb74</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:01</sys_created_on>
+        <sys_id>4ecd8c291b4030508b08419ead4bcbee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 17:21:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Field,child_name=Field,child_type=object,child_type_label=Object,child_uiUniqueId=59c5be2d-64c4-431a-9651-4a34a5a195ec,co_type_name=FDc6cd8c2905403050e9a37a2b30c07d95,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=9511eae0-aeeb-492d-abda-5bcd76712668</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Edit Jira Issue Fields">c81c88611b4030508b08419ead4bcb74</model>
+        <model_id>c81c88611b4030508b08419ead4bcb74</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_c81c88611b4030508b08419ead4bcb74</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:01</sys_created_on>
+        <sys_id>86cdcc291b4030508b08419ead4bcb04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=ae7f3a87-be74-4a9c-9938-7665077b2349</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_alias</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>{"display":"sn_jira_spoke.Jira","value":"629ad2bfdb1893005963ff041d961971"}</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>connection_alias</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Connection Alias</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Edit Jira Issue Fields">c81c88611b4030508b08419ead4bcb74</model>
+        <model_id>c81c88611b4030508b08419ead4bcb74</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_c81c88611b4030508b08419ead4bcb74</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_alias">sys_alias</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:00</sys_created_on>
+        <sys_id>c2cd8c291b4030508b08419ead4bcb98</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=176d5e61-93fc-4652-98ca-0859e00642c9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>overrideeditableflag</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Ignore Editable Flag</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Edit Jira Issue Fields">c81c88611b4030508b08419ead4bcb74</model>
+        <model_id>c81c88611b4030508b08419ead4bcb74</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_c81c88611b4030508b08419ead4bcb74</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:01</sys_created_on>
+        <sys_id>c2cd8c291b4030508b08419ead4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=c81c88611b4030508b08419ead4bcb74^sys_idNOT IN489010e11b8030508b08419ead4bcb7f,c49010e11b8030508b08419ead4bcb77"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=5586d8dd-e02e-46b1-973a-0084291fe27a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_message</element>
+        <element_prototype display_value="Error Message" element="error_message" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">26a48b7347622200b4fad7527c9a71c0</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Error Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Edit Jira Issue Fields">c81c88611b4030508b08419ead4bcb74</model>
+        <model_id>c81c88611b4030508b08419ead4bcb74</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_c81c88611b4030508b08419ead4bcb74</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:10</sys_created_on>
+        <sys_id>489010e11b8030508b08419ead4bcb7f</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 22:46:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=fb4e33ba-296a-4e87-8d41-c56e9f01a92f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_prototype display_value="Status Code" element="status_code" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">a053077347622200b4fad7527c9a716e</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Status Code</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Edit Jira Issue Fields">c81c88611b4030508b08419ead4bcb74</model>
+        <model_id>c81c88611b4030508b08419ead4bcb74</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_c81c88611b4030508b08419ead4bcb74</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:10</sys_created_on>
+        <sys_id>c49010e11b8030508b08419ead4bcb77</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 22:46:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_c81c88611b4030508b08419ead4bcb74^sys_idNOT IN0acdcc291b4030508b08419ead4bcb0a,0ecd8c291b4030508b08419ead4bcbfb,4acd8c291b4030508b08419ead4bcbf4,86cd8c291b4030508b08419ead4bcbed,8ecd8c291b4030508b08419ead4bcbe1,cecdcc291b4030508b08419ead4bcb02"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>fields</element>
+        <help/>
+        <hint/>
+        <label>Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_c81c88611b4030508b08419ead4bcb74</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:01</sys_created_on>
+        <sys_id>0acdcc291b4030508b08419ead4bcb0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>overridescreensecurity</element>
+        <help/>
+        <hint/>
+        <label>Ignore Screen Security</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_c81c88611b4030508b08419ead4bcb74</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:01</sys_created_on>
+        <sys_id>0ecd8c291b4030508b08419ead4bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>notifyusers</element>
+        <help/>
+        <hint/>
+        <label>Notify Users</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_c81c88611b4030508b08419ead4bcb74</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:01</sys_created_on>
+        <sys_id>4acd8c291b4030508b08419ead4bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>jira_issue</element>
+        <help/>
+        <hint/>
+        <label>Jira Issue</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_c81c88611b4030508b08419ead4bcb74</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:01</sys_created_on>
+        <sys_id>86cd8c291b4030508b08419ead4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>connection_alias</element>
+        <help/>
+        <hint/>
+        <label>Connection Alias</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_c81c88611b4030508b08419ead4bcb74</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:00</sys_created_on>
+        <sys_id>8ecd8c291b4030508b08419ead4bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>overrideeditableflag</element>
+        <help/>
+        <hint/>
+        <label>Ignore Editable Flag</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_c81c88611b4030508b08419ead4bcb74</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:23:01</sys_created_on>
+        <sys_id>cecdcc291b4030508b08419ead4bcb02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:23:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_c81c88611b4030508b08419ead4bcb74^sys_idNOT IN809010e11b8030508b08419ead4bcb7e,849010e11b8030508b08419ead4bcb85"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status_code</element>
+        <help/>
+        <hint/>
+        <label>Status Code</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_c81c88611b4030508b08419ead4bcb74</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:10</sys_created_on>
+        <sys_id>809010e11b8030508b08419ead4bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error_message</element>
+        <help/>
+        <hint/>
+        <label>Error Message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_c81c88611b4030508b08419ead4bcb74</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:10</sys_created_on>
+        <sys_id>849010e11b8030508b08419ead4bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=c81c88611b4030508b08419ead4bcb74^sys_idNOT INe590d0e11b8030508b08419ead4bcb4d"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Edit Jira Issue Fields">c81c88611b4030508b08419ead4bcb74</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"e590d0e11b8030508b08419ead4bcb4d","name":"plan"}}</plan>
+        <snapshot>1395e9e11b4070508b08419ead4bcb98</snapshot>
+        <sys_class_name>sys_hub_action_plan</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e590d0e11b8030508b08419ead4bcb4d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 22:46:47</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>edit_jira_issue_fields</internal_name>
+        <label_cache>[{"name":"{{action.notifyusers}}","label":"action➛Notify Users","type":"action","ref":""},{"name":"{{action.overridescreensecurity}}","label":"action➛Ignore Screen Security","type":"action","ref":""},{"name":"{{action.overrideeditableflag}}","label":"action➛Ignore Editable Flag","type":"action","ref":""},{"name":"{{action.issueidorkey}}","label":"action➛issueIdOrKey","type":"action","ref":""},{"name":"{{action.issueupdatedetails}}","label":"action➛IssueUpdateDetails","type":"action","ref":""},{"name":"{{action.jira_issue}}","label":"action➛Jira Issue","type":"action","ref":""},{"name":"{{action.connectino_alias}}","label":"action➛Connectino Alias","type":"action","ref":""},{"name":"{{action.connection_alias}}","label":"action➛Connection Alias","type":"action","ref":""},{"name":"{{action.jira_issue.u_jira_id}}","label":"action➛Jira Issue➛Jira ID","type":"action","ref":""},{"name":"{{action.fields}}","label":"action➛Fields","type":"action","ref":""},{"name":"{{action.fields.Field_ID}}","label":"action➛Fields➛Field ID","type":"action","ref":""},{"name":"{{action.fields.Field}}","label":"action➛Fields➛Field","type":"action","ref":""},{"name":"{{action.fields.Field.Field_ID}}","label":"action➛Fields➛Field➛Field ID","type":"action","ref":""},{"name":"{{action.fields.Field.ID}}","label":"action➛Fields➛Field➛ID","type":"action","ref":""},{"name":"{{action.fields.Field.Value}}","label":"action➛Fields➛Field➛Value","type":"action","ref":""},{"name":"{{action.fields.Field.value}}","label":"action➛Fields➛Field➛Value","type":"action","ref":""},{"name":"{{action.fields.Field.id}}","label":"action➛Fields➛Field➛ID","type":"action","ref":""},{"name":"{{action.fields.Field.FIeld_Type}}","label":"action➛Fields➛Field➛FIeld Type","type":"action","ref":""},{"name":"{{action.fields.Field.type}}","label":"action➛Fields➛Field➛FIeld Type","type":"action","ref":""},{"name":"{{action.fields.Field.fields_field_type}}","label":"action➛Fields➛Field➛FIeld Type","type":"action","ref":""},{"name":"{{step[0e8c20cd-d3b0-42ad-b89f-293bdd85674c].variable}}","label":"step➛Prepare Payload➛variable","type":"step","ref":""},{"name":"{{step[0e8c20cd-d3b0-42ad-b89f-293bdd85674c].payload}}","label":"step➛Prepare Payload➛Payload","type":"step","ref":""},{"name":"{{step[1701cdf5-82d1-41f4-a273-b991ed08616f].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":""},{"name":"{{step[1701cdf5-82d1-41f4-a273-b991ed08616f].error_message}}","label":"step➛REST step➛Error Message","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Edit Jira Issue Fields</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Edit Jira Issue Fields">c81c88611b4030508b08419ead4bcb74</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>909010e11b8030508b08419ead4bcbfb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 21:42:26</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=909010e11b8030508b08419ead4bcbfb"/>
+    <sys_element_mapping action="delete_multiple" query="id=909010e11b8030508b08419ead4bcbfb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>909010e11b8030508b08419ead4bcbfb</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>b49050e11b8030508b08419ead4bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <table>var__m_sys_hub_action_output_909010e11b8030508b08419ead4bcbfb</table>
+        <value>{{step[1701cdf5-82d1-41f4-a273-b991ed08616f].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>909010e11b8030508b08419ead4bcbfb</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>789050e11b8030508b08419ead4bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <table>var__m_sys_hub_action_output_909010e11b8030508b08419ead4bcbfb</table>
+        <value>{{step[1701cdf5-82d1-41f4-a273-b991ed08616f].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=909010e11b8030508b08419ead4bcbfb^sys_idNOT IN689050e11b8030508b08419ead4bcb83,b09050e11b8030508b08419ead4bcb9d"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Edit Jira Issue Fields">909010e11b8030508b08419ead4bcbfb</action>
+        <cid>0e8c20cd-d3b0-42ad-b89f-293bdd85674c</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Prepare Payload</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:12</sys_created_on>
+        <sys_id>689050e11b8030508b08419ead4bcb83</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 21:51:43</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=689050e11b8030508b08419ead4bcb83"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>689050e11b8030508b08419ead4bcb83</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:12</sys_created_on>
+        <sys_id>b89050e11b8030508b08419ead4bcb99</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 21:51:43</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  var updateObj = inputs.fields.reduce(function(obj, next){
+    if (next.fields_field_type === 'choice'){
+      // Choice fields expect this particular format
+      obj[next.id] = {value: next.value};
+    } else {
+      obj[next.id] = next.value;
+    }
+    return obj;
+  }, {});
+  
+  outputs.payload = JSON.stringify({fields: updateObj});
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>689050e11b8030508b08419ead4bcb83</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:12</sys_created_on>
+        <sys_id>f09050e11b8030508b08419ead4bcb99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:12</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=689050e11b8030508b08419ead4bcb83"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>689050e11b8030508b08419ead4bcb83</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:12</sys_created_on>
+        <sys_id>bc9050e11b8030508b08419ead4bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:12</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>689050e11b8030508b08419ead4bcb83</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:12</sys_created_on>
+        <sys_id>b49050e11b8030508b08419ead4bcb9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:12</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_689050e11b8030508b08419ead4bcb83</table>
+        <value>{{action.fields}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>689050e11b8030508b08419ead4bcb83</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:12</sys_created_on>
+        <sys_id>709050e11b8030508b08419ead4bcb99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:12</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=689050e11b8030508b08419ead4bcb83^sys_idNOT IN609050e11b8030508b08419ead4bcb87"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>fields</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Prepare Payload">689050e11b8030508b08419ead4bcb83</model>
+        <model_id>689050e11b8030508b08419ead4bcb83</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_689050e11b8030508b08419ead4bcb83</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:12</sys_created_on>
+        <sys_id>609050e11b8030508b08419ead4bcb87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=689050e11b8030508b08419ead4bcb83^sys_idNOT IN2c9050e11b8030508b08419ead4bcb8e"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=07e7b4d4-1be3-4d4b-b39b-bd928b8dedfb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>payload</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Payload</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Prepare Payload">689050e11b8030508b08419ead4bcb83</model>
+        <model_id>689050e11b8030508b08419ead4bcb83</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_689050e11b8030508b08419ead4bcb83</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:12</sys_created_on>
+        <sys_id>2c9050e11b8030508b08419ead4bcb8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Edit Jira Issue Fields">909010e11b8030508b08419ead4bcbfb</action>
+        <cid>1701cdf5-82d1-41f4-a273-b991ed08616f</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:12</sys_created_on>
+        <sys_id>b09050e11b8030508b08419ead4bcb9d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 22:46:44</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b09050e11b8030508b08419ead4bcb9d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b09050e11b8030508b08419ead4bcb9d</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>309050e11b8030508b08419ead4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enable Retry Policy">321e31fd87803300a8cc7d5e27cb0b7a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b09050e11b8030508b08419ead4bcb9d</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>3c9050e11b8030508b08419ead4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b09050e11b8030508b08419ead4bcb9d</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>789050e11b8030508b08419ead4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b09050e11b8030508b08419ead4bcb9d</document_key>
+        <order>16</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>7c9050e11b8030508b08419ead4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <value>d28c34a91ba32c508b08419ead4bcbd1</value>
+        <variable display_value="API Operation">29c75782c7822300a150effeeb976338</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b09050e11b8030508b08419ead4bcb9d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>b09050e11b8030508b08419ead4bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <value>{"notifyusers":{"name":"notifyUsers","allowEmptyValue":false,"allowReserved":false,"explode":true,"required":false,"style":"form","schema":{"glideType":"boolean","deprecated":false,"name":"notifyUsers2620899348","default":"true","type":"boolean"}},"overridescreensecurity":{"name":"overrideScreenSecurity","allowEmptyValue":false,"allowReserved":false,"explode":true,"required":false,"style":"form","schema":{"glideType":"boolean","deprecated":false,"name":"overrideScreenSecurity7032186082","default":"false","type":"boolean"}},"overrideeditableflag":{"name":"overrideEditableFlag","allowEmptyValue":false,"allowReserved":false,"explode":true,"required":false,"style":"form","schema":{"glideType":"boolean","deprecated":false,"name":"overrideEditableFlag2689271767","default":"false","type":"boolean"}},"issueidorkey":{"name":"issueIdOrKey","allowEmptyValue":false,"allowReserved":false,"explode":false,"required":true,"style":"simple","schema":{"glideType":"string","deprecated":false,"name":"issueIdOrKey7530498343","type":"string"}},"issueupdatedetails":{"complexObjectParameter":{"id":"","label":"IssueUpdateDetails","name":"IssueUpdateDetails","type":"object","type_label":"Object","order":0,"extended":false,"mandatory":false,"readonly":false,"maxsize":0,"children":[{"id":"","label":"historyMetadata","name":"historyMetadata","type":"object","type_label":"Object","order":0,"extended":false,"mandatory":false,"readonly":false,"maxsize":0,"children":[{"id":"","label":"actor","name":"actor","type":"object","type_label":"Object","order":0,"extended":false,"mandatory":false,"readonly":false,"maxsize":0,"children":[],"data_structure":"","reference":"","reference_display":"","ref_qual":"","choiceOption":"","table":"","columnName":"","defaultValue":"","defaultDisplayValue":"","use_dependent":false,"dependent_on":"","internal_link":"","show_ref_finder":false,"local":false,"attributes":{},"sys_class_name":"","fieldFacetMap":{},"uiDisplayType":"object","uiDisplayTypeLabel":"Object","value":"","scriptActive":false,"script":{},"display_value":""},{"id":"","label":"emailDescription","name":"emailDescription","type":"string","type_label":"String","order":0,"extended":false,"mandatory":false,"readonly":false,"maxsize":0,"children":[],"data_structure":"","reference":"","reference_display":"","ref_qual":"","choiceOption":"","table":"","columnName":"","defaultValue":"","defaultDisplayValue":"","use_dependent":false,"dependent_on":"","internal_link":"","show_ref_finder":false,"local":false,"attributes":{},"sys_class_name":"","fieldFacetMap":{},"uiDisplayType":"string","uiDisplayTypeLabel":"String","value":"","scriptActive":false,"script":{},"display_value":""},{"id":"","label":"extraData","name":"extraData","type":"object","type_label":"Object","order":0,"extended":false,"mandatory":false,"readonly":false,"maxsize":0,"children":[],"data_structure":"","reference":"","reference_display":"","ref_qual":"","choiceOption":"","table":"","columnName":"","defaultValue":"","defaultDisplayValue":"","use_dependent":false,"dependent_on":"","internal_link":"","show_ref_finder":false,"local":false,"attributes":{},"sys_class_name":"","fieldFacetMap":{},"uiDisplayType":"object","uiDisplayTypeLabel":"Object","value":"","scriptActive":false,"script":{},"display_value":""},{"id":"","label":"activityDescriptionKey","name":"activityDescriptionKey","type":"string","type_label":"String","order":0,"extended":false,"mandatory":false,"readonly":false,"maxsize":0,"children":[],"data_structure":"","reference":"","reference_display":"","ref_qual":"","choiceOption":"","table":"","columnName":"","defaultValue":"","defaultDisplayValue":"","use_dependent":false,"dependent_on":"","internal_link":"","show_ref_finder":false,"local":false,"attributes":{},"sys_class_name":"","fieldFacetMap":{},"uiDisplayType":"string","uiDisplayTypeLabel":"String","value":"","scriptActive":false,"script":{},"display_value":""},{"id":"","label":"emailDescriptionKey","name":"emailDescriptionKey","type":"string","type_</value>
+        <variable display_value="REST Metadata">3c4d7367c7d32300a150effeeb9763a4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b09050e11b8030508b08419ead4bcb9d</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>b49050e11b8030508b08419ead4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Accept","value":"application/json"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b09050e11b8030508b08419ead4bcb9d</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>b89050e11b8030508b08419ead4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <value>from_openapi</value>
+        <variable display_value="Build Request">bb61fcd3c7312300a150effeeb97638e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b09050e11b8030508b08419ead4bcb9d</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>f09050e11b8030508b08419ead4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <value>put</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b09050e11b8030508b08419ead4bcb9d</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>f49050e11b8030508b08419ead4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <value>517cb4691ba32c508b08419ead4bcb65</value>
+        <variable display_value="API Source">c346f4d7c7312300a150effeeb976366</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b09050e11b8030508b08419ead4bcb9d</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>fc9050e11b8030508b08419ead4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b09050e11b8030508b08419ead4bcb9d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>api_operation</field>
+        <id>b09050e11b8030508b08419ead4bcb9d</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>f49050e11b8030508b08419ead4bcbc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>api_source</field>
+        <id>b09050e11b8030508b08419ead4bcb9d</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>709050e11b8030508b08419ead4bcbc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>b09050e11b8030508b08419ead4bcb9d</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>fc9050e11b8030508b08419ead4bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>body</field>
+        <id>b09050e11b8030508b08419ead4bcb9d</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>7c9050e11b8030508b08419ead4bcbc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[0e8c20cd-d3b0-42ad-b89f-293bdd85674c].payload}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>build_request</field>
+        <id>b09050e11b8030508b08419ead4bcb9d</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>349050e11b8030508b08419ead4bcbc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>b09050e11b8030508b08419ead4bcb9d</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>3c9050e11b8030508b08419ead4bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>b09050e11b8030508b08419ead4bcb9d</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>f09050e11b8030508b08419ead4bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{action.connection_alias}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>enable_retry_policy</field>
+        <id>b09050e11b8030508b08419ead4bcb9d</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>b89050e11b8030508b08419ead4bcbc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>b09050e11b8030508b08419ead4bcb9d</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>789050e11b8030508b08419ead4bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>b09050e11b8030508b08419ead4bcb9d</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>309050e11b8030508b08419ead4bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>b09050e11b8030508b08419ead4bcb9d</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>b09050e11b8030508b08419ead4bcbcb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 20:46:21</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"notifyUsers","value":"{{action.notifyusers}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"overrideEditableFlag","value":"{{action.overrideeditableflag}}","attributes":{"omit_if_empty":true,"mandatory":false}},{"name":"overrideScreenSecurity","value":"{{action.overridescreensecurity}}","attributes":{"omit_if_empty":true,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>b09050e11b8030508b08419ead4bcb9d</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>b49050e11b8030508b08419ead4bcbca</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 22:46:44</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>/rest/api/2/issue/{{action.jira_issue.u_jira_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>rest_metadata</field>
+        <id>b09050e11b8030508b08419ead4bcb9d</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>749050e11b8030508b08419ead4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=b09050e11b8030508b08419ead4bcb9d^sys_idNOT INbc9050e11b8030508b08419ead4bcba3"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=f07e239b-6c54-46dc-8bd8-5e64b00575c8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">b09050e11b8030508b08419ead4bcb9d</model>
+        <model_id>b09050e11b8030508b08419ead4bcb9d</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_b09050e11b8030508b08419ead4bcb9d</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>bc9050e11b8030508b08419ead4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=909010e11b8030508b08419ead4bcbfb^sys_idNOT IN2c9050e11b8030508b08419ead4bcb4a,2c9050e11b8030508b08419ead4bcb6c,689050e11b8030508b08419ead4bcb65,a49050e11b8030508b08419ead4bcb26,d89050e11b8030508b08419ead4bcb00,ec9050e11b8030508b08419ead4bcb51"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=45e592a0-b3bd-40ca-bda2-da6685cf46ec</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>notifyusers</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Notify Users</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Edit Jira Issue Fields">909010e11b8030508b08419ead4bcbfb</model>
+        <model_id>909010e11b8030508b08419ead4bcbfb</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_909010e11b8030508b08419ead4bcbfb</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:12</sys_created_on>
+        <sys_id>2c9050e11b8030508b08419ead4bcb4a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 20:46:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Field,child_name=Field,child_type=object,child_type_label=Object,child_uiUniqueId=59c5be2d-64c4-431a-9651-4a34a5a195ec,co_type_name=FD509010e1d08030506ab75dfb843f41fe,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=9511eae0-aeeb-492d-abda-5bcd76712668</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Edit Jira Issue Fields">909010e11b8030508b08419ead4bcbfb</model>
+        <model_id>909010e11b8030508b08419ead4bcbfb</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_909010e11b8030508b08419ead4bcbfb</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:12</sys_created_on>
+        <sys_id>2c9050e11b8030508b08419ead4bcb6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=176d5e61-93fc-4652-98ca-0859e00642c9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>overrideeditableflag</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Ignore Editable Flag</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Edit Jira Issue Fields">909010e11b8030508b08419ead4bcbfb</model>
+        <model_id>909010e11b8030508b08419ead4bcbfb</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_909010e11b8030508b08419ead4bcbfb</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:12</sys_created_on>
+        <sys_id>689050e11b8030508b08419ead4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=ed177432-b367-41ec-b9ce-97549676e1b8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>u_jira_issue</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>jira_issue</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Jira Issue</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Edit Jira Issue Fields">909010e11b8030508b08419ead4bcbfb</model>
+        <model_id>909010e11b8030508b08419ead4bcbfb</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_909010e11b8030508b08419ead4bcbfb</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="u_jira_issue">u_jira_issue</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:11</sys_created_on>
+        <sys_id>a49050e11b8030508b08419ead4bcb26</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=ae7f3a87-be74-4a9c-9938-7665077b2349</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_alias</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>{"display":"sn_jira_spoke.Jira","value":"629ad2bfdb1893005963ff041d961971"}</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>connection_alias</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Connection Alias</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Edit Jira Issue Fields">909010e11b8030508b08419ead4bcbfb</model>
+        <model_id>909010e11b8030508b08419ead4bcbfb</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_909010e11b8030508b08419ead4bcbfb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_alias">sys_alias</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:11</sys_created_on>
+        <sys_id>d89050e11b8030508b08419ead4bcb00</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=cc1d0c8d-8336-4e47-be08-313a4bfed958</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>overridescreensecurity</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Ignore Screen Security</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Edit Jira Issue Fields">909010e11b8030508b08419ead4bcbfb</model>
+        <model_id>909010e11b8030508b08419ead4bcbfb</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_909010e11b8030508b08419ead4bcbfb</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:12</sys_created_on>
+        <sys_id>ec9050e11b8030508b08419ead4bcb51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=909010e11b8030508b08419ead4bcbfb^sys_idNOT INf49050e11b8030508b08419ead4bcbd9,f89050e11b8030508b08419ead4bcbd1"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=5586d8dd-e02e-46b1-973a-0084291fe27a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_message</element>
+        <element_prototype display_value="Error Message" element="error_message" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">26a48b7347622200b4fad7527c9a71c0</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Error Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Edit Jira Issue Fields">909010e11b8030508b08419ead4bcbfb</model>
+        <model_id>909010e11b8030508b08419ead4bcbfb</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_909010e11b8030508b08419ead4bcbfb</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>f49050e11b8030508b08419ead4bcbd9</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 22:46:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=fb4e33ba-296a-4e87-8d41-c56e9f01a92f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_prototype display_value="Status Code" element="status_code" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">a053077347622200b4fad7527c9a716e</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Status Code</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Edit Jira Issue Fields">909010e11b8030508b08419ead4bcbfb</model>
+        <model_id>909010e11b8030508b08419ead4bcbfb</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_909010e11b8030508b08419ead4bcbfb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>f89050e11b8030508b08419ead4bcbd1</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 22:46:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_909010e11b8030508b08419ead4bcbfb^sys_idNOT IN289050e11b8030508b08419ead4bcb50,649050e11b8030508b08419ead4bcb49,649050e11b8030508b08419ead4bcb6b,649050e11b8030508b08419ead4bcb7f,e89050e11b8030508b08419ead4bcb57,ec9050e11b8030508b08419ead4bcb24"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>notifyusers</element>
+        <help/>
+        <hint/>
+        <label>Notify Users</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_909010e11b8030508b08419ead4bcbfb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:12</sys_created_on>
+        <sys_id>289050e11b8030508b08419ead4bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>jira_issue</element>
+        <help/>
+        <hint/>
+        <label>Jira Issue</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_909010e11b8030508b08419ead4bcbfb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:12</sys_created_on>
+        <sys_id>649050e11b8030508b08419ead4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>overrideeditableflag</element>
+        <help/>
+        <hint/>
+        <label>Ignore Editable Flag</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_909010e11b8030508b08419ead4bcbfb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:12</sys_created_on>
+        <sys_id>649050e11b8030508b08419ead4bcb6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>fields</element>
+        <help/>
+        <hint/>
+        <label>Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_909010e11b8030508b08419ead4bcbfb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:12</sys_created_on>
+        <sys_id>649050e11b8030508b08419ead4bcb7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>overridescreensecurity</element>
+        <help/>
+        <hint/>
+        <label>Ignore Screen Security</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_909010e11b8030508b08419ead4bcbfb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:12</sys_created_on>
+        <sys_id>e89050e11b8030508b08419ead4bcb57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>connection_alias</element>
+        <help/>
+        <hint/>
+        <label>Connection Alias</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_909010e11b8030508b08419ead4bcbfb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:11</sys_created_on>
+        <sys_id>ec9050e11b8030508b08419ead4bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_909010e11b8030508b08419ead4bcbfb^sys_idNOT IN309050e11b8030508b08419ead4bcbd8,349050e11b8030508b08419ead4bcbdf"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status_code</element>
+        <help/>
+        <hint/>
+        <label>Status Code</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_909010e11b8030508b08419ead4bcbfb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>309050e11b8030508b08419ead4bcbd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error_message</element>
+        <help/>
+        <hint/>
+        <label>Error Message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_909010e11b8030508b08419ead4bcbfb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-10 16:35:13</sys_created_on>
+        <sys_id>349050e11b8030508b08419ead4bcbdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:35:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>c81c88611b4030508b08419ead4bcb74</sys_id>
+        <latest_snapshot>909010e11b8030508b08419ead4bcbfb</latest_snapshot>
+    </sys_hub_action_type_definition>
+</record_update>

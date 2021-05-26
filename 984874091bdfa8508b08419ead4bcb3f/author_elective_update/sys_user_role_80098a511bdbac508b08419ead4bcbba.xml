@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>u_jira_user_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix/>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 23:55:48</sys_created_on>
+        <sys_id>80098a511bdbac508b08419ead4bcbba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_jira_user_user</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_user_role_80098a511bdbac508b08419ead4bcbba</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 23:55:48</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</application>
+        <file_path/>
+        <instance_id>0338d1bbdbe39b041ddcf22ebf9619b4</instance_id>
+        <instance_name>adcomsolutionsdev</instance_name>
+        <name>sys_user_role_80098a511bdbac508b08419ead4bcbba</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><encryption_context/><grantable>true</grantable><includes_roles/><name>u_jira_user_user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix/><sys_class_name>sys_user_role</sys_class_name><sys_created_by>chris.crockett</sys_created_by><sys_created_on>2021-04-02 23:55:48</sys_created_on><sys_id>80098a511bdbac508b08419ead4bcbba</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_jira_user_user</sys_name><sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package><sys_policy/><sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope><sys_update_name>sys_user_role_80098a511bdbac508b08419ead4bcbba</sys_update_name><sys_updated_by>chris.crockett</sys_updated_by><sys_updated_on>2021-04-02 23:55:48</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-1773672510</payload_hash>
+        <record_name>u_jira_user_user</record_name>
+        <reverted_from/>
+        <source>926e5be61bcbe01031264159cc4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 23:55:48</sys_created_on>
+        <sys_id>c4098a511bdbac508b08419ead4bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1789503a8980000001</sys_recorded_at>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 23:55:48</sys_updated_on>
+        <type>Role</type>
+        <update_guid>8c098a5153dbac50d6f8eea55f6dc7bf</update_guid>
+        <update_guid_history>8c098a5153dbac50d6f8eea55f6dc7bf:-1773672510</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2021-04-30 13:49:47">6bb1059a1b37a8508b08419ead4bcbd0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-30 17:49:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>5971d68f94db43128ab9397bff702864</sys_id>
+        <sys_metadata>80098a511bdbac508b08419ead4bcbba</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_jira_user_user</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_scope_delete display_value="">4d6c253b4e124d31af4e500594e86541</sys_scope_delete>
+        <sys_update_name>sys_user_role_80098a511bdbac508b08419ead4bcbba</sys_update_name>
+        <sys_update_version display_value="sys_user_role_80098a511bdbac508b08419ead4bcbba">c4098a511bdbac508b08419ead4bcbc0</sys_update_version>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-30 17:49:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

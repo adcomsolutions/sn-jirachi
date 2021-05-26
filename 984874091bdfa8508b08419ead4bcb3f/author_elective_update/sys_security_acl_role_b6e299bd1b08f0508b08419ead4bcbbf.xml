@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-11 16:03:33</sys_created_on>
+        <sys_id>b6e299bd1b08f0508b08419ead4bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_jira_issue.snc_internal</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_security_acl display_value="u_jira_issue">3ae299bd1b08f0508b08419ead4bcbbe</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_b6e299bd1b08f0508b08419ead4bcbbf</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-11 16:03:33</sys_updated_on>
+        <sys_user_role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</sys_user_role>
+        <transaction_id>3ae29dfd1b08f0508b08419ead4bcb76</transaction_id>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</application>
+        <file_path/>
+        <instance_id>0338d1bbdbe39b041ddcf22ebf9619b4</instance_id>
+        <instance_name>adcomsolutionsdev</instance_name>
+        <name>sys_security_acl_role_b6e299bd1b08f0508b08419ead4bcbbf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>chris.crockett</sys_created_by><sys_created_on>2021-05-11 16:03:33</sys_created_on><sys_id>b6e299bd1b08f0508b08419ead4bcbbf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_jira_issue.snc_internal</sys_name><sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package><sys_policy/><sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope><sys_security_acl display_value="u_jira_issue">3ae299bd1b08f0508b08419ead4bcbbe</sys_security_acl><sys_update_name>sys_security_acl_role_b6e299bd1b08f0508b08419ead4bcbbf</sys_update_name><sys_updated_by>chris.crockett</sys_updated_by><sys_updated_on>2021-05-11 16:03:33</sys_updated_on><sys_user_role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</sys_user_role><transaction_id>3ae29dfd1b08f0508b08419ead4bcb76</transaction_id></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-2110406116</payload_hash>
+        <record_name>u_jira_issue.snc_internal</record_name>
+        <reverted_from/>
+        <source>26dd97331b3320108b08419ead4bcbcc</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2021-05-05 21:02:43</sys_created_on>
+        <sys_id>340391fd1b08f0508b08419ead4bcb2f</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>1793e570d380000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Access Roles</type>
+        <update_guid>f00391fda308f05050a7ce671e227e2f</update_guid>
+        <update_guid_history>f00391fda308f05050a7ce671e227e2f:-2110406116</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2021-05-11 12:03:58">300391fd1b08f0508b08419ead4bcb33</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-11 16:03:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>07d564fbac85481c8086a51dfb50f110</sys_id>
+        <sys_metadata>b6e299bd1b08f0508b08419ead4bcbbf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_jira_issue.snc_internal</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_parent display_value="u_jira_issue">3ae299bd1b08f0508b08419ead4bcbbe</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_scope_delete display_value="">4d6c253b4e124d31af4e500594e86541</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_b6e299bd1b08f0508b08419ead4bcbbf</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_b6e299bd1b08f0508b08419ead4bcbbf">340391fd1b08f0508b08419ead4bcb2f</sys_update_version>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-11 16:03:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

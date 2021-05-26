@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="System Import Sets">import_sets</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Jira Issues Import</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>u_jira_issues</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 04:15:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>a8caf9c51b5fe8508b08419ead4bcb3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Jira Issues Import</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_app_module_a8caf9c51b5fe8508b08419ead4bcb3f</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 04:15:05</sys_updated_on>
+        <timeline_page/>
+        <title>Jira Issues Import</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</application>
+        <file_path/>
+        <instance_id>0338d1bbdbe39b041ddcf22ebf9619b4</instance_id>
+        <instance_name>adcomsolutionsdev</instance_name>
+        <name>sys_app_module_a8caf9c51b5fe8508b08419ead4bcb3f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Import Sets">import_sets</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Jira Issues Import</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_jira_issues</name><order>1100</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>chris.crockett</sys_created_by><sys_created_on>2021-04-02 04:15:05</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>a8caf9c51b5fe8508b08419ead4bcb3f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Jira Issues Import</sys_name><sys_overrides/><sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package><sys_policy/><sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope><sys_update_name>sys_app_module_a8caf9c51b5fe8508b08419ead4bcb3f</sys_update_name><sys_updated_by>chris.crockett</sys_updated_by><sys_updated_on>2021-04-02 04:15:05</sys_updated_on><timeline_page/><title>Jira Issues Import</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-880413092</payload_hash>
+        <record_name>Jira Issues Import</record_name>
+        <reverted_from/>
+        <source>926e5be61bcbe01031264159cc4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 04:15:05</sys_created_on>
+        <sys_id>e8caf9c51b5fe8508b08419ead4bcb43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17890caadfa0000001</sys_recorded_at>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 04:15:05</sys_updated_on>
+        <type>Module</type>
+        <update_guid>e0caf9c5575fe850e889144f29b0ac43</update_guid>
+        <update_guid_history>e0caf9c5575fe850e889144f29b0ac43:-880413092</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2021-04-30 17:32:04">3394f1d21bbfa8508b08419ead4bcbc6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-30 21:32:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>0cbc76e18b4343e8a49937242e64b690</sys_id>
+        <sys_metadata>a8caf9c51b5fe8508b08419ead4bcb3f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Jira Issues Import</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_scope_delete display_value="">4d6c253b4e124d31af4e500594e86541</sys_scope_delete>
+        <sys_update_name>sys_app_module_a8caf9c51b5fe8508b08419ead4bcb3f</sys_update_name>
+        <sys_update_version display_value="sys_app_module_a8caf9c51b5fe8508b08419ead4bcb3f">e8caf9c51b5fe8508b08419ead4bcb43</sys_update_version>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-30 21:32:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

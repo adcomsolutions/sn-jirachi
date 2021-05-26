@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.convertJiraSprintState</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Converts the state string used in the state field of Jira Projects ("future"/"active"/"closed") to a numeric state value that can be used in a Jira Sprint record</description>
+        <name>convertJiraSprintState</name>
+        <script><![CDATA[function convertJiraSprintState(jiraStatusString){
+	return (function(){
+		var statusMap = {
+			// 1 = Planning
+			future: 1,
+			// 2 = Current
+			active: 2,
+			// 3 = Complete
+			closed: 3
+		};
+		return statusMap[jiraStatusString];
+	})();
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-28 20:20:16</sys_created_on>
+        <sys_id>947f0b2d1b3f2050b2895245624bcb30</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>convertJiraSprintState</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_script_include_947f0b2d1b3f2050b2895245624bcb30</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-29 01:25:31</sys_updated_on>
+    </sys_script_include>
+</record_update>

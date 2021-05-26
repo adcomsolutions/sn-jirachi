@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="u_jira_issue_type" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Jira Issue Type - Default view" name="u_jira_issue_type" related_list="NULL" sys_domain="global" view="Default view">2b5d4e2b1bb7e4908b08419ead4bcbe8</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>u_m2m_jira_issue_type_status.u_jira_issue_type</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-05-04 20:32:35</sys_created_on>
+            <sys_id>eb5d4e2b1bb7e4908b08419ead4bcbe9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-05-04 20:32:35</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Jira Issue Type - Default view" name="u_jira_issue_type" related_list="NULL" sys_domain="global" view="Default view">2b5d4e2b1bb7e4908b08419ead4bcbe8</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>u_m2m_jira_project_issue_type.u_jira_issue_type</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-05-04 20:32:35</sys_created_on>
+            <sys_id>675d4e2b1bb7e4908b08419ead4bcbea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-05-04 20:32:35</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Jira Issue Type - Default view</calculated_name>
+            <filter/>
+            <name>u_jira_issue_type</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-05-04 20:32:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2b5d4e2b1bb7e4908b08419ead4bcbe8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Jira Issue Type - Default view</sys_name>
+            <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+            <sys_update_name>sys_ui_related_u_jira_issue_type_null</sys_update_name>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-05-04 20:32:35</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

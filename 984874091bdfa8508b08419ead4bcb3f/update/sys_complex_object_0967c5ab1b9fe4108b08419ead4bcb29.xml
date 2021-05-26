@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD4567c5abd89fe41025e3023094050029</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name>
+        <serialized_content>{"FlowDesigner:FD4567c5abd89fe41025e3023094050029":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD4567c5abd89fe41025e3023094050029.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"max_rows\":null,\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Deleted Issue Type Choices\",\"mandatory\":\"false\",\"child_name\":\"deleted_issue_type_choice\",\"uiUniqueId\":\"5dff6ac3-65b1-4279-ae89-8530dc6cbb03\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD4567c5abd89fe41025e3023094050029\",\"child_label\":\"Deleted Issue Type Choice\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"83a605c4-0201-4677-aea7-ac2627d27703\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-09 18:55:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>0967c5ab1b9fe4108b08419ead4bcb29</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>FD4567c5abd89fe41025e3023094050029</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_complex_object_0967c5ab1b9fe4108b08419ead4bcb29</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-22 19:55:32</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

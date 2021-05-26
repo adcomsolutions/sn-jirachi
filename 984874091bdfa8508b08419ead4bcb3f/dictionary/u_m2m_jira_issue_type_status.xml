@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="M2m Jira Issue Type Status" max_length="40" name="u_m2m_jira_issue_type_status" sizeclass="46" type="collection">
+        <element attributes="encode_utf8=false" label="Jira Issue Type" mandatory="true" max_length="32" name="u_jira_issue_type" read_only="true" reference="u_jira_issue_type" type="reference"/>
+        <element label="Jira Projects" max_length="4000" name="u_jira_projects" reference="u_jira_project" type="glide_list"/>
+        <element attributes="encode_utf8=false" label="Jira Status" mandatory="true" max_length="32" name="u_jira_status" read_only="true" reference="u_jira_status" type="reference"/>
+        <index name="index">
+            <element name="u_jira_status"/>
+        </index>
+        <index name="index2">
+            <element name="u_jira_issue_type"/>
+        </index>
+    </element>
+</database>

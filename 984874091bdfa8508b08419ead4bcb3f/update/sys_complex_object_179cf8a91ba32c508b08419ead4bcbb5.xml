@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>types4274981878</name>
+        <namespace>TheJiraCloudplatformRESTAPI100100SNAPSHOT</namespace>
+        <scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name>
+        <serialized_content>{"TheJiraCloudplatformRESTAPI100100SNAPSHOT:types4274981878":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-15 23:16:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>179cf8a91ba32c508b08419ead4bcbb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>types4274981878</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_complex_object_179cf8a91ba32c508b08419ead4bcbb5</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-15 23:16:13</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

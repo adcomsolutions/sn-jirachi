@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Jira Integration">11ce03821b887850b2895245624bcbe3</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Jira Sprints Import</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>u_jira_sprints</name>
+        <order>3200</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>u_jira_power_user</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-04-30 22:24:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e19006de1bf72850b2895245624bcb21</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Jira Sprints Import</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_app_module_e19006de1bf72850b2895245624bcb21</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-12 20:51:15</sys_updated_on>
+        <timeline_page/>
+        <title>Jira Sprints Import</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</claim_owner_scope>
+        <claim_timestamp>17962571da10000001</claim_timestamp>
+        <metadata_update_name>sys_app_module_e19006de1bf72850b2895245624bcb21</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Jira Integration</previous_claim_name>
+        <previous_claim_scope>984874091bdfa8508b08419ead4bcb3f</previous_claim_scope>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-12 20:49:06</sys_created_on>
+        <sys_id>9fdd9bc61b4c7850b2895245624bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-12 20:49:06</sys_updated_on>
+    </sys_claim>
+</record_update>

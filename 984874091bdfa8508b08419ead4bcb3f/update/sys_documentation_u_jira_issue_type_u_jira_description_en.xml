@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_jira_description" label="Description" language="en" table="u_jira_issue_type">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_jira_description</element>
+            <help/>
+            <hint/>
+            <label>Description</label>
+            <language>en</language>
+            <name>u_jira_issue_type</name>
+            <plural>Descriptions</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-05-04 13:46:56</sys_created_on>
+            <sys_id>d9807c271bb7a4908b08419ead4bcb04</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Description</sys_name>
+            <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+            <sys_update_name>sys_documentation_u_jira_issue_type_u_jira_description_en</sys_update_name>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-05-04 13:46:56</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

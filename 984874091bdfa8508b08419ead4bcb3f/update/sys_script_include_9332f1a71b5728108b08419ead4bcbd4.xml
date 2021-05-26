@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.getUsersLinkedToJira</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Returns a list of Sys IDs for all sys_users that are linked to a Jira User via the u_jira_user table. This is used in some list query definitions</description>
+        <name>getUsersLinkedToJira</name>
+        <script><![CDATA[function getUsersLinkedToJira(){
+	return new GlideQuery('u_jira_user')
+		.whereNotNull('u_user')
+		.select('u_user')
+		.map(function(jiraUserData){ return jiraUserData.u_user; })
+		.toArray(99);
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-09 22:19:09</sys_created_on>
+        <sys_id>9332f1a71b5728108b08419ead4bcbd4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>getUsersLinkedToJira</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_script_include_9332f1a71b5728108b08419ead4bcbd4</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-27 19:13:15</sys_updated_on>
+    </sys_script_include>
+</record_update>

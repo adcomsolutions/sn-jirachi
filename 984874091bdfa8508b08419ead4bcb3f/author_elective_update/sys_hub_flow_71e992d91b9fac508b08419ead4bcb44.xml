@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>update_jira_projects</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Update Jira Projects</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-03 01:09:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>71e992d91b9fac508b08419ead4bcb44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Jira Projects</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_hub_flow_71e992d91b9fac508b08419ead4bcb44</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-03 01:09:38</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="DELETE" query="document_key=71e992d91b9fac508b08419ead4bcb44"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=71e992d91b9fac508b08419ead4bcb44^sys_idNOT IN35e9d6d91b9fac508b08419ead4bcb78"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>71e992d91b9fac508b08419ead4bcb44</id>
+        <name>Update Jira Projects</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-03 01:09:38</sys_created_on>
+        <sys_id>35e9d6d91b9fac508b08419ead4bcb78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-03 01:09:38</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</application>
+        <file_path/>
+        <instance_id>0338d1bbdbe39b041ddcf22ebf9619b4</instance_id>
+        <instance_name>adcomsolutionsdev</instance_name>
+        <name>sys_hub_flow_71e992d91b9fac508b08419ead4bcb44</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from/><copied_from_name/><description/><internal_name>update_jira_projects</internal_name><label_cache>[]</label_cache><latest_snapshot/><master_snapshot/><name>Update Jira Projects</name><natlang/><outputs/><remote_trigger_id/><run_as>system</run_as><run_with_roles/><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>chris.crockett</sys_created_by><sys_created_on>2021-04-03 01:09:38</sys_created_on><sys_domain>global</sys_domain><sys_id>71e992d91b9fac508b08419ead4bcb44</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Update Jira Projects</sys_name><sys_overrides/><sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package><sys_policy/><sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope><sys_update_name>sys_hub_flow_71e992d91b9fac508b08419ead4bcb44</sys_update_name><sys_updated_by>chris.crockett</sys_updated_by><sys_updated_on>2021-04-03 01:09:38</sys_updated_on><type>flow</type></sys_hub_flow><sys_variable_value action="delete_multiple" query="document_key=71e992d91b9fac508b08419ead4bcb44"/><sys_flow_cat_variable_model action="delete_multiple" query="id=71e992d91b9fac508b08419ead4bcb44^sys_idNOT IN35e9d6d91b9fac508b08419ead4bcb78"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>71e992d91b9fac508b08419ead4bcb44</id><name>Update Jira Projects</name><sys_class_name>sys_flow_cat_variable_model</sys_class_name><sys_created_by>chris.crockett</sys_created_by><sys_created_on>2021-04-03 01:09:38</sys_created_on><sys_id>35e9d6d91b9fac508b08419ead4bcb78</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package/><sys_policy/><sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope><sys_update_name/><sys_updated_by>chris.crockett</sys_updated_by><sys_updated_on>2021-04-03 01:09:38</sys_updated_on></sys_flow_cat_variable_model></record_update>]]></payload>
+        <payload_hash>-1201242869</payload_hash>
+        <record_name>Update Jira Projects</record_name>
+        <reverted_from/>
+        <source>926e5be61bcbe01031264159cc4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-03 01:09:38</sys_created_on>
+        <sys_id>b5e9d6d91b9fac508b08419ead4bcb7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178954742c60000001</sys_recorded_at>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-03 01:09:38</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>bde9d6d9b19fac508a671af4087a0a7b</update_guid>
+        <update_guid_history>bde9d6d9b19fac508a671af4087a0a7b:-1201242869</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-05 18:25:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>0c12a29b605647489cb9985b67653040</sys_id>
+        <sys_metadata>71e992d91b9fac508b08419ead4bcb44</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Jira Projects</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_scope_delete display_value="">4d6c253b4e124d31af4e500594e86541</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_71e992d91b9fac508b08419ead4bcb44</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_71e992d91b9fac508b08419ead4bcb44">b5e9d6d91b9fac508b08419ead4bcb7c</sys_update_version>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-05 18:25:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

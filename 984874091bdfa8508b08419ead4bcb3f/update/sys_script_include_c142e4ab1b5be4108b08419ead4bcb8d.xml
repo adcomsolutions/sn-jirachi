@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.createJiraRestMessage</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Builds a full Jira REST request URL from a given snippet and credential alias. Only basic auth is currently supported!&#13;
+&#13;
+The endpoint and authentication are preconfigured, but the rest will need to be manually configured (HTTP method, Query parameters, etc.)&#13;
+For convenience, the request method is pre-configured to get. This means you can skip setting the request method for get messages&#13;
+&#13;
+The function is partially applicable. See the second example set below for details...&#13;
+&#13;
+Basic Example:&#13;
+  var message = createJiraRestMessage('629ad2bfdb1893005963ff041d961971', 'issue/createmeta');&#13;
+  message.setHttpMethod('get');&#13;
+  message.setQueryParameter('projectIds', '123456');&#13;
+  var response = message.execute();&#13;
+&#13;
+Partial Application Example:&#13;
+  // Only providing the first parameter creates a shortcut function for later use&#13;
+  var buildMessageWithJiraAlias = createJiraRestMessage('629ad2bfdb1893005963ff041d961971');&#13;
+  // The partially applied version is useful when you need to make many RestMessageV2s in one script&#13;
+  var issueMetadataMessage = createMessageWithJiraAlias('issue/createmeta');&#13;
+  var issueLinkTypesMessage = createMessageWithJiraAlias('issueLinkType');&#13;
+  var projectsMessage = createMessageWithJiraAlias('project');</description>
+        <name>createJiraRestMessage</name>
+        <script><![CDATA[var createJiraRestMessage = GQ.partial(function(credAliasId, targetUri){
+	// Result to be returned
+	var out = new sn_ws.RESTMessageV2();
+	// Use get method by default for convenience
+	out.setHttpMethod('get');
+	
+	// Magic values
+	var defaultApiVersion = '2';
+	var jiraRestPath = 'rest/api';
+	
+	// Credential alias helper
+	var connection = new sn_cc.ConnectionInfoProvider().getConnectionInfo(credAliasId);
+	var connectionData = connection.getDataMap();
+	
+	// Data to use in building the endpoint
+	var baseUrl = connectionData.connection_url;
+	var apiVersion = connection.getExtendedAttributes().api_version || defaultApiVersion;
+	
+	// Setting the endpoint
+	var targetEndpoint = [baseUrl, jiraRestPath, apiVersion, targetUri].join('/');
+	out.setEndpoint(targetEndpoint);
+	
+	// Setting credentials from the credential alias
+	out.setBasicAuth(
+		connection.getCredentialAttribute('user_name'),
+		connection.getCredentialAttribute('password')
+	);
+	
+	// Configuring other optional data from the credential alias where applicable
+	var maybeTimeout = new Optional(
+		Number(connectionData.connection_timeout) || null
+	);
+	var maybeMidServer = connectionData.use_mid == 'false'
+		? new Optional(connectionData.mid_server || null)
+		: Optional.empty();
+	
+	maybeTimeout.isPresent(function(timeout){
+		out.setHttpTimeout(timeout);
+	});
+	
+	maybeMidServer.isPresent(function(midServer){
+		out.setMIDServer(midServer);
+	});
+	
+	return out;
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-09 17:15:49</sys_created_on>
+        <sys_id>c142e4ab1b5be4108b08419ead4bcb8d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>createJiraRestMessage</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_script_include_c142e4ab1b5be4108b08419ead4bcb8d</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-09 17:48:57</sys_updated_on>
+    </sys_script_include>
+</record_update>

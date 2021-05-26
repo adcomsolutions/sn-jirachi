@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>u_jira.trigger_datasource</event_name>
+        <name>Handle Manual Jira Import</name>
+        <order>100</order>
+        <script><![CDATA[try {
+	// Create the import set and associate it with the data source
+    var loader = new GlideImportSetLoader();
+    var importSet = loader.getImportSetGr(current);
+
+    publishNotification(event.user_id, {
+        text: 'Staging data into <a href="' + importSet.getLink(false) + '">' + importSet.getDisplayValue() + '</a>'
+    });
+
+	// Trigger the data source and wait until the import set is populated
+    var importSucceeded = loader.loadImportSetTable(importSet, current);
+
+    if (!importSucceeded) NiceError.raise('Failed to create import set via Data Source: ' + current.sys_id);
+
+    publishNotification(event.user_id, {
+        text: 'Finished staging...'
+    });
+
+    importSet.state = 'loaded';
+    importSet.update();
+
+	// Apparently there's no convenient way to just trigger the right maps
+	// Not 100% sure if this ordering/criteria for maps will match what normally happens...
+    var transformMapIds = new GlideQuery('sys_transform_map')
+        .orderBy('order')
+        .where('active', true)
+        .where('source_table', importSet.table_name)
+        .select()
+        .map(function(i) {
+            return i.sys_id;
+        });
+
+    publishNotification(event.user_id, {
+        text: 'Applying transform maps...'
+    });
+
+	// Run the queried transform maps on the import set synchronously
+    transformMapIds.forEach(function(transformerId) {
+        var transformer = new GlideImportSetTransformer();
+        transformer.setMapID(transformerId);
+        transformer.transformAllMaps(importSet);
+    });
+
+    publishNotification(event.user_id, {
+        text: 'Data import complete!'
+    });
+} catch (err) {
+    publishNotification(event.user_id, {
+        type: 'error',
+        text: 'Something went wrong: ' + err.message
+    });
+    throw err;
+}]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-30 20:03:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e4de551a1b7ba8508b08419ead4bcb43</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Handle Manual Jira Import</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sysevent_script_action_e4de551a1b7ba8508b08419ead4bcb43</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-30 21:16:07</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD5ba4232b6623a0d06407877eaa21d23e</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name>
+        <serialized_content>{"FlowDesigner:FD5ba4232b6623a0d06407877eaa21d23e":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Name\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"self":"String","self.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Self URL\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"id":"Integer","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"ID\",\"mandatory\":\"true\",\"order\":\"1\",\"max_length\":\"0\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"scrum\",\"label\":\"Board Type\",\"mandatory\":\"true\",\"order\":\"4\",\"max_length\":\"32\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Kanban\":\"{\\\"label\\\":\\\"Kanban\\\",\\\"value\\\":\\\"kanban\\\",\\\"order\\\":2}\",\"Scrum\":\"{\\\"label\\\":\\\"Scrum\\\",\\\"value\\\":\\\"scrum\\\",\\\"order\\\":1}\"}}"}},"FlowDesigner:FD5ba4232b6623a0d06407877eaa21d23e.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Boards\",\"mandatory\":\"false\",\"uiUniqueId\":\"62c9b032-d89b-4e59-8de5-3975dc4eb627\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD5ba4232b6623a0d06407877eaa21d23e\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-22 16:38:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>1fa4232b1b23a0d08b08419ead4bcb3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD5ba4232b6623a0d06407877eaa21d23e</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_complex_object_1fa4232b1b23a0d08b08419ead4bcb3e</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-22 16:38:21</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Story" language="en" table="rm_story">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Story</label>
+            <language>en</language>
+            <name>rm_story</name>
+            <plural>Stories</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-01 23:26:26</sys_created_on>
+            <sys_id>54b8b4c91bdfa8508b08419ead4bcb3c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Story</sys_name>
+            <sys_package display_value="SDLC - SCRUM" source="com.snc.sdlc.scrum">51a870c91bdfa8508b08419ead4bcb8f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+            <sys_update_name>sys_documentation_rm_story__en</sys_update_name>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-02 23:09:50</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</claim_owner_scope>
+        <claim_timestamp>17894dea96e0000001</claim_timestamp>
+        <metadata_update_name>sys_documentation_rm_story__en</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Jira Integration</previous_claim_name>
+        <previous_claim_scope>984874091bdfa8508b08419ead4bcb3f</previous_claim_scope>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 23:15:23</sys_created_on>
+        <sys_id>d8cf75151b5bac508b08419ead4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 23:15:23</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</claim_owner_scope>
+        <claim_timestamp>17894d995af0000001</claim_timestamp>
+        <metadata_update_name>sys_documentation_rm_story__en</metadata_update_name>
+        <previous_claim_app_version/>
+        <previous_claim_name>com.snc.sdlc.scrum</previous_claim_name>
+        <previous_claim_scope>com.snc.sdlc.scrum</previous_claim_scope>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 23:15:23</sys_created_on>
+        <sys_id>9ccf75151b5bac508b08419ead4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 23:15:23</sys_updated_on>
+    </sys_claim>
+</record_update>

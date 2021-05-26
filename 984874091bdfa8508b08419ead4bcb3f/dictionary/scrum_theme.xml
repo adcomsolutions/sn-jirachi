@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Theme" max_length="40" name="scrum_theme" sizeclass="5" type="collection"/>
+</database>

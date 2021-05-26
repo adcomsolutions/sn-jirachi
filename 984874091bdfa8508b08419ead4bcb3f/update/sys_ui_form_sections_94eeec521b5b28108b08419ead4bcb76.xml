@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="94eeec521b5b28108b08419ead4bcb76" sys_domain="global" table="u_jira_issue" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:55:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>28ee64921b5b28108b08419ead4bcb4f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="u_jira_issue" name="u_jira_issue" sys_domain="global" view="Default view">94eeec521b5b28108b08419ead4bcb76</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="Default view">eceeec521b5b28108b08419ead4bcb7a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:55:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-05-10 18:10:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fc56e0611b8430508b08419ead4bcb39</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="u_jira_issue" name="u_jira_issue" sys_domain="global" view="Default view">94eeec521b5b28108b08419ead4bcb76</sys_ui_form>
+            <sys_ui_section caption="Comments" display_value="Comments" name="u_jira_issue" sys_domain="global" view="Default view">7856e0611b8430508b08419ead4bcb36</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-05-10 18:10:14</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-05-10 18:10:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fc56e0611b8430508b08419ead4bcb94</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="u_jira_issue" name="u_jira_issue" sys_domain="global" view="Default view">94eeec521b5b28108b08419ead4bcb76</sys_ui_form>
+            <sys_ui_section caption="Edit" display_value="Edit" name="u_jira_issue" sys_domain="global" view="Default view">f056e0611b8430508b08419ead4bcb38</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-05-10 18:10:14</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-05-11 16:25:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3ff7993d1b48f0508b08419ead4bcb1a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="u_jira_issue" name="u_jira_issue" sys_domain="global" view="Default view">94eeec521b5b28108b08419ead4bcb76</sys_ui_form>
+            <sys_ui_section caption="Sprint" display_value="Sprint" name="u_jira_issue" sys_domain="global" view="Default view">7bf7593d1b48f0508b08419ead4bcbbf</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-05-11 16:25:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>u_jira_issue</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:55:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>94eeec521b5b28108b08419ead4bcb76</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_jira_issue</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+            <sys_update_name>sys_ui_form_sections_94eeec521b5b28108b08419ead4bcb76</sys_update_name>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:55:59</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

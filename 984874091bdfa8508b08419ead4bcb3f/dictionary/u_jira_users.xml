@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Jira Users Import" max_length="40" name="u_jira_users" sizeclass="192" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=accountId" label="accountId" max_length="43" name="u_accountid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=accountType" label="accountType" max_length="40" name="u_accounttype" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=active" label="active" max_length="40" name="u_active" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=displayName" label="displayName" max_length="40" name="u_displayname" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=emailAddress" label="emailAddress" max_length="40" name="u_emailaddress" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=locale" label="locale" max_length="40" name="u_locale" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=self" label="self" max_length="97" name="u_self" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=timeZone" label="timeZone" max_length="40" name="u_timezone" type="string"/>
+    </element>
+</database>

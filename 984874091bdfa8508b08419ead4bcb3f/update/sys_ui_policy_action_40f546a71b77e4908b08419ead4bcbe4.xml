@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>description</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 20:02:41</sys_created_on>
+        <sys_id>40f546a71b77e4908b08419ead4bcbe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>description</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_ui_policy_action_40f546a71b77e4908b08419ead4bcbe4</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 20:02:41</sys_updated_on>
+        <table>u_jira_issue</table>
+        <ui_policy display_value="Disallow blank Jira issue description unless it originally loaded from Jira that way">9e9582271b77e4908b08419ead4bcbba</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

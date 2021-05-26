@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="e0ee64921b5b28108b08419ead4bcb6a" sys_domain="global" table="u_jira_issue" version="3" view="scrum">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>e4ee64921b5b28108b08419ead4bcb6b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>1</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>6cee64921b5b28108b08419ead4bcb6b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>theme</element>
+            <position>2</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>e0ee64921b5b28108b08419ead4bcb6c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>epic</element>
+            <position>3</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>68ee64921b5b28108b08419ead4bcb6c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>4</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>ecee64921b5b28108b08419ead4bcb6c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>story_points</element>
+            <position>5</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>64ee64921b5b28108b08419ead4bcb6d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sprint</element>
+            <position>6</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>e8ee64921b5b28108b08419ead4bcb6d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>demand</element>
+            <position>7</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>60ee64921b5b28108b08419ead4bcb6e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>8</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>e4ee64921b5b28108b08419ead4bcb6e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>product</element>
+            <position>9</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>6cee64921b5b28108b08419ead4bcb6e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>release</element>
+            <position>10</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>e0ee64921b5b28108b08419ead4bcb6f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assignment_group</element>
+            <position>11</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>68ee64921b5b28108b08419ead4bcb6f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>12</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>ecee64921b5b28108b08419ead4bcb6f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>project</element>
+            <position>13</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>64ee64921b5b28108b08419ead4bcb70</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>project_phase</element>
+            <position>14</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>e8ee64921b5b28108b08419ead4bcb70</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>blocked</element>
+            <position>15</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>60ee64921b5b28108b08419ead4bcb71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>16</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>e4ee64921b5b28108b08419ead4bcb71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>blocked_reason</element>
+            <position>17</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>6cee64921b5b28108b08419ead4bcb71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>18</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>e0ee64921b5b28108b08419ead4bcb72</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>19</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>68ee64921b5b28108b08419ead4bcb72</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>acceptance_criteria</element>
+            <position>20</position>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_id>ecee64921b5b28108b08419ead4bcb72</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_jira_issue" sys_domain="global" view="dfb01c4adb4ed3008648d2984b9619be">e0ee64921b5b28108b08419ead4bcb6a</sys_ui_section>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>u_jira_issue</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-05 19:56:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e0ee64921b5b28108b08419ead4bcb6a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_jira_issue</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+            <sys_update_name>sys_ui_section_e0ee64921b5b28108b08419ead4bcb6a</sys_update_name>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-05 19:56:00</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Scrum" name="scrum">dfb01c4adb4ed3008648d2984b9619be</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

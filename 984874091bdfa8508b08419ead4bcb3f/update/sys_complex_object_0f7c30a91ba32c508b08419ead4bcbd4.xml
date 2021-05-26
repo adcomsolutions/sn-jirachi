@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>IssuePickerSuggestionsIssueType</name>
+        <namespace>TheJiraCloudplatformRESTAPI100100SNAPSHOT</namespace>
+        <scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name>
+        <serialized_content>{"TheJiraCloudplatformRESTAPI100100SNAPSHOT:IssuePickerSuggestionsIssueType":{"msg":"String","msg.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"sub":"String","sub.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"label":"String","label.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"issues":[{"issues":{"summary":"String","summary.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"img":"String","img.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"keyHtml":"String","keyHtml.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"summaryText":"String","summaryText.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"id":"Integer","id.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"key":"String","key.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"}}}],"issues.$type_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"issues.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"}}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-15 23:15:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>0f7c30a91ba32c508b08419ead4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IssuePickerSuggestionsIssueType</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_complex_object_0f7c30a91ba32c508b08419ead4bcbd4</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-15 23:15:41</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

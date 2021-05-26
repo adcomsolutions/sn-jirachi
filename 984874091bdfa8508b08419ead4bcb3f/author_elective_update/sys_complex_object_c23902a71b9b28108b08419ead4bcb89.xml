@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="DELETE">
+        <label/>
+        <name>AttachmentArchive</name>
+        <namespace>TheJiraCloudplatformRESTAPI100100SNAPSHOT</namespace>
+        <scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name>
+        <serialized_content>{"TheJiraCloudplatformRESTAPI100100SNAPSHOT:AttachmentArchive":{"totalEntryCount":"Integer","moreAvailable":"Boolean","entries":[{"entries":{"entryIndex":"Integer","size":"Integer","name":"String","mediaType":"String","abbreviatedName":"String"}}],"totalNumberOfEntriesAvailable":"Integer"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-09 23:43:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c23902a71b9b28108b08419ead4bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AttachmentArchive</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_complex_object_c23902a71b9b28108b08419ead4bcb89</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-09 23:43:05</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</application>
+        <file_path/>
+        <instance_id>0338d1bbdbe39b041ddcf22ebf9619b4</instance_id>
+        <instance_name>adcomsolutionsdev</instance_name>
+        <name>sys_complex_object_c23902a71b9b28108b08419ead4bcb89</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object"><sys_complex_object action="INSERT_OR_UPDATE"><label/><name>AttachmentArchive</name><namespace>TheJiraCloudplatformRESTAPI100100SNAPSHOT</namespace><scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name><serialized_content>{"TheJiraCloudplatformRESTAPI100100SNAPSHOT:AttachmentArchive":{"totalEntryCount":"Integer","moreAvailable":"Boolean","entries":[{"entries":{"entryIndex":"Integer","size":"Integer","name":"String","mediaType":"String","abbreviatedName":"String"}}],"totalNumberOfEntriesAvailable":"Integer"}}</serialized_content><sys_class_name>sys_complex_object</sys_class_name><sys_created_by>chris.crockett</sys_created_by><sys_created_on>2021-04-09 23:43:05</sys_created_on><sys_domain>global</sys_domain><sys_id>c23902a71b9b28108b08419ead4bcb89</sys_id><sys_mod_count>0</sys_mod_count><sys_name>AttachmentArchive</sys_name><sys_overrides/><sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package><sys_policy/><sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope><sys_update_name>sys_complex_object_c23902a71b9b28108b08419ead4bcb89</sys_update_name><sys_updated_by>chris.crockett</sys_updated_by><sys_updated_on>2021-04-09 23:43:05</sys_updated_on><type>complex_object_schema</type></sys_complex_object></record_update>]]></payload>
+        <payload_hash>771255673</payload_hash>
+        <record_name>AttachmentArchive</record_name>
+        <reverted_from/>
+        <source>926e5be61bcbe01031264159cc4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-09 23:43:05</sys_created_on>
+        <sys_id>0a3902a71b9b28108b08419ead4bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178b90488980000001</sys_recorded_at>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-09 23:43:05</sys_updated_on>
+        <type>Complex Object</type>
+        <update_guid>023902a7f09b2810b38dad9ca7a1028b</update_guid>
+        <update_guid_history>023902a7f09b2810b38dad9ca7a1028b:771255673</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-15 23:12:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_complex_object">sys_complex_object</sys_db_object>
+        <sys_id>1176f9bfb8444060b1b2e4d42cdba8c4</sys_id>
+        <sys_metadata>c23902a71b9b28108b08419ead4bcb89</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AttachmentArchive</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_scope_delete display_value="">4d6c253b4e124d31af4e500594e86541</sys_scope_delete>
+        <sys_update_name>sys_complex_object_c23902a71b9b28108b08419ead4bcb89</sys_update_name>
+        <sys_update_version display_value="sys_complex_object_c23902a71b9b28108b08419ead4bcb89">0a3902a71b9b28108b08419ead4bcb8b</sys_update_version>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-15 23:12:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

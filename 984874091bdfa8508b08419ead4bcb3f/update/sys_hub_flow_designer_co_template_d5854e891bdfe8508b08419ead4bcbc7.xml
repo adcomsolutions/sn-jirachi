@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_designer_co_template">
+    <sys_hub_flow_designer_co_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <complex_definition>FD75258e410e132c50087486ef19409fe4</complex_definition>
+        <sys_class_name>sys_hub_flow_designer_co_template</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 05:02:07</sys_created_on>
+        <sys_id>d5854e891bdfe8508b08419ead4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Jira REST JSON data - Issue</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_hub_flow_designer_co_template_d5854e891bdfe8508b08419ead4bcbc7</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 05:02:07</sys_updated_on>
+        <template_label>Jira REST JSON data - Issue</template_label>
+        <template_name>jira_rest_json_data_issue</template_name>
+    </sys_hub_flow_designer_co_template>
+</record_update>

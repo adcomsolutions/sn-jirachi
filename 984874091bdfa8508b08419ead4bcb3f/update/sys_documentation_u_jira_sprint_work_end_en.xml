@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="work_end" label="Actual end date" language="en" table="u_jira_sprint">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>work_end</element>
+            <help/>
+            <hint/>
+            <label>Actual end date</label>
+            <language>en</language>
+            <name>u_jira_sprint</name>
+            <plural>Actual end dates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-29 03:39:07</sys_created_on>
+            <sys_id>387578751bff6050b2895245624bcba0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Actual end date</sys_name>
+            <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+            <sys_update_name>sys_documentation_u_jira_sprint_work_end_en</sys_update_name>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-29 03:39:07</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

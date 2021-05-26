@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.convertJiraDate</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Converts the date string used by Jira (e.g. "2021-04-28T23:00:00.000Z") to a GlideDateTime value</description>
+        <name>convertJiraDate</name>
+        <script><![CDATA[function convertJiraDate(jiraDateString){
+	return (function(){
+		// Get date values
+		var year = jiraDateString.substring(0, 4);
+		var month = jiraDateString.substring(5, 7);
+		var date = jiraDateString.substring(8, 10);
+		var hours = jiraDateString.substring(11, 13);
+		var minutes = jiraDateString.substring(14, 16);
+		var seconds = jiraDateString.substring(17, 19);
+		
+		var gdt = new GlideDateTime(
+			year + '-' + month + '-' + date + ' ' + hours + ':' + minutes + ':' + seconds
+		);
+		
+		return gdt;
+	})();
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-28 20:59:11</sys_created_on>
+        <sys_id>66e957a11bbf2050b2895245624bcb86</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>convertJiraDate</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_script_include_66e957a11bbf2050b2895245624bcb86</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-30 22:35:27</sys_updated_on>
+    </sys_script_include>
+</record_update>

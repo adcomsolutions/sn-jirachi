@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Jira User" max_length="40" name="u_jira_user" sizeclass="28" type="collection">
+        <element label="Jira ID" mandatory="true" max_length="40" name="u_jira_id" read_only="true" type="string" unique="true"/>
+        <element hint="Enable this for any users that the Jira Integration works through. Typically, you will only need to enable this for one user, the same one tied to the Jira credential alias.&#13;&#10;&#13;&#10;If true, the Jira integration will ignore certain actions from this user to prevent loops. For example: the comment WebHook decision Flow will ignore inbound comments made by this user." label="Integration User" max_length="40" name="u_jira_integration" type="boolean"/>
+        <element display="true" label="Jira Name" mandatory="true" max_length="40" name="u_jira_name" read_only="true" type="string"/>
+        <element label="Linked User" max_length="32" name="u_user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="u_jira_id"/>
+        </index>
+        <index name="index2">
+            <element name="u_user"/>
+        </index>
+    </element>
+</database>

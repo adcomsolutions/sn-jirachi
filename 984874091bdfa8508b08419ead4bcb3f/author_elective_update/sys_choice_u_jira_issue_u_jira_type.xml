@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_jira_type" table="u_jira_issue" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_jira_type</element>
+            <name>u_jira_issue</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-09 21:08:40</sys_created_on>
+            <sys_id>58e525271b1728108b08419ead4bcb40</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_jira_type</sys_name>
+            <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+            <sys_update_name>sys_choice_u_jira_issue_u_jira_type</sys_update_name>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-09 21:08:40</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>d911a01e1bd728108b08419ead4bcb87</dependent_value>
+            <element>u_jira_type</element>
+            <hint>A big user story that needs to be broken down. Created by Jira Software - do not edit or delete.</hint>
+            <inactive>false</inactive>
+            <label>Epic</label>
+            <language>en</language>
+            <name>u_jira_issue</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-04-09 21:33:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1cab25af1b1728108b08419ead4bcb92</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-04-09 21:33:48</sys_updated_on>
+            <value>10000</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>d111a01e1bd728108b08419ead4bcb63</dependent_value>
+            <element>u_jira_type</element>
+            <hint>A big user story that needs to be broken down. Created by Jira Software - do not edit or delete.</hint>
+            <inactive>false</inactive>
+            <label>Epic</label>
+            <language>en</language>
+            <name>u_jira_issue</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-04-23 17:36:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4aab34001b3f2c1031264159cc4bcb5a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-04-23 17:36:52</sys_updated_on>
+            <value>10000</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>6acc896b1bdfe4108b08419ead4bcb42</dependent_value>
+            <element>u_jira_type</element>
+            <hint>A small, distinct piece of work.</hint>
+            <inactive>false</inactive>
+            <label>Task</label>
+            <language>en</language>
+            <name>u_jira_issue</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-04-23 17:36:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>29abb0001b3f2c1031264159cc4bcbb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-04-23 17:36:50</sys_updated_on>
+            <value>10002</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>d911a01e1bd728108b08419ead4bcb87</dependent_value>
+            <element>u_jira_type</element>
+            <hint>A small, distinct piece of work.</hint>
+            <inactive>false</inactive>
+            <label>Task</label>
+            <language>en</language>
+            <name>u_jira_issue</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-04-09 21:33:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5cab25af1b1728108b08419ead4bcb6f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-04-09 21:33:48</sys_updated_on>
+            <value>10002</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>b61c70401b3f2c1031264159cc4bcb6b</dependent_value>
+            <element>u_jira_type</element>
+            <hint>A small, distinct piece of work.</hint>
+            <inactive>false</inactive>
+            <label>Task</label>
+            <language>en</language>
+            <name>u_jira_issue</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-04-23 17:38:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7a1cb0401b3f2c1031264159cc4bcb39</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-04-23 17:38:50</sys_updated_on>
+            <value>10002</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>d111a01e1bd728108b08419ead4bcb63</dependent_value>
+            <element>u_jira_type</element>
+            <hint>A small, distinct piece of work.</hint>
+            <inactive>false</inactive>
+            <label>Task</label>
+            <language>en</language>
+            <name>u_jira_issue</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-04-23 17:36:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>caab34001b3f2c1031264159cc4bcb17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-04-23 17:36:51</sys_updated_on>
+            <value>10002</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>1911a01e1bd728108b08419ead4bcb76</dependent_value>
+            <element>u_jira_type</element>
+            <hint>A small, distinct piece of work.</hint>
+            <inactive>false</inactive>
+            <label>Task</label>
+            <language>en</language>
+            <name>u_jira_issue</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-04-23 15:06:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e65954881b772c1031264159cc4bcbbe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-04-23 15:06:59</sys_updated_on>
+            <value>10002</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>6acc896b1bdfe4108b08419ead4bcb42</dependent_value>
+            <element>u_jira_type</element>
+            <hint>A small piece of work that's part of a larger task.</hint>
+            <inactive>false</inactive>
+            <label>Sub-task</label>
+            <language>en</language>
+            <name>u_jira_issue</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-04-23 17:36:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>25abb0001b3f2c1031264159cc4bcbc2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-04-23 17:36:50</sys_updated_on>
+            <value>10003</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>b61c70401b3f2c1031264159cc4bcb6b</dependent_value>
+            <element>u_jira_type</element>
+            <hint>A small piece of work that's part of a larger task.</hint>
+            <inactive>false</inactive>
+            <label>Sub-task</label>
+            <language>en</language>
+            <name>u_jira_issue</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-04-23 17:38:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4f1cb0401b3f2c1031264159cc4bcb41</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-04-23 17:38:50</sys_updated_on>
+            <value>10003</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>1911a01e1bd728108b08419ead4bcb76</dependent_value>
+            <element>u_jira_type</element>
+            <hint>A small piece of work that's part of a larger task.</hint>
+            <inactive>false</inactive>
+            <label>Sub-task</label>
+            <language>en</language>
+            <name>u_jira_issue</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-04-23 15:06:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6e5954881b772c1031264159cc4bcbc6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-04-23 15:06:59</sys_updated_on>
+            <value>10003</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>d111a01e1bd728108b08419ead4bcb63</dependent_value>
+            <element>u_jira_type</element>
+            <hint>A small piece of work that's part of a larger task.</hint>
+            <inactive>false</inactive>
+            <label>Sub-task</label>
+            <language>en</language>
+            <name>u_jira_issue</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-04-23 17:36:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>82ab34001b3f2c1031264159cc4bcb1f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-04-23 17:36:51</sys_updated_on>
+            <value>10003</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>d911a01e1bd728108b08419ead4bcb87</dependent_value>
+            <element>u_jira_type</element>
+            <hint>A small piece of work that's part of a larger task.</hint>
+            <inactive>false</inactive>
+            <label>Sub-task</label>
+            <language>en</language>
+            <name>u_jira_issue</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-04-09 21:33:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9cab25af1b1728108b08419ead4bcb81</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-04-09 21:33:48</sys_updated_on>
+            <value>10003</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>d911a01e1bd728108b08419ead4bcb87</dependent_value>
+            <element>u_jira_type</element>
+            <hint>A problem or error.</hint>
+            <inactive>false</inactive>
+            <label>Bug</label>
+            <language>en</language>
+            <name>u_jira_issue</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-04-09 21:33:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>90ab25af1b1728108b08419ead4bcb8d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-04-09 21:33:48</sys_updated_on>
+            <value>10005</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>d111a01e1bd728108b08419ead4bcb63</dependent_value>
+            <element>u_jira_type</element>
+            <hint>A problem or error.</hint>
+            <inactive>false</inactive>
+            <label>Bug</label>
+            <language>en</language>
+            <name>u_jira_issue</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-04-23 17:36:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c2ab34001b3f2c1031264159cc4bcb53</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-04-23 17:36:52</sys_updated_on>
+            <value>10005</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>d911a01e1bd728108b08419ead4bcb87</dependent_value>
+            <element>u_jira_type</element>
+            <hint>Stories track functionality or features expressed as user goals.</hint>
+            <inactive>false</inactive>
+            <label>Story</label>
+            <language>en</language>
+            <name>u_jira_issue</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-04-09 21:33:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>18ab25af1b1728108b08419ead4bcb87</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-04-09 21:33:48</sys_updated_on>
+            <value>10006</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>d111a01e1bd728108b08419ead4bcb63</dependent_value>
+            <element>u_jira_type</element>
+            <hint>Stories track functionality or features expressed as user goals.</hint>
+            <inactive>false</inactive>
+            <label>Story</label>
+            <language>en</language>
+            <name>u_jira_issue</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-04-23 17:36:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4eab34001b3f2c1031264159cc4bcb4b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-04-23 17:36:51</sys_updated_on>
+            <value>10006</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

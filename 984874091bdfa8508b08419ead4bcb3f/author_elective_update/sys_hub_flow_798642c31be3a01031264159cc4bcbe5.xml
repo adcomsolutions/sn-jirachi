@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>get_jira_user_record_from_jira_id</internal_name>
+        <label_cache>[{"name":"3d724190-301b-4cf9-80a1-f3c3d782f7a0.Record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3d724190-301b-4cf9-80a1-f3c3d782f7a0.Table","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3d724190-301b-4cf9-80a1-f3c3d782f7a0.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"3d724190-301b-4cf9-80a1-f3c3d782f7a0.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"subflow.jira_user_id","label":"Input➛Jira User ID","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"859fca5d-0e98-4778-8327-cc8cff832cb3"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.item_count","label":"1➛Item Count","reference_display":"Item Count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","visible_in_ad":"false","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.page_count","label":"1➛Page Count","reference_display":"Page Count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","visible_in_ad":"false","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.count","label":"1➛count","reference_display":"count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","visible_in_fd":"false","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.ds_count","label":"1➛ds_count","reference_display":"ds_count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","visible_in_fd":"false","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.item","label":"1➛item","reference_display":"item","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.ds_output_page_variables","label":"1➛ds_output_page_variables","reference_display":"ds_output_page_variables","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.response_headers","label":"1➛response_headers","reference_display":"response_headers","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.error_message","label":"1➛error_message","reference_display":"error_message","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.status_code","label":"1➛status_code","reference_display":"status_code","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.error_code","label":"1➛error_code","reference_display":"error_code","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.ds_parsed_stream","label":"1➛ds_parsed_stream","reference_display":"ds_parsed_stream","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.targetObject","label":"1➛Assignable Users","reference_display":"Assignable Users","type":"array.object","base_type":"array.object","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDb97e0aeb79db2810da1bbff9e9c19a7d","child_label":"User","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"user","child_uiUniqueId":"f710b8f8-2004-471b-b9a4-087474641f19","uiUniqueId":"fde623d3-f26f-41ec-a1a3-c6ef56bc20ff"}},{"name":"subflow.jira_project","label":"Input➛Jira Project","reference":"u_jira_project","reference_display":"Jira Project","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"78e21f1f-64f3-45b0-91ee-b2b4a784bfb7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.connection_alias","label":"Input➛Connection Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"bddc39fd-4a25-4a7a-ba4a-240b53c15261"}},{"name":"0589727d-b49a-49bb-a68d-7533f5d15f99.Record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0589727d-b49a-49bb-a68d-7533f5d15f99.Table","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0589727d-b49a-49bb-a68d-7533f5d15f99.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"0589727d-b49a-49bb-a68d-7533f5d15f99.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"987fa5e3-35a4-41cb-b251-1a4bcaaf279f.record","label":"3➛M2m Jira Users Jira Projects Record","reference":"u_m2m_jira_users_jira_projects","reference_display":"M2m Jira Users Jira Projects","type":"reference","base_type":"reference","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id"}},{"name":"987fa5e3-35a4-41cb-b251-1a4bcaaf279f.table_name","label":"3➛M2m Jira Users Jira Projects Table","reference":"u_m2m_jira_users_jira_projects","reference_display":"M2m Jira Users Jira Projects","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name"}},{"name":"987fa5e3-35a4-41cb-b251-1a4bcaaf279f.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"987fa5e3-35a4-41cb-b251-1a4bcaaf279f.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"eaec395a-ab5d-49e1-99cd-3ea846c07b3f.Record","label":"2➛Jira User Record","reference":"u_jira_user","reference_display":"Jira User","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eaec395a-ab5d-49e1-99cd-3ea846c07b3f.Table","label":"2➛Jira User Table","reference":"u_jira_user","reference_display":"Jira User","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eaec395a-ab5d-49e1-99cd-3ea846c07b3f.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"eaec395a-ab5d-49e1-99cd-3ea846c07b3f.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"0fdc4932-bb0d-49d8-ae65-7dce730706ab.Record","label":"2➛Jira User Record","reference":"u_jira_user","reference_display":"Jira User","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0fdc4932-bb0d-49d8-ae65-7dce730706ab.Table","label":"2➛Jira User Table","reference":"u_jira_user","reference_display":"Jira User","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0fdc4932-bb0d-49d8-ae65-7dce730706ab.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"0fdc4932-bb0d-49d8-ae65-7dce730706ab.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"2193071d-843f-4aa9-b761-6e02bd522619.item","label":"2➛User","reference_display":"User","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"7b56c9cc-28f3-4faa-8ada-9ab21b50a032.Record","label":"3➛Jira User Record","reference":"u_jira_user","reference_display":"Jira User Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b56c9cc-28f3-4faa-8ada-9ab21b50a032.Table","label":"3➛Jira User Table","reference":"u_jira_user","reference_display":"Jira User Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b56c9cc-28f3-4faa-8ada-9ab21b50a032.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"7b56c9cc-28f3-4faa-8ada-9ab21b50a032.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"2193071d-843f-4aa9-b761-6e02bd522619.item.accountId","label":"2➛User➛Account ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"57f52b19-e1cb-4edf-b8dc-830eae2be4b7.Record","label":"5➛M2m Jira Users Jira Projects Record","reference":"u_m2m_jira_users_jira_projects","reference_display":"M2m Jira Users Jira Projects Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57f52b19-e1cb-4edf-b8dc-830eae2be4b7.Table","label":"5➛M2m Jira Users Jira Projects Table","reference":"u_m2m_jira_users_jira_projects","reference_display":"M2m Jira Users Jira Projects Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57f52b19-e1cb-4edf-b8dc-830eae2be4b7.status","label":"5➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"57f52b19-e1cb-4edf-b8dc-830eae2be4b7.error_message","label":"5➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"3d54e43b-3c8f-4e7c-b825-a47b646c6fdc.record","label":"7➛M2m Jira Users Jira Projects Record","reference":"u_m2m_jira_users_jira_projects","reference_display":"M2m Jira Users Jira Projects Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3d54e43b-3c8f-4e7c-b825-a47b646c6fdc.table_name","label":"7➛M2m Jira Users Jira Projects Table","reference":"u_m2m_jira_users_jira_projects","reference_display":"M2m Jira Users Jira Projects Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f4838b18-95bd-4853-a6dd-c2ffff2419db.Records","label":"8➛M2m Jira Users Jira Projects Records","reference":"u_m2m_jira_users_jira_projects","reference_display":"M2m Jira Users Jira Projects Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f4838b18-95bd-4853-a6dd-c2ffff2419db.Table","label":"8➛M2m Jira Users Jira Projects Table","reference":"u_m2m_jira_users_jira_projects","reference_display":"M2m Jira Users Jira Projects Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f4838b18-95bd-4853-a6dd-c2ffff2419db.Count","label":"8➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1a353be2-839c-4720-aab4-f36823adc4b6.item","label":"9➛M2m Jira Users Jira Projects Record","reference":"u_m2m_jira_users_jira_projects","reference_display":"M2m Jira Users Jira Projects","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Update Jira Project Users</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 20:30:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>798642c31be3a01031264159cc4bcbe5</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Update Jira Project Users</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_hub_flow_798642c31be3a01031264159cc4bcbe5</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:16:32</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="DELETE" query="document_key=798642c31be3a01031264159cc4bcbe5"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=798642c31be3a01031264159cc4bcbe5^sys_idNOT IN7d8646871be3a01031264159cc4bcb67"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>798642c31be3a01031264159cc4bcbe5</id>
+        <name>Get Jira User Record from Jira ID</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 20:30:04</sys_created_on>
+        <sys_id>7d8646871be3a01031264159cc4bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 20:30:04</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="DELETE" query="model=798642c31be3a01031264159cc4bcbe5^sys_idNOT IN2c29820f1be3a01031264159cc4bcb97,ec29820f1be3a01031264159cc4bcbaf"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=78e21f1f-64f3-45b0-91ee-b2b4a784bfb7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>u_jira_project</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>jira_project</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Jira Project</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Update Jira Project Users">798642c31be3a01031264159cc4bcbe5</model>
+        <model_id>798642c31be3a01031264159cc4bcbe5</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_798642c31be3a01031264159cc4bcbe5</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="u_jira_project">u_jira_project</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 20:41:26</sys_created_on>
+        <sys_id>2c29820f1be3a01031264159cc4bcb97</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 20:41:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=bddc39fd-4a25-4a7a-ba4a-240b53c15261</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_alias</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>connection_alias</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Connection Alias</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Update Jira Project Users">798642c31be3a01031264159cc4bcbe5</model>
+        <model_id>798642c31be3a01031264159cc4bcbe5</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_798642c31be3a01031264159cc4bcbe5</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_alias">sys_alias</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 20:41:26</sys_created_on>
+        <sys_id>ec29820f1be3a01031264159cc4bcbaf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 20:41:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="DELETE" query="flow=798642c31be3a01031264159cc4bcbe5^sys_idNOT IN2620de071b67a01031264159cc4bcbb7,2a20de071b67a01031264159cc4bcbcf,6429820f1be3a01031264159cc4bcbeb,a220de071b67a01031264159cc4bcbd7,ea20de071b67a01031264159cc4bcbc5"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Update Jira Project Users">798642c31be3a01031264159cc4bcbe5</flow>
+        <order>3</order>
+        <parent_ui_id>2193071d-843f-4aa9-b761-6e02bd522619</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:09</sys_created_on>
+        <sys_id>2620de071b67a01031264159cc4bcbb7</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:16:32</sys_updated_on>
+        <ui_id>7b56c9cc-28f3-4faa-8ada-9ab21b50a032</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=2620de071b67a01031264159cc4bcbb7"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2620de071b67a01031264159cc4bcbb7</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>6a20de071b67a01031264159cc4bcbba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <value>u_jira_user</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2620de071b67a01031264159cc4bcbb7</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>a620de071b67a01031264159cc4bcbba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2620de071b67a01031264159cc4bcbb7</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>ee20de071b67a01031264159cc4bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <value>error</value>
+        <variable display_value="If multiple records are found action">1909f99587003300663ca1bb36cb0bb9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=2620de071b67a01031264159cc4bcbb7"/>
+    <sys_element_mapping action="DELETE">
+        <field>conditions</field>
+        <id>2620de071b67a01031264159cc4bcbb7</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>aa20de071b67a01031264159cc4bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>u_jira_id={{2193071d-843f-4aa9-b761-6e02bd522619.item.accountId}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>if_multiple_records_are_found_action</field>
+        <id>2620de071b67a01031264159cc4bcbb7</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>2620de071b67a01031264159cc4bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table</field>
+        <id>2620de071b67a01031264159cc4bcbb7</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>6e20de071b67a01031264159cc4bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>__snc_dont_fail_on_error</field>
+        <id>2620de071b67a01031264159cc4bcbb7</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>e620de071b67a01031264159cc4bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Update Jira Project Users">798642c31be3a01031264159cc4bcbe5</flow>
+        <order>7</order>
+        <parent_ui_id>6190bcf9-bc62-4eee-95d1-c3f01d743e7f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>2a20de071b67a01031264159cc4bcbcf</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:16:32</sys_updated_on>
+        <ui_id>3d54e43b-3c8f-4e7c-b825-a47b646c6fdc</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=2a20de071b67a01031264159cc4bcbcf"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2a20de071b67a01031264159cc4bcbcf</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>e220de071b67a01031264159cc4bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <value>u_m2m_jira_users_jira_projects</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=2a20de071b67a01031264159cc4bcbcf"/>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>2a20de071b67a01031264159cc4bcbcf</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>ae20de071b67a01031264159cc4bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>values</field>
+        <id>2a20de071b67a01031264159cc4bcbcf</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>6220de071b67a01031264159cc4bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>u_jira_project={{subflow.jira_project}}^u_jira_user={{7b56c9cc-28f3-4faa-8ada-9ab21b50a032.Record}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Jira User Data for Project">a277caef1b5b28108b08419ead4bcb33</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Update Jira Project Users">798642c31be3a01031264159cc4bcbe5</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 20:41:27</sys_created_on>
+        <sys_id>6429820f1be3a01031264159cc4bcbeb</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:16:31</sys_updated_on>
+        <ui_id>84395e84-e408-408d-8c00-ffddfe64e0c9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=6429820f1be3a01031264159cc4bcbeb"/>
+    <sys_element_mapping action="DELETE" query="id=6429820f1be3a01031264159cc4bcbeb"/>
+    <sys_element_mapping action="DELETE">
+        <field>connection_alias</field>
+        <id>6429820f1be3a01031264159cc4bcbeb</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 20:41:27</sys_created_on>
+        <sys_id>e429820f1be3a01031264159cc4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 20:41:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a277caef1b5b28108b08419ead4bcb33</table>
+        <value>{{subflow.connection_alias}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>jira_project</field>
+        <id>6429820f1be3a01031264159cc4bcbeb</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 20:41:27</sys_created_on>
+        <sys_id>ac29820f1be3a01031264159cc4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 20:41:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a277caef1b5b28108b08419ead4bcb33</table>
+        <value>{{subflow.jira_project}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment>Get outdated Jira User / Jira Project links</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Update Jira Project Users">798642c31be3a01031264159cc4bcbe5</flow>
+        <order>8</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>a220de071b67a01031264159cc4bcbd7</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:16:32</sys_updated_on>
+        <ui_id>f4838b18-95bd-4853-a6dd-c2ffff2419db</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=a220de071b67a01031264159cc4bcbd7"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a220de071b67a01031264159cc4bcbd7</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>aa20de071b67a01031264159cc4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <value>u_m2m_jira_users_jira_projects</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=a220de071b67a01031264159cc4bcbd7"/>
+    <sys_element_mapping action="DELETE">
+        <field>conditions</field>
+        <id>a220de071b67a01031264159cc4bcbd7</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>6620de071b67a01031264159cc4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>u_jira_project={{subflow.jira_project}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table</field>
+        <id>a220de071b67a01031264159cc4bcbd7</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>2a20de071b67a01031264159cc4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=a220de071b67a01031264159cc4bcbd7^sys_idNOT IN2620de071b67a01031264159cc4bcbd8"/>
+    <sys_hub_input_scripts action="DELETE">
+        <active>true</active>
+        <input_name>conditions</input_name>
+        <instance>a220de071b67a01031264159cc4bcbd7</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"conditions":{"scriptActive":true,"script":"var jiraIds \u003d fd_data._1__get_jira_user_data_for_project.targetObject\n    .map(function(jiraUserData){\n        return jiraUserData.accountId;\n    })\n    .join();\n\nreturn \u0027u_jira_project\u003d\u0027 + fd_data.subflow_inputs.jira_project +\n    \u0027^u_jira_user.u_jira_idNOTIN\u0027 + jiraIds;"}}</script>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>2620de071b67a01031264159cc4bcbd8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:16:32</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Update Jira Project Users">798642c31be3a01031264159cc4bcbe5</flow>
+        <order>5</order>
+        <parent_ui_id>e850319a-e880-4df7-bbf5-c33778022820</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>ea20de071b67a01031264159cc4bcbc5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:16:32</sys_updated_on>
+        <ui_id>57f52b19-e1cb-4edf-b8dc-830eae2be4b7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=ea20de071b67a01031264159cc4bcbc5"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ea20de071b67a01031264159cc4bcbc5</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>2220de071b67a01031264159cc4bcbc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ea20de071b67a01031264159cc4bcbc5</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>6e20de071b67a01031264159cc4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <value>error</value>
+        <variable display_value="If multiple records are found action">1909f99587003300663ca1bb36cb0bb9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ea20de071b67a01031264159cc4bcbc5</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>e220de071b67a01031264159cc4bcbc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <value>u_m2m_jira_users_jira_projects</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=ea20de071b67a01031264159cc4bcbc5"/>
+    <sys_element_mapping action="DELETE">
+        <field>conditions</field>
+        <id>ea20de071b67a01031264159cc4bcbc5</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>2a20de071b67a01031264159cc4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>u_jira_project={{subflow.jira_project}}^u_jira_user={{7b56c9cc-28f3-4faa-8ada-9ab21b50a032.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>if_multiple_records_are_found_action</field>
+        <id>ea20de071b67a01031264159cc4bcbc5</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>a220de071b67a01031264159cc4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table</field>
+        <id>ea20de071b67a01031264159cc4bcbc5</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>ea20de071b67a01031264159cc4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>__snc_dont_fail_on_error</field>
+        <id>ea20de071b67a01031264159cc4bcbc5</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>6620de071b67a01031264159cc4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="DELETE" query="flow=798642c31be3a01031264159cc4bcbe5^sys_idNOT IN6620de071b67a01031264159cc4bcbac,a620de071b67a01031264159cc4bcbbb,ae20de071b67a01031264159cc4bcbc8"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">a620de071b67a01031264159cc4bcbab</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Jira Project Users">798642c31be3a01031264159cc4bcbe5</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:09</sys_created_on>
+        <sys_id>6620de071b67a01031264159cc4bcbac</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:16:32</sys_updated_on>
+        <ui_id>2193071d-843f-4aa9-b761-6e02bd522619</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=6620de071b67a01031264159cc4bcbac"/>
+    <sys_element_mapping action="DELETE" query="id=6620de071b67a01031264159cc4bcbac"/>
+    <sys_element_mapping action="DELETE">
+        <field>items</field>
+        <id>6620de071b67a01031264159cc4bcbac</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:09</sys_created_on>
+        <sys_id>ee20de071b67a01031264159cc4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:09</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{84395e84-e408-408d-8c00-ffddfe64e0c9.targetObject}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">ee20de071b67a01031264159cc4bcbba</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Jira Project Users">798642c31be3a01031264159cc4bcbe5</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>2193071d-843f-4aa9-b761-6e02bd522619</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>a620de071b67a01031264159cc4bcbbb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:16:32</sys_updated_on>
+        <ui_id>e850319a-e880-4df7-bbf5-c33778022820</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=a620de071b67a01031264159cc4bcbbb"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a620de071b67a01031264159cc4bcbbb</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>ea20de071b67a01031264159cc4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <value>Jira User is configured in ServiceNow</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=a620de071b67a01031264159cc4bcbbb"/>
+    <sys_element_mapping action="DELETE">
+        <field>condition</field>
+        <id>a620de071b67a01031264159cc4bcbbb</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>6a20de071b67a01031264159cc4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{7b56c9cc-28f3-4faa-8ada-9ab21b50a032.status}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>condition_name</field>
+        <id>a620de071b67a01031264159cc4bcbbb</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>a620de071b67a01031264159cc4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">e620de071b67a01031264159cc4bcbc8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Jira Project Users">798642c31be3a01031264159cc4bcbe5</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>e850319a-e880-4df7-bbf5-c33778022820</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>ae20de071b67a01031264159cc4bcbc8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:16:32</sys_updated_on>
+        <ui_id>6190bcf9-bc62-4eee-95d1-c3f01d743e7f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=ae20de071b67a01031264159cc4bcbc8"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ae20de071b67a01031264159cc4bcbc8</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>2e20de071b67a01031264159cc4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <value>If M2M link does not already exist</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=ae20de071b67a01031264159cc4bcbc8"/>
+    <sys_element_mapping action="DELETE">
+        <field>condition</field>
+        <id>ae20de071b67a01031264159cc4bcbc8</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>aa20de071b67a01031264159cc4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{57f52b19-e1cb-4edf-b8dc-830eae2be4b7.status}}=1</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>condition_name</field>
+        <id>ae20de071b67a01031264159cc4bcbc8</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:12:10</sys_created_on>
+        <sys_id>e620de071b67a01031264159cc4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:12:10</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_798642c31be3a01031264159cc4bcbe5^sys_idNOT IN2829820f1be3a01031264159cc4bcbae,2829820f1be3a01031264159cc4bcbb8"/>
+    <sys_documentation action="DELETE">
+        <element>jira_project</element>
+        <help/>
+        <hint/>
+        <label>Jira Project</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_798642c31be3a01031264159cc4bcbe5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 20:41:26</sys_created_on>
+        <sys_id>2829820f1be3a01031264159cc4bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 20:41:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>connection_alias</element>
+        <help/>
+        <hint/>
+        <label>Connection Alias</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_798642c31be3a01031264159cc4bcbe5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 20:41:26</sys_created_on>
+        <sys_id>2829820f1be3a01031264159cc4bcbb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 20:41:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</application>
+        <file_path/>
+        <instance_id>0338d1bbdbe39b041ddcf22ebf9619b4</instance_id>
+        <instance_name>adcomsolutionsdev</instance_name>
+        <name>sys_hub_flow_798642c31be3a01031264159cc4bcbe5</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;internal_name&gt;get_jira_user_record_from_jira_id&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"3d724190-301b-4cf9-80a1-f3c3d782f7a0.Record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3d724190-301b-4cf9-80a1-f3c3d782f7a0.Table","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3d724190-301b-4cf9-80a1-f3c3d782f7a0.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"3d724190-301b-4cf9-80a1-f3c3d782f7a0.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"subflow.jira_user_id","label":"Input➛Jira User ID","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"859fca5d-0e98-4778-8327-cc8cff832cb3"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.item_count","label":"1➛Item Count","reference_display":"Item Count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","visible_in_ad":"false","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.page_count","label":"1➛Page Count","reference_display":"Page Count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","visible_in_ad":"false","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.count","label":"1➛count","reference_display":"count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","visible_in_fd":"false","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.ds_count","label":"1➛ds_count","reference_display":"ds_count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","visible_in_fd":"false","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.item","label":"1➛item","reference_display":"item","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.ds_output_page_variables","label":"1➛ds_output_page_variables","reference_display":"ds_output_page_variables","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.response_headers","label":"1➛response_headers","reference_display":"response_headers","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.error_message","label":"1➛error_message","reference_display":"error_message","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.status_code","label":"1➛status_code","reference_display":"status_code","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.error_code","label":"1➛error_code","reference_display":"error_code","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.ds_parsed_stream","label":"1➛ds_parsed_stream","reference_display":"ds_parsed_stream","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"84395e84-e408-408d-8c00-ffddfe64e0c9.targetObject","label":"1➛Assignable Users","reference_display":"Assignable Users","type":"array.object","base_type":"array.object","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDb97e0aeb79db2810da1bbff9e9c19a7d","child_label":"User","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"user","child_uiUniqueId":"f710b8f8-2004-471b-b9a4-087474641f19","uiUniqueId":"fde623d3-f26f-41ec-a1a3-c6ef56bc20ff"}},{"name":"subflow.jira_project","label":"Input➛Jira Project","reference":"u_jira_project","reference_display":"Jira Project","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"78e21f1f-64f3-45b0-91ee-b2b4a784bfb7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.connection_alias","label":"Input➛Connection Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"bddc39fd-4a25-4a7a-ba4a-240b53c15261"}},{"name":"0589727d-b49a-49bb-a68d-7533f5d15f99.Record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0589727d-b49a-49bb-a68d-7533f5d15f99.Table","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0589727d-b49a-49bb-a68d-7533f5d15f99.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"0589727d-b49a-49bb-a68d-7533f5d15f99.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"987fa5e3-35a4-41cb-b251-1a4bcaaf279f.record","label":"3➛M2m Jira Users Jira Projects Record","reference":"u_m2m_jira_users_jira_projects","reference_display":"M2m Jira Users Jira Projects","type":"reference","base_type":"reference","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id"}},{"name":"987fa5e3-35a4-41cb-b251-1a4bcaaf279f.table_name","label":"3➛M2m Jira Users Jira Projects Table","reference":"u_m2m_jira_users_jira_projects","reference_display":"M2m Jira Users Jira Projects","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name"}},{"name":"987fa5e3-35a4-41cb-b251-1a4bcaaf279f.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"987fa5e3-35a4-41cb-b251-1a4bcaaf279f.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"eaec395a-ab5d-49e1-99cd-3ea846c07b3f.Record","label":"2➛Jira User Record","reference":"u_jira_user","reference_display":"Jira User","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eaec395a-ab5d-49e1-99cd-3ea846c07b3f.Table","label":"2➛Jira User Table","reference":"u_jira_user","reference_display":"Jira User","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eaec395a-ab5d-49e1-99cd-3ea846c07b3f.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"eaec395a-ab5d-49e1-99cd-3ea846c07b3f.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"0fdc4932-bb0d-49d8-ae65-7dce730706ab.Record","label":"2➛Jira User Record","reference":"u_jira_user","reference_display":"Jira User","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0fdc4932-bb0d-49d8-ae65-7dce730706ab.Table","label":"2➛Jira User Table","reference":"u_jira_user","reference_display":"Jira User","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0fdc4932-bb0d-49d8-ae65-7dce730706ab.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"0fdc4932-bb0d-49d8-ae65-7dce730706ab.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"2193071d-843f-4aa9-b761-6e02bd522619.item","label":"2➛User","reference_display":"User","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"7b56c9cc-28f3-4faa-8ada-9ab21b50a032.Record","label":"3➛Jira User Record","reference":"u_jira_user","reference_display":"Jira User Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b56c9cc-28f3-4faa-8ada-9ab21b50a032.Table","label":"3➛Jira User Table","reference":"u_jira_user","reference_display":"Jira User Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b56c9cc-28f3-4faa-8ada-9ab21b50a032.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"7b56c9cc-28f3-4faa-8ada-9ab21b50a032.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"2193071d-843f-4aa9-b761-6e02bd522619.item.accountId","label":"2➛User➛Account ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"57f52b19-e1cb-4edf-b8dc-830eae2be4b7.Record","label":"5➛M2m Jira Users Jira Projects Record","reference":"u_m2m_jira_users_jira_projects","reference_display":"M2m Jira Users Jira Projects Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57f52b19-e1cb-4edf-b8dc-830eae2be4b7.Table","label":"5➛M2m Jira Users Jira Projects Table","reference":"u_m2m_jira_users_jira_projects","reference_display":"M2m Jira Users Jira Projects Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57f52b19-e1cb-4edf-b8dc-830eae2be4b7.status","label":"5➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"57f52b19-e1cb-4edf-b8dc-830eae2be4b7.error_message","label":"5➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"3d54e43b-3c8f-4e7c-b825-a47b646c6fdc.record","label":"7➛M2m Jira Users Jira Projects Record","reference":"u_m2m_jira_users_jira_projects","reference_display":"M2m Jira Users Jira Projects Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3d54e43b-3c8f-4e7c-b825-a47b646c6fdc.table_name","label":"7➛M2m Jira Users Jira Projects Table","reference":"u_m2m_jira_users_jira_projects","reference_display":"M2m Jira Users Jira Projects Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f4838b18-95bd-4853-a6dd-c2ffff2419db.Records","label":"8➛M2m Jira Users Jira Projects Records","reference":"u_m2m_jira_users_jira_projects","reference_display":"M2m Jira Users Jira Projects Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f4838b18-95bd-4853-a6dd-c2ffff2419db.Table","label":"8➛M2m Jira Users Jira Projects Table","reference":"u_m2m_jira_users_jira_projects","reference_display":"M2m Jira Users Jira Projects Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f4838b18-95bd-4853-a6dd-c2ffff2419db.Count","label":"8➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1a353be2-839c-4720-aab4-f36823adc4b6.item","label":"9➛M2m Jira Users Jira Projects Record","reference":"u_m2m_jira_users_jira_projects","reference_display":"M2m Jira Users Jira Projects","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;name&gt;Update Jira Project Users&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 20:30:04&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;798642c31be3a01031264159cc4bcbe5&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;Update Jira Project Users&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_798642c31be3a01031264159cc4bcbe5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:16:32&lt;/sys_updated_on&gt;&lt;type&gt;subflow&lt;/type&gt;&lt;/sys_hub_flow&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=798642c31be3a01031264159cc4bcbe5"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=798642c31be3a01031264159cc4bcbe5^sys_idNOT IN7d8646871be3a01031264159cc4bcb67"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;798642c31be3a01031264159cc4bcbe5&lt;/id&gt;&lt;name&gt;Get Jira User Record from Jira ID&lt;/name&gt;&lt;sys_class_name&gt;sys_flow_cat_variable_model&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 20:30:04&lt;/sys_created_on&gt;&lt;sys_id&gt;7d8646871be3a01031264159cc4bcb67&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 20:30:04&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=798642c31be3a01031264159cc4bcbe5^sys_idNOT IN2c29820f1be3a01031264159cc4bcb97,ec29820f1be3a01031264159cc4bcbaf"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=78e21f1f-64f3-45b0-91ee-b2b4a784bfb7&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table&gt;u_jira_project&lt;/choice_table&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;jira_project&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;Jira Project&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Update Jira Project Users"&gt;798642c31be3a01031264159cc4bcbe5&lt;/model&gt;&lt;model_id&gt;798642c31be3a01031264159cc4bcbe5&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_798642c31be3a01031264159cc4bcbe5&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="u_jira_project"&gt;u_jira_project&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 20:41:26&lt;/sys_created_on&gt;&lt;sys_id&gt;2c29820f1be3a01031264159cc4bcb97&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 20:41:26&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=bddc39fd-4a25-4a7a-ba4a-240b53c15261&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table&gt;sys_alias&lt;/choice_table&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;connection_alias&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;Connection Alias&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Update Jira Project Users"&gt;798642c31be3a01031264159cc4bcbe5&lt;/model&gt;&lt;model_id&gt;798642c31be3a01031264159cc4bcbe5&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_798642c31be3a01031264159cc4bcbe5&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;2&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sys_alias"&gt;sys_alias&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 20:41:26&lt;/sys_created_on&gt;&lt;sys_id&gt;ec29820f1be3a01031264159cc4bcbaf&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 20:41:26&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=798642c31be3a01031264159cc4bcbe5^sys_idNOT IN2620de071b67a01031264159cc4bcbb7,2a20de071b67a01031264159cc4bcbcf,6429820f1be3a01031264159cc4bcbeb,a220de071b67a01031264159cc4bcbd7,ea20de071b67a01031264159cc4bcbc5"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Look Up Record"&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Update Jira Project Users"&gt;798642c31be3a01031264159cc4bcbe5&lt;/flow&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;2193071d-843f-4aa9-b761-6e02bd522619&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:09&lt;/sys_created_on&gt;&lt;sys_id&gt;2620de071b67a01031264159cc4bcbb7&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:16:32&lt;/sys_updated_on&gt;&lt;ui_id&gt;7b56c9cc-28f3-4faa-8ada-9ab21b50a032&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=2620de071b67a01031264159cc4bcbb7"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;2620de071b67a01031264159cc4bcbb7&lt;/document_key&gt;&lt;order&gt;0&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;6a20de071b67a01031264159cc4bcbba&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;value&gt;u_jira_user&lt;/value&gt;&lt;variable display_value="Table"&gt;d909f99587003300663ca1bb36cb0ba4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;2620de071b67a01031264159cc4bcbb7&lt;/document_key&gt;&lt;order&gt;5&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;a620de071b67a01031264159cc4bcbba&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;value&gt;1&lt;/value&gt;&lt;variable display_value="Don't fail on error"&gt;ceab42a673110010d70877186bf6a74f&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;2620de071b67a01031264159cc4bcbb7&lt;/document_key&gt;&lt;order&gt;4&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;ee20de071b67a01031264159cc4bcbb9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;value&gt;error&lt;/value&gt;&lt;variable display_value="If multiple records are found action"&gt;1909f99587003300663ca1bb36cb0bb9&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=2620de071b67a01031264159cc4bcbb7"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;conditions&lt;/field&gt;&lt;id&gt;2620de071b67a01031264159cc4bcbb7&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;aa20de071b67a01031264159cc4bcbb9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3&lt;/table&gt;&lt;value&gt;u_jira_id={{2193071d-843f-4aa9-b761-6e02bd522619.item.accountId}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;if_multiple_records_are_found_action&lt;/field&gt;&lt;id&gt;2620de071b67a01031264159cc4bcbb7&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;2620de071b67a01031264159cc4bcbb9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table&lt;/field&gt;&lt;id&gt;2620de071b67a01031264159cc4bcbb7&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;6e20de071b67a01031264159cc4bcbb9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;__snc_dont_fail_on_error&lt;/field&gt;&lt;id&gt;2620de071b67a01031264159cc4bcbb7&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;e620de071b67a01031264159cc4bcbb9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Create Record"&gt;2de05916c31332002841b63b12d3aee1&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Update Jira Project Users"&gt;798642c31be3a01031264159cc4bcbe5&lt;/flow&gt;&lt;order&gt;7&lt;/order&gt;&lt;parent_ui_id&gt;6190bcf9-bc62-4eee-95d1-c3f01d743e7f&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;2a20de071b67a01031264159cc4bcbcf&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:16:32&lt;/sys_updated_on&gt;&lt;ui_id&gt;3d54e43b-3c8f-4e7c-b825-a47b646c6fdc&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=2a20de071b67a01031264159cc4bcbcf"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;2a20de071b67a01031264159cc4bcbcf&lt;/document_key&gt;&lt;order&gt;0&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;e220de071b67a01031264159cc4bcbd1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;value&gt;u_m2m_jira_users_jira_projects&lt;/value&gt;&lt;variable display_value="Table"&gt;61e05916c31332002841b63b12d3aee4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=2a20de071b67a01031264159cc4bcbcf"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table_name&lt;/field&gt;&lt;id&gt;2a20de071b67a01031264159cc4bcbcf&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;ae20de071b67a01031264159cc4bcbd0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;values&lt;/field&gt;&lt;id&gt;2a20de071b67a01031264159cc4bcbcf&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;6220de071b67a01031264159cc4bcbd1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1&lt;/table&gt;&lt;value&gt;u_jira_project={{subflow.jira_project}}^u_jira_user={{7b56c9cc-28f3-4faa-8ada-9ab21b50a032.Record}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Get Jira User Data for Project"&gt;a277caef1b5b28108b08419ead4bcb33&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Update Jira Project Users"&gt;798642c31be3a01031264159cc4bcbe5&lt;/flow&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 20:41:27&lt;/sys_created_on&gt;&lt;sys_id&gt;6429820f1be3a01031264159cc4bcbeb&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:16:31&lt;/sys_updated_on&gt;&lt;ui_id&gt;84395e84-e408-408d-8c00-ffddfe64e0c9&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=6429820f1be3a01031264159cc4bcbeb"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=6429820f1be3a01031264159cc4bcbeb"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;connection_alias&lt;/field&gt;&lt;id&gt;6429820f1be3a01031264159cc4bcbeb&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 20:41:27&lt;/sys_created_on&gt;&lt;sys_id&gt;e429820f1be3a01031264159cc4bcbed&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 20:41:27&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_a277caef1b5b28108b08419ead4bcb33&lt;/table&gt;&lt;value&gt;{{subflow.connection_alias}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;jira_project&lt;/field&gt;&lt;id&gt;6429820f1be3a01031264159cc4bcbeb&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 20:41:27&lt;/sys_created_on&gt;&lt;sys_id&gt;ac29820f1be3a01031264159cc4bcbed&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 20:41:27&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_a277caef1b5b28108b08419ead4bcb33&lt;/table&gt;&lt;value&gt;{{subflow.jira_project}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment&gt;Get outdated Jira User / Jira Project links&lt;/comment&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Update Jira Project Users"&gt;798642c31be3a01031264159cc4bcbe5&lt;/flow&gt;&lt;order&gt;8&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;a220de071b67a01031264159cc4bcbd7&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:16:32&lt;/sys_updated_on&gt;&lt;ui_id&gt;f4838b18-95bd-4853-a6dd-c2ffff2419db&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=a220de071b67a01031264159cc4bcbd7"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;a220de071b67a01031264159cc4bcbd7&lt;/document_key&gt;&lt;order&gt;0&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;aa20de071b67a01031264159cc4bcbd9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;value&gt;u_m2m_jira_users_jira_projects&lt;/value&gt;&lt;variable display_value="Table"&gt;8f400a1587003300663ca1bb36cb0b4b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=a220de071b67a01031264159cc4bcbd7"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;conditions&lt;/field&gt;&lt;id&gt;a220de071b67a01031264159cc4bcbd7&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;6620de071b67a01031264159cc4bcbd9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b&lt;/table&gt;&lt;value&gt;u_jira_project={{subflow.jira_project}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table&lt;/field&gt;&lt;id&gt;a220de071b67a01031264159cc4bcbd7&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;2a20de071b67a01031264159cc4bcbd9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=a220de071b67a01031264159cc4bcbd7^sys_idNOT IN2620de071b67a01031264159cc4bcbd8"/&gt;&lt;sys_hub_input_scripts action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;input_name&gt;conditions&lt;/input_name&gt;&lt;instance&gt;a220de071b67a01031264159cc4bcbd7&lt;/instance&gt;&lt;referenced_table&gt;sys_hub_action_instance&lt;/referenced_table&gt;&lt;script&gt;{"conditions":{"scriptActive":true,"script":"var jiraIds \u003d fd_data._1__get_jira_user_data_for_project.targetObject\n    .map(function(jiraUserData){\n        return jiraUserData.accountId;\n    })\n    .join();\n\nreturn \u0027u_jira_project\u003d\u0027 + fd_data.subflow_inputs.jira_project +\n    \u0027^u_jira_user.u_jira_idNOTIN\u0027 + jiraIds;"}}&lt;/script&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;2620de071b67a01031264159cc4bcbd8&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:16:32&lt;/sys_updated_on&gt;&lt;/sys_hub_input_scripts&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Look Up Record"&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Update Jira Project Users"&gt;798642c31be3a01031264159cc4bcbe5&lt;/flow&gt;&lt;order&gt;5&lt;/order&gt;&lt;parent_ui_id&gt;e850319a-e880-4df7-bbf5-c33778022820&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;ea20de071b67a01031264159cc4bcbc5&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:16:32&lt;/sys_updated_on&gt;&lt;ui_id&gt;57f52b19-e1cb-4edf-b8dc-830eae2be4b7&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=ea20de071b67a01031264159cc4bcbc5"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;ea20de071b67a01031264159cc4bcbc5&lt;/document_key&gt;&lt;order&gt;5&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;2220de071b67a01031264159cc4bcbc8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;value&gt;1&lt;/value&gt;&lt;variable display_value="Don't fail on error"&gt;ceab42a673110010d70877186bf6a74f&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;ea20de071b67a01031264159cc4bcbc5&lt;/document_key&gt;&lt;order&gt;4&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;6e20de071b67a01031264159cc4bcbc7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;value&gt;error&lt;/value&gt;&lt;variable display_value="If multiple records are found action"&gt;1909f99587003300663ca1bb36cb0bb9&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;ea20de071b67a01031264159cc4bcbc5&lt;/document_key&gt;&lt;order&gt;0&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;e220de071b67a01031264159cc4bcbc8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;value&gt;u_m2m_jira_users_jira_projects&lt;/value&gt;&lt;variable display_value="Table"&gt;d909f99587003300663ca1bb36cb0ba4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=ea20de071b67a01031264159cc4bcbc5"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;conditions&lt;/field&gt;&lt;id&gt;ea20de071b67a01031264159cc4bcbc5&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;2a20de071b67a01031264159cc4bcbc7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3&lt;/table&gt;&lt;value&gt;u_jira_project={{subflow.jira_project}}^u_jira_user={{7b56c9cc-28f3-4faa-8ada-9ab21b50a032.Record}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;if_multiple_records_are_found_action&lt;/field&gt;&lt;id&gt;ea20de071b67a01031264159cc4bcbc5&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;a220de071b67a01031264159cc4bcbc7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table&lt;/field&gt;&lt;id&gt;ea20de071b67a01031264159cc4bcbc5&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;ea20de071b67a01031264159cc4bcbc7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;__snc_dont_fail_on_error&lt;/field&gt;&lt;id&gt;ea20de071b67a01031264159cc4bcbc5&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;6620de071b67a01031264159cc4bcbc7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_flow_logic action="delete_multiple" query="flow=798642c31be3a01031264159cc4bcbe5^sys_idNOT IN6620de071b67a01031264159cc4bcbac,a620de071b67a01031264159cc4bcbbb,ae20de071b67a01031264159cc4bcbc8"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;a620de071b67a01031264159cc4bcbab&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Update Jira Project Users"&gt;798642c31be3a01031264159cc4bcbe5&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="For Each"&gt;098e1dc5c3e232002841b63b12d3ae33&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:09&lt;/sys_created_on&gt;&lt;sys_id&gt;6620de071b67a01031264159cc4bcbac&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:16:32&lt;/sys_updated_on&gt;&lt;ui_id&gt;2193071d-843f-4aa9-b761-6e02bd522619&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=6620de071b67a01031264159cc4bcbac"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=6620de071b67a01031264159cc4bcbac"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;items&lt;/field&gt;&lt;id&gt;6620de071b67a01031264159cc4bcbac&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:09&lt;/sys_created_on&gt;&lt;sys_id&gt;ee20de071b67a01031264159cc4bcbaf&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:09&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33&lt;/table&gt;&lt;value&gt;{{84395e84-e408-408d-8c00-ffddfe64e0c9.targetObject}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;ee20de071b67a01031264159cc4bcbba&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Update Jira Project Users"&gt;798642c31be3a01031264159cc4bcbe5&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;2193071d-843f-4aa9-b761-6e02bd522619&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;a620de071b67a01031264159cc4bcbbb&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:16:32&lt;/sys_updated_on&gt;&lt;ui_id&gt;e850319a-e880-4df7-bbf5-c33778022820&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=a620de071b67a01031264159cc4bcbbb"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_flow_logic&lt;/document&gt;&lt;document_key&gt;a620de071b67a01031264159cc4bcbbb&lt;/document_key&gt;&lt;order&gt;10&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;ea20de071b67a01031264159cc4bcbbe&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;value&gt;Jira User is configured in ServiceNow&lt;/value&gt;&lt;variable display_value="Condition Label"&gt;f0af19c1c32632002841b63b12d3aea3&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=a620de071b67a01031264159cc4bcbbb"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;condition&lt;/field&gt;&lt;id&gt;a620de071b67a01031264159cc4bcbbb&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;6a20de071b67a01031264159cc4bcbbe&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e&lt;/table&gt;&lt;value&gt;{{7b56c9cc-28f3-4faa-8ada-9ab21b50a032.status}}=0&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;condition_name&lt;/field&gt;&lt;id&gt;a620de071b67a01031264159cc4bcbbb&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;a620de071b67a01031264159cc4bcbbe&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;e620de071b67a01031264159cc4bcbc8&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Update Jira Project Users"&gt;798642c31be3a01031264159cc4bcbe5&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;6&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;e850319a-e880-4df7-bbf5-c33778022820&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;ae20de071b67a01031264159cc4bcbc8&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:16:32&lt;/sys_updated_on&gt;&lt;ui_id&gt;6190bcf9-bc62-4eee-95d1-c3f01d743e7f&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=ae20de071b67a01031264159cc4bcbc8"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_flow_logic&lt;/document&gt;&lt;document_key&gt;ae20de071b67a01031264159cc4bcbc8&lt;/document_key&gt;&lt;order&gt;10&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;2e20de071b67a01031264159cc4bcbcb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;value&gt;If M2M link does not already exist&lt;/value&gt;&lt;variable display_value="Condition Label"&gt;f0af19c1c32632002841b63b12d3aea3&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=ae20de071b67a01031264159cc4bcbc8"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;condition&lt;/field&gt;&lt;id&gt;ae20de071b67a01031264159cc4bcbc8&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;aa20de071b67a01031264159cc4bcbcb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e&lt;/table&gt;&lt;value&gt;{{57f52b19-e1cb-4edf-b8dc-830eae2be4b7.status}}=1&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;condition_name&lt;/field&gt;&lt;id&gt;ae20de071b67a01031264159cc4bcbc8&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 21:12:10&lt;/sys_created_on&gt;&lt;sys_id&gt;e620de071b67a01031264159cc4bcbcb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 21:12:10&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_798642c31be3a01031264159cc4bcbe5^sys_idNOT IN2829820f1be3a01031264159cc4bcbae,2829820f1be3a01031264159cc4bcbb8"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;jira_project&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Jira Project&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_798642c31be3a01031264159cc4bcbe5&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 20:41:26&lt;/sys_created_on&gt;&lt;sys_id&gt;2829820f1be3a01031264159cc4bcbae&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 20:41:26&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;connection_alias&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Connection Alias&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_798642c31be3a01031264159cc4bcbe5&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-20 20:41:26&lt;/sys_created_on&gt;&lt;sys_id&gt;2829820f1be3a01031264159cc4bcbb8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-20 20:41:26&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1120456120</payload_hash>
+        <record_name>Update Jira Project Users</record_name>
+        <reverted_from/>
+        <source>926e5be61bcbe01031264159cc4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-20 21:16:32</sys_created_on>
+        <sys_id>fa211ac71b67a01031264159cc4bcb5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178f12452b80000001</sys_recorded_at>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-20 21:16:32</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>b2211ac77d67a01020807a6aa38ea65d</update_guid>
+        <update_guid_history>b2211ac77d67a01020807a6aa38ea65d:1120456120,bec09a871867a0105952049f5b4a37b1:-801871373,7a2012476067a0106f0f11d453cbd117:114091977,1c4bc6477727a010cf5aa9b080aa4bc5:-947773844,1f8a06830a27a0102fabd13f75c1b23d:995391395,df2a4a034827a010946fe09f0acd2d14:255516519,3029c20f05e3a010185d16b2bca7a73c:-1847843658,02864687aae3a01076e987f68d22726c:1563844958</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-21 14:27:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>58883b7bfe9648f698f299177d514284</sys_id>
+        <sys_metadata>798642c31be3a01031264159cc4bcbe5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Jira Project Users</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_scope_delete display_value="">4d6c253b4e124d31af4e500594e86541</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_798642c31be3a01031264159cc4bcbe5</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_798642c31be3a01031264159cc4bcbe5">fa211ac71b67a01031264159cc4bcb5d</sys_update_version>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-21 14:27:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

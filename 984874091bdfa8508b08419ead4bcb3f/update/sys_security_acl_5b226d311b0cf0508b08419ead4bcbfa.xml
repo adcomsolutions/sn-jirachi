@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <condition table="u_jira_issue">u_stakeholderISNOTEMPTY^active=true^EQ<item endquery="false" field="u_stakeholder" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description>Allow managers/department heads of the issue's stakeholder to have some editing power</description>
+        <name>u_jira_issue</name>
+        <operation display_value="write">write</operation>
+        <script><![CDATA[(function(current, previous){
+	var mySysId = gs.getUserID();
+	if (!mySysId) return false;
+
+	var allSuperiorUserIds = getUserSuperiorsForJiraIssue(current.u_stakeholder.sys_id);
+	
+	return allSuperiorUserIds.indexOf(mySysId) !== -1;
+})(current, previous);]]></script>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-11 17:10:13</sys_created_on>
+        <sys_id>5b226d311b0cf0508b08419ead4bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_jira_issue</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_security_acl_5b226d311b0cf0508b08419ead4bcbfa</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-11 17:10:13</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

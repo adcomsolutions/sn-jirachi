@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Jira Projects Import" max_length="40" name="u_jira_projects" sizeclass="32" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=description" label="description" max_length="40" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=id" label="id" max_length="40" name="u_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=isPrivate" label="isPrivate" max_length="40" name="u_isprivate" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=issueTypes" label="issueTypes" max_length="901" name="u_issuetypes" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=key" label="key" max_length="40" name="u_key" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=name" label="name" max_length="40" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=projectKeys" label="projectKeys" max_length="40" name="u_projectkeys" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=projectTypeKey" label="projectTypeKey" max_length="40" name="u_projecttypekey" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=self" label="self" max_length="52" name="u_self" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=simplified" label="simplified" max_length="40" name="u_simplified" type="string"/>
+    </element>
+</database>

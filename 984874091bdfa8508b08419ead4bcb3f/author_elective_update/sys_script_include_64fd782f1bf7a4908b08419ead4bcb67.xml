@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.getStatusIdsForJiraIssueId</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Given a Jira Issue ID, find all applicable Jira Status (u_jira_status) record IDs.&#13;
+&#13;
+A Jira Status is considered applicable to the issue if both following conditions are satisfied:&#13;
+* There must be a M2M relationship between the issue's Jira Project and the Jira Status&#13;
+* There must be a M2M relationship between the issue's Jira Issue Type and the Jira Status</description>
+        <name>getStatusIdsForJiraIssueId</name>
+        <script><![CDATA[function getStatusIdsForJiraIssueId(issueId) {
+    return (function() {
+        // Retrieve field data from given issue ID
+        // Will crash here if the record could not be found
+        var issueData = new GlideQuery('u_jira_issue')
+            .get(issueId, ['theme', 'u_jira_issue_type'])
+            .get();
+
+        // Get list of statuses matching the issue project
+        var idsWithMatchingProject = new GlideQuery('u_m2m_jira_project_issue_status')
+            .where('u_jira_project', issueData.theme)
+            .select()
+            .map(function(status) {
+                return status.sys_id;
+            });
+
+        // Get list of statuses matching the issue jira type
+        var idsWithMatchingIssueType = new GlideQuery('u_m2m_jira_issue_type_status')
+            .where('u_jira_issue_type', issueData.u_jira_issue_type)
+            .select()
+            .map(function(status) {
+                return status.sys_id;
+            });
+
+        // Return only status IDs that appear in both lists
+        return ArrayUtil.prototype.intersect(
+            idsWithMatchingProject,
+            idsWithMatchingIssueType
+        );
+    })();
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:00:48</sys_created_on>
+        <sys_id>64fd782f1bf7a4908b08419ead4bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getStatusIdsForJiraIssueId</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_script_include_64fd782f1bf7a4908b08419ead4bcb67</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:00:48</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</application>
+        <file_path/>
+        <instance_id>0338d1bbdbe39b041ddcf22ebf9619b4</instance_id>
+        <instance_name>adcomsolutionsdev</instance_name>
+        <name>sys_script_include_64fd782f1bf7a4908b08419ead4bcb67</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.getStatusIdsForJiraIssueId&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Given a Jira Issue ID, find all applicable Jira Status (u_jira_status) record IDs.&amp;#13;
+&amp;#13;
+A Jira Status is considered applicable to the issue if both following conditions are satisfied:&amp;#13;
+* There must be a M2M relationship between the issue's Jira Project and the Jira Status&amp;#13;
+* There must be a M2M relationship between the issue's Jira Issue Type and the Jira Status&lt;/description&gt;&lt;name&gt;getStatusIdsForJiraIssueId&lt;/name&gt;&lt;script&gt;&lt;![CDATA[function getStatusIdsForJiraIssueId(issueId) {
+    return (function() {
+        // Retrieve field data from given issue ID
+        // Will crash here if the record could not be found
+        var issueData = new GlideQuery('u_jira_issue')
+            .get(issueId, ['theme', 'u_jira_issue_type'])
+            .get();
+
+        // Get list of statuses matching the issue project
+        var idsWithMatchingProject = new GlideQuery('u_m2m_jira_project_issue_status')
+            .where('u_jira_project', issueData.theme)
+            .select()
+            .map(function(status) {
+                return status.sys_id;
+            });
+
+        // Get list of statuses matching the issue jira type
+        var idsWithMatchingIssueType = new GlideQuery('u_m2m_jira_issue_type_status')
+            .where('u_jira_issue_type', issueData.u_jira_issue_type)
+            .select()
+            .map(function(status) {
+                return status.sys_id;
+            });
+
+        // Return only status IDs that appear in both lists
+        return ArrayUtil.prototype.intersect(
+            idsWithMatchingProject,
+            idsWithMatchingIssueType
+        );
+    })();
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-04 15:00:48&lt;/sys_created_on&gt;&lt;sys_id&gt;64fd782f1bf7a4908b08419ead4bcb67&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;getStatusIdsForJiraIssueId&lt;/sys_name&gt;&lt;sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_64fd782f1bf7a4908b08419ead4bcb67&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-04 15:00:48&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1694982022</payload_hash>
+        <record_name>getStatusIdsForJiraIssueId</record_name>
+        <reverted_from/>
+        <source>926e5be61bcbe01031264159cc4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:00:48</sys_created_on>
+        <sys_id>1761cdaf1bf7a4908b08419ead4bcb77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17937e559b30000001</sys_recorded_at>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:00:48</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>1f61cdaf1df7a490c02e238f4921a676</update_guid>
+        <update_guid_history>1f61cdaf1df7a490c02e238f4921a676:1694982022</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 19:25:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>94a425b365ba4f2791aa11f139bc7dc1</sys_id>
+        <sys_metadata>64fd782f1bf7a4908b08419ead4bcb67</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getStatusIdsForJiraIssueId</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_scope_delete display_value="">4d6c253b4e124d31af4e500594e86541</sys_scope_delete>
+        <sys_update_name>sys_script_include_64fd782f1bf7a4908b08419ead4bcb67</sys_update_name>
+        <sys_update_version display_value="sys_script_include_64fd782f1bf7a4908b08419ead4bcb67">1761cdaf1bf7a4908b08419ead4bcb77</sys_update_version>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 19:25:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

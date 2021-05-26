@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="scrum_theme" label="Jira Project" max_length="40" name="u_jira_project" sizeclass="5" type="collection">
+        <element label="Default Assignment Group" max_length="32" name="u_default_assignment_group" reference="sys_user_group" type="reference"/>
+        <element default="true" label="Disable Jira Connection" max_length="40" name="u_jira_disabled" type="boolean"/>
+        <element attributes="format=none" label="Jira ID" mandatory="true" max_length="40" name="u_jira_id" read_only="true" type="integer" unique="true"/>
+        <element choice="1" label="Jira Project Type" mandatory="true" max_length="40" name="u_jira_project_type" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Software" sequence="100" value="software"/>
+                <element inactive_on_update="false" label="Service Desk" sequence="200" value="service_desk"/>
+                <element inactive_on_update="false" label="Business" sequence="300" value="business"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="u_default_assignment_group"/>
+        </index>
+        <index name="index2">
+            <element name="u_jira_id"/>
+        </index>
+    </element>
+</database>

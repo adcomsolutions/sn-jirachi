@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDd97973ab26e76810f2c3504b7f9bd2c7</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name>
+        <serialized_content>{"FlowDesigner:FDd97973ab26e76810f2c3504b7f9bd2c7":{"endDate":"String","endDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Scheduled End Date (Jira Encoded)\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Name\",\"mandatory\":\"true\",\"order\":\"4\",\"max_length\":\"0\"}"},"self":"String","self.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Self URL\",\"mandatory\":\"true\",\"order\":\"2\",\"max_length\":\"0\"}"},"id":"Integer","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"ID\",\"mandatory\":\"true\",\"order\":\"1\",\"max_length\":\"0\"}"},"state":"String","state.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"closed\",\"label\":\"State\",\"mandatory\":\"true\",\"order\":\"3\",\"max_length\":\"32\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Active\":\"{\\\"label\\\":\\\"Active\\\",\\\"value\\\":\\\"active\\\",\\\"order\\\":2}\",\"Closed\":\"{\\\"label\\\":\\\"Closed\\\",\\\"value\\\":\\\"closed\\\",\\\"order\\\":3}\",\"Future\":\"{\\\"label\\\":\\\"Future\\\",\\\"value\\\":\\\"future\\\",\\\"order\\\":1}\"}}"},"startDate":"String","startDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Scheduled Start Date (Jira Encoded)\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"completeDate":"String","completeDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Actual Completion Date (Jira Encoded))\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"}},"FlowDesigner:FDd97973ab26e76810f2c3504b7f9bd2c7.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Sprint Data\",\"mandatory\":\"false\",\"uiUniqueId\":\"edcd5f25-af2a-4ce5-bec0-774ffc5a4dd4\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDd97973ab26e76810f2c3504b7f9bd2c7\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-22 18:09:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>dd7973ab1be7681031264159cc4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDd97973ab26e76810f2c3504b7f9bd2c7</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_complex_object_dd7973ab1be7681031264159cc4bcbc7</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-22 18:09:10</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

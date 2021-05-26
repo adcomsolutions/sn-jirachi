@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Jira Issues Import" max_length="40" name="u_jira_issues" sizeclass="10327" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields" label="fields" max_length="6158" name="u_fields" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/assignee" label="fields/assignee" max_length="70" name="u_fields_assignee" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/assignee/accountId" label="fields/assignee/accountId" max_length="40" name="u_fields_assignee_accountid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/assignee/displayName" label="fields/assignee/displayName" max_length="40" name="u_fields_assignee_displayname" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/customfield_10026" label="fields/customfield_10026" max_length="40" name="u_fields_customfield_10026" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/description" label="fields/description" max_length="5658" name="u_fields_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/issuetype" label="fields/issuetype" max_length="45" name="u_fields_issuetype" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/issuetype/id" label="fields/issuetype/id" max_length="40" name="u_fields_issuetype_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/issuetype/name" label="fields/issuetype/name" max_length="40" name="u_fields_issuetype_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/issuetype/subtask" label="fields/issuetype/subtask" max_length="40" name="u_fields_issuetype_subtask" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/priority" label="fields/priority" max_length="40" name="u_fields_priority" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/priority/id" label="fields/priority/id" max_length="40" name="u_fields_priority_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/priority/name" label="fields/priority/name" max_length="40" name="u_fields_priority_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/reporter" label="fields/reporter" max_length="69" name="u_fields_reporter" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/reporter/accountId" label="fields/reporter/accountId" max_length="40" name="u_fields_reporter_accountid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/reporter/displayName" label="fields/reporter/displayName" max_length="40" name="u_fields_reporter_displayname" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/resolution" label="fields/resolution" max_length="40" name="u_fields_resolution" type="string"/>
+        <element label="fields/stakeholder" max_length="40" name="u_fields_stakeholder" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/status" label="fields/status" max_length="83" name="u_fields_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/status/id" label="fields/status/id" max_length="40" name="u_fields_status_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/status/name" label="fields/status/name" max_length="40" name="u_fields_status_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/status/statusCategory" label="fields/status/statusCategory" max_length="40" name="u_fields_status_statuscategory" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/status/statusCategory/name" label="fields/status/statusCategory/name" max_length="40" name="u_fields_statu_scategory_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/status/statusCategory/id" label="fields/status/statusCategory/id" max_length="40" name="u_fields_statu_tuscategory_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=fields/summary" label="fields/summary" max_length="153" name="u_fields_summary" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=id" label="id" max_length="40" name="u_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=key" label="key" max_length="40" name="u_key" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=self" label="self" max_length="50" name="u_self" type="string"/>
+    </element>
+</database>

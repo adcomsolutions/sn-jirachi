@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_stakeholder" label="Stakeholder" language="en" table="u_jira_issue">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_stakeholder</element>
+            <help/>
+            <hint/>
+            <label>Stakeholder</label>
+            <language>en</language>
+            <name>u_jira_issue</name>
+            <plural>Stakeholders</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-05-07 01:14:21</sys_created_on>
+            <sys_id>e201a1541b8034108b08419ead4bcb49</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Stakeholder</sys_name>
+            <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+            <sys_update_name>sys_documentation_u_jira_issue_u_stakeholder_en</sys_update_name>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-05-07 01:14:21</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_designer_co_template">
+    <sys_hub_flow_designer_co_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <complex_definition>FD5aefd0d642d72810b780eb368ffa1f7b</complex_definition>
+        <sys_class_name>sys_hub_flow_designer_co_template</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-05 18:50:35</sys_created_on>
+        <sys_id>9eefd0d61bd728108b08419ead4bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Jira Projects REST Data</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_hub_flow_designer_co_template_9eefd0d61bd728108b08419ead4bcb7e</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-05 18:50:35</sys_updated_on>
+        <template_label>Jira Projects REST Data</template_label>
+        <template_name>jira_projects_rest_data</template_name>
+    </sys_hub_flow_designer_co_template>
+</record_update>

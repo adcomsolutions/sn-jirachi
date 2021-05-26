@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2012-01-25 11:21:50</sys_created_on>
+        <sys_id>dcbe6d19ef731000a7450fa3f822560d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>scrum_theme.scrum_release_planner</sys_name>
+        <sys_package display_value="Agile Development" source="com.snc.sdlc.scrum.pp">d9a870c91bdfa8508b08419ead4bcb8e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_security_acl display_value="scrum_theme">6cbe2d19ef731000a7450fa3f8225690</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_dcbe6d19ef731000a7450fa3f822560d</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-03 00:46:58</sys_updated_on>
+        <sys_user_role display_value="scrum_release_planner" name="scrum_release_planner">92685301efa31000a7450fa3f82256ec</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</claim_owner_scope>
+        <claim_timestamp>178953282bc0000002</claim_timestamp>
+        <metadata_update_name>sys_security_acl_role_dcbe6d19ef731000a7450fa3f822560d</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Jira Integration</previous_claim_name>
+        <previous_claim_scope>984874091bdfa8508b08419ead4bcb3f</previous_claim_scope>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-03 00:46:58</sys_created_on>
+        <sys_id>39b492991b5fac508b08419ead4bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-03 00:46:58</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</claim_owner_scope>
+        <claim_timestamp>178953282bc0000001</claim_timestamp>
+        <metadata_update_name>sys_security_acl_role_dcbe6d19ef731000a7450fa3f822560d</metadata_update_name>
+        <previous_claim_app_version/>
+        <previous_claim_name>com.snc.sdlc.scrum.pp</previous_claim_name>
+        <previous_claim_scope>com.snc.sdlc.scrum.pp</previous_claim_scope>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-03 00:46:58</sys_created_on>
+        <sys_id>f9b492991b5fac508b08419ead4bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-03 00:46:58</sys_updated_on>
+    </sys_claim>
+</record_update>

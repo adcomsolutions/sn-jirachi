@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Jira Sprints Import" max_length="40" name="u_jira_sprints" sizeclass="373" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=completeDate" label="completeDate" max_length="40" name="u_completedate" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=endDate" label="endDate" max_length="40" name="u_enddate" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=goal" label="goal" max_length="40" name="u_goal" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=id" label="id" max_length="40" name="u_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=name" label="name" max_length="40" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=projectId" label="projectId" max_length="40" name="u_projectid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=self" label="self" max_length="52" name="u_self" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=startDate" label="startDate" max_length="40" name="u_startdate" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=state" label="state" max_length="40" name="u_state" type="string"/>
+    </element>
+</database>

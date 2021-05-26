@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>pull_jira_issue</internal_name>
+        <label_cache>[{"name":"flow_variable.jira_issue_json","label":"Flow Variables➛Jira Issue JSON","reference":"","reference_display":"","type":"json","base_type":"json","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"899d62e2-cb08-4c64-8df1-7e5f2ffe4d62"}},{"name":"ac347631-18f9-41aa-b0fe-a3355fcc21b3.variable3","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac347631-18f9-41aa-b0fe-a3355fcc21b3.variable12","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac347631-18f9-41aa-b0fe-a3355fcc21b3.variable1","label":"1➛Issues","reference_display":"Issues","type":"json","base_type":"json","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac347631-18f9-41aa-b0fe-a3355fcc21b3.variable","label":"1➛Number of Records","reference_display":"Number of Records","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"976519f8-bcaa-4bf9-8d96-bffd77572ed7.item","label":"1➛Items","reference_display":"Items","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.targetobject.fields.creator.accountId","label":"1➛targetObject➛fields➛creator➛accountId","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"3d75c6dd-3833-498b-a968-cc30a028eb91.Table","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3d75c6dd-3833-498b-a968-cc30a028eb91.Record","label":"2➛Record","reference":"task","reference_display":"Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.issue_id","label":"Input➛Issue ID","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"a674fdc6-89a0-4009-8205-3bb3ef1b1179"}},{"name":"647494e3-782a-48bd-a33b-ed0ab3de99f6.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"647494e3-782a-48bd-a33b-ed0ab3de99f6.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"647494e3-782a-48bd-a33b-ed0ab3de99f6.issue","label":"1➛Issue","reference_display":"Issue","type":"json","base_type":"json","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.targetobject","label":"1➛targetObject","reference_display":"targetObject","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FD17d86482ba161010b68c70ec8d6a2190","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ffdc0ef-8bce-4813-9e1f-878347f6994b"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.item_count","label":"1➛Item Count","reference_display":"Item Count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","visible_in_ad":"false","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.page_count","label":"1➛Page Count","reference_display":"Page Count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","visible_in_ad":"false","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.count","label":"1➛count","reference_display":"count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","visible_in_fd":"false","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.ds_count","label":"1➛ds_count","reference_display":"ds_count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","visible_in_fd":"false","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.item","label":"1➛item","reference_display":"item","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.ds_output_page_variables","label":"1➛ds_output_page_variables","reference_display":"ds_output_page_variables","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.response_headers","label":"1➛response_headers","reference_display":"response_headers","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.error_message","label":"1➛error_message","reference_display":"error_message","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.status_code","label":"1➛status_code","reference_display":"status_code","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.error_code","label":"1➛error_code","reference_display":"error_code","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.ds_parsed_stream","label":"1➛ds_parsed_stream","reference_display":"ds_parsed_stream","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.targetobject.fields","label":"1➛targetObject➛fields","reference":"","reference_display":"","type":"object","base_type":"object","column_name":"","attributes":{}},{"name":"f53e075f-212f-4c6d-8c06-b47e7974c9d2.field_values","label":"1➛Fields","reference_display":"Fields","type":"json","base_type":"json","attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"6a320e52-ea8d-497a-bfb1-2253d031d1f4"}},{"name":"f53e075f-212f-4c6d-8c06-b47e7974c9d2.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice"}},{"name":"f53e075f-212f-4c6d-8c06-b47e7974c9d2.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string"}},{"name":"ec369ff6-8c48-47c6-8820-dfd6626ee184.variable","label":"1➛Number of Records","reference_display":"Number of Records","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"ec369ff6-8c48-47c6-8820-dfd6626ee184.variable1","label":"1➛Issues","reference_display":"Issues","type":"json","base_type":"json","attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json"}},{"name":"ec369ff6-8c48-47c6-8820-dfd6626ee184.variable12","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"ec369ff6-8c48-47c6-8820-dfd6626ee184.variable3","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"a642e4a6-659c-4d96-8b74-fb2ec91e2827.item_count","label":"2➛Item Count","reference_display":"Item Count","type":"integer","base_type":"integer","attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","visible_in_ad":"false"}},{"name":"a642e4a6-659c-4d96-8b74-fb2ec91e2827.page_count","label":"2➛Page Count","reference_display":"Page Count","type":"integer","base_type":"integer","attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","visible_in_ad":"false"}},{"name":"a642e4a6-659c-4d96-8b74-fb2ec91e2827.count","label":"2➛count","reference_display":"count","type":"integer","base_type":"integer","attributes":{"visible_in_fd":"false","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer"}},{"name":"a642e4a6-659c-4d96-8b74-fb2ec91e2827.ds_count","label":"2➛ds_count","reference_display":"ds_count","type":"integer","base_type":"integer","attributes":{"visible_in_fd":"false","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer"}},{"name":"a642e4a6-659c-4d96-8b74-fb2ec91e2827.item","label":"2➛item","reference_display":"item","type":"string","base_type":"string","attributes":{"visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"a642e4a6-659c-4d96-8b74-fb2ec91e2827.ds_output_page_variables","label":"2➛ds_output_page_variables","reference_display":"ds_output_page_variables","type":"string","base_type":"string","attributes":{"visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"a642e4a6-659c-4d96-8b74-fb2ec91e2827.jiraIssues","label":"2➛Jira Issues","type":"array.object","base_type":"array.object","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDabee25412ddbe850f6db5e046f82ee19","child_label":"Issue","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"issue","child_uiUniqueId":"4e1f93f2-875f-4932-a054-a942570d48d2","uiUniqueId":"31689f64-d681-4712-8350-778c7367f952"}},{"name":"a642e4a6-659c-4d96-8b74-fb2ec91e2827.ds_parsed_stream","label":"2➛ds_parsed_stream","reference_display":"ds_parsed_stream","type":"string","base_type":"string","attributes":{"visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"d479b9b1-b2d5-4c73-a88f-01b7b4d3f3ad.item","label":"1➛Issue","reference_display":"Issue","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.targetobject","label":"1➛targetObject","reference_display":"targetObject","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FD17d86482ba161010b68c70ec8d6a2190","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ffdc0ef-8bce-4813-9e1f-878347f6994b"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.item_count","label":"1➛Item Count","reference_display":"Item Count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","visible_in_ad":"false","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.page_count","label":"1➛Page Count","reference_display":"Page Count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","visible_in_ad":"false","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.count","label":"1➛count","reference_display":"count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","visible_in_fd":"false","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.ds_count","label":"1➛ds_count","reference_display":"ds_count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","visible_in_fd":"false","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.item","label":"1➛item","reference_display":"item","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.ds_output_page_variables","label":"1➛ds_output_page_variables","reference_display":"ds_output_page_variables","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.response_headers","label":"1➛response_headers","reference_display":"response_headers","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.error_message","label":"1➛error_message","reference_display":"error_message","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.status_code","label":"1➛status_code","reference_display":"status_code","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.error_code","label":"1➛error_code","reference_display":"error_code","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.ds_parsed_stream","label":"1➛ds_parsed_stream","reference_display":"ds_parsed_stream","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8b7ec6d8-a4c6-425a-8c13-79d98eee0e45.variable","label":"2➛Jira Issues","reference_display":"Jira Issues","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"709ba77a-32e5-48a3-9b94-68ff78a31744"}},{"name":"0f0fb47d-e580-475d-a110-11c662102068.variable","label":"2➛Jira Issues","reference_display":"Jira Issues","type":"array.object","base_type":"array.object","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD2e277d092f1fe850cd092d04d10dc0ee","child_label":"Issue","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"issue","child_uiUniqueId":"e1af5923-5c84-4752-9a10-8c3d212f9bc9","uiUniqueId":"709ba77a-32e5-48a3-9b94-68ff78a31744"}},{"name":"ae12d9dd-462a-4143-96d5-cfcff5aaa16a.item","label":"3➛Issue","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Pull Jira Issue</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 00:33:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8ef789891bd3e8508b08419ead4bcb2e</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Pull Jira Issue</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_hub_flow_8ef789891bd3e8508b08419ead4bcb2e</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 04:00:57</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="DELETE" query="document_key=8ef789891bd3e8508b08419ead4bcb2e"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=8ef789891bd3e8508b08419ead4bcb2e^sys_idNOT IN1af789891bd3e8508b08419ead4bcb31"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>8ef789891bd3e8508b08419ead4bcb2e</id>
+        <name>Pull Jira Issue</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 00:33:11</sys_created_on>
+        <sys_id>1af789891bd3e8508b08419ead4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 00:33:11</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_output action="DELETE" query="model=8ef789891bd3e8508b08419ead4bcb2e^sys_idNOT IN8ad5bd851b1fe8508b08419ead4bcbdf"/>
+    <sys_hub_flow_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Output_child0,child_name=Output_child0,child_type=object,child_type_label=Object,child_uiUniqueId=d46cefb4-e7dc-45b9-8600-d0933a663c15,co_type_name=FD46d5bd853b1fe85082a86c2744a0bbda,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=7ced0f57-7d86-4ff4-8a26-3d46dd13f5c7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Output</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Pull Jira Issue">8ef789891bd3e8508b08419ead4bcb2e</model>
+        <model_id>8ef789891bd3e8508b08419ead4bcb2e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_8ef789891bd3e8508b08419ead4bcb2e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 03:53:37</sys_created_on>
+        <sys_id>8ad5bd851b1fe8508b08419ead4bcbdf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 03:53:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="DELETE" query="flow=8ef789891bd3e8508b08419ead4bcb2e^sys_idNOT IN1187b5891b1fe8508b08419ead4bcbc8,92d5fd851b1fe8508b08419ead4bcb1a,d587f5891b1fe8508b08419ead4bcb35"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Process Jira Issues JSON">6a16b1011b1fe8508b08419ead4bcb68</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Pull Jira Issue">8ef789891bd3e8508b08419ead4bcb2e</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 04:00:56</sys_created_on>
+        <sys_id>1187b5891b1fe8508b08419ead4bcbc8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 04:00:56</sys_updated_on>
+        <ui_id>0f0fb47d-e580-475d-a110-11c662102068</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=1187b5891b1fe8508b08419ead4bcbc8"/>
+    <sys_element_mapping action="DELETE" query="id=1187b5891b1fe8508b08419ead4bcbc8"/>
+    <sys_element_mapping action="DELETE">
+        <field>issues_json</field>
+        <id>1187b5891b1fe8508b08419ead4bcbc8</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 04:00:56</sys_created_on>
+        <sys_id>5987b5891b1fe8508b08419ead4bcbc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 04:00:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6a16b1011b1fe8508b08419ead4bcb68</table>
+        <value>{{ac347631-18f9-41aa-b0fe-a3355fcc21b3.variable1}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Lookup Records By JQL">5ada126ab7e933001fd1d818ee11a94a</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Pull Jira Issue">8ef789891bd3e8508b08419ead4bcb2e</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 03:53:38</sys_created_on>
+        <sys_id>92d5fd851b1fe8508b08419ead4bcb1a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 04:00:56</sys_updated_on>
+        <ui_id>ac347631-18f9-41aa-b0fe-a3355fcc21b3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=92d5fd851b1fe8508b08419ead4bcb1a"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>92d5fd851b1fe8508b08419ead4bcb1a</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 03:53:38</sys_created_on>
+        <sys_id>16d5fd851b1fe8508b08419ead4bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 03:53:38</sys_updated_on>
+        <value>project = "SNOW Enhancements (Dev Ops)" AND updated &gt;= startOfDay() AND statusCategory = "In Progress"</value>
+        <variable display_value="JQL Query">1eda126ab7e933001fd1d818ee11a94b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>92d5fd851b1fe8508b08419ead4bcb1a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 03:53:38</sys_created_on>
+        <sys_id>1ed5fd851b1fe8508b08419ead4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 03:53:38</sys_updated_on>
+        <value>629ad2bfdb1893005963ff041d961971</value>
+        <variable display_value="Connection Alias">c30e82e487400010ca8560e3d6cb0b86</variable>
+    </sys_variable_value>
+    <sys_hub_input_scripts action="DELETE" query="instance=92d5fd851b1fe8508b08419ead4bcb1a^sys_idNOT IN52d5fd851b1fe8508b08419ead4bcb1c"/>
+    <sys_hub_input_scripts action="DELETE">
+        <active>false</active>
+        <input_name>jql</input_name>
+        <instance>92d5fd851b1fe8508b08419ead4bcb1a</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"jql":{"scriptActive":false}}</script>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 03:53:38</sys_created_on>
+        <sys_id>52d5fd851b1fe8508b08419ead4bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 03:53:38</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Pull Jira Issue">8ef789891bd3e8508b08419ead4bcb2e</flow>
+        <order>4</order>
+        <parent_ui_id>ae12d9dd-462a-4143-96d5-cfcff5aaa16a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 04:00:56</sys_created_on>
+        <sys_id>d587f5891b1fe8508b08419ead4bcb35</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 04:00:56</sys_updated_on>
+        <ui_id>9149fcbe-6816-4569-baec-3c45651d6e45</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=d587f5891b1fe8508b08419ead4bcb35"/>
+    <sys_element_mapping action="DELETE" query="id=d587f5891b1fe8508b08419ead4bcb35"/>
+    <sys_element_mapping action="DELETE">
+        <field>log_message</field>
+        <id>d587f5891b1fe8508b08419ead4bcb35</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 04:00:56</sys_created_on>
+        <sys_id>9d87f5891b1fe8508b08419ead4bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 04:00:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>{{ae12d9dd-462a-4143-96d5-cfcff5aaa16a.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="DELETE" query="flow=8ef789891bd3e8508b08419ead4bcb2e^sys_idNOT IN5d87b5891b1fe8508b08419ead4bcbca"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">9187b5891b1fe8508b08419ead4bcbca</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Pull Jira Issue">8ef789891bd3e8508b08419ead4bcb2e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 04:00:56</sys_created_on>
+        <sys_id>5d87b5891b1fe8508b08419ead4bcbca</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 04:00:56</sys_updated_on>
+        <ui_id>ae12d9dd-462a-4143-96d5-cfcff5aaa16a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=5d87b5891b1fe8508b08419ead4bcbca"/>
+    <sys_element_mapping action="DELETE" query="id=5d87b5891b1fe8508b08419ead4bcbca"/>
+    <sys_element_mapping action="DELETE">
+        <field>items</field>
+        <id>5d87b5891b1fe8508b08419ead4bcbca</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 04:00:56</sys_created_on>
+        <sys_id>d187b5891b1fe8508b08419ead4bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 04:00:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{0f0fb47d-e580-475d-a110-11c662102068.variable}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_8ef789891bd3e8508b08419ead4bcb2e^sys_idNOT IN5ed5bd851b1fe8508b08419ead4bcbed"/>
+    <sys_documentation action="DELETE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>Output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_8ef789891bd3e8508b08419ead4bcb2e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 03:53:37</sys_created_on>
+        <sys_id>5ed5bd851b1fe8508b08419ead4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 03:53:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</application>
+        <file_path/>
+        <instance_id>0338d1bbdbe39b041ddcf22ebf9619b4</instance_id>
+        <instance_name>adcomsolutionsdev</instance_name>
+        <name>sys_hub_flow_8ef789891bd3e8508b08419ead4bcb2e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;internal_name&gt;pull_jira_issue&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"flow_variable.jira_issue_json","label":"Flow Variables➛Jira Issue JSON","reference":"","reference_display":"","type":"json","base_type":"json","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"899d62e2-cb08-4c64-8df1-7e5f2ffe4d62"}},{"name":"ac347631-18f9-41aa-b0fe-a3355fcc21b3.variable3","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac347631-18f9-41aa-b0fe-a3355fcc21b3.variable12","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac347631-18f9-41aa-b0fe-a3355fcc21b3.variable1","label":"1➛Issues","reference_display":"Issues","type":"json","base_type":"json","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac347631-18f9-41aa-b0fe-a3355fcc21b3.variable","label":"1➛Number of Records","reference_display":"Number of Records","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"976519f8-bcaa-4bf9-8d96-bffd77572ed7.item","label":"1➛Items","reference_display":"Items","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.targetobject.fields.creator.accountId","label":"1➛targetObject➛fields➛creator➛accountId","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"3d75c6dd-3833-498b-a968-cc30a028eb91.Table","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3d75c6dd-3833-498b-a968-cc30a028eb91.Record","label":"2➛Record","reference":"task","reference_display":"Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.issue_id","label":"Input➛Issue ID","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"a674fdc6-89a0-4009-8205-3bb3ef1b1179"}},{"name":"647494e3-782a-48bd-a33b-ed0ab3de99f6.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"647494e3-782a-48bd-a33b-ed0ab3de99f6.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"647494e3-782a-48bd-a33b-ed0ab3de99f6.issue","label":"1➛Issue","reference_display":"Issue","type":"json","base_type":"json","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.targetobject","label":"1➛targetObject","reference_display":"targetObject","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FD17d86482ba161010b68c70ec8d6a2190","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ffdc0ef-8bce-4813-9e1f-878347f6994b"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.item_count","label":"1➛Item Count","reference_display":"Item Count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","visible_in_ad":"false","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.page_count","label":"1➛Page Count","reference_display":"Page Count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","visible_in_ad":"false","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.count","label":"1➛count","reference_display":"count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","visible_in_fd":"false","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.ds_count","label":"1➛ds_count","reference_display":"ds_count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","visible_in_fd":"false","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.item","label":"1➛item","reference_display":"item","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.ds_output_page_variables","label":"1➛ds_output_page_variables","reference_display":"ds_output_page_variables","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.response_headers","label":"1➛response_headers","reference_display":"response_headers","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.error_message","label":"1➛error_message","reference_display":"error_message","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.status_code","label":"1➛status_code","reference_display":"status_code","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.error_code","label":"1➛error_code","reference_display":"error_code","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.ds_parsed_stream","label":"1➛ds_parsed_stream","reference_display":"ds_parsed_stream","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"673b6ee1-2e14-4c1d-946e-6eebdc7f1200.targetobject.fields","label":"1➛targetObject➛fields","reference":"","reference_display":"","type":"object","base_type":"object","column_name":"","attributes":{}},{"name":"f53e075f-212f-4c6d-8c06-b47e7974c9d2.field_values","label":"1➛Fields","reference_display":"Fields","type":"json","base_type":"json","attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"6a320e52-ea8d-497a-bfb1-2253d031d1f4"}},{"name":"f53e075f-212f-4c6d-8c06-b47e7974c9d2.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice"}},{"name":"f53e075f-212f-4c6d-8c06-b47e7974c9d2.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string"}},{"name":"ec369ff6-8c48-47c6-8820-dfd6626ee184.variable","label":"1➛Number of Records","reference_display":"Number of Records","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"ec369ff6-8c48-47c6-8820-dfd6626ee184.variable1","label":"1➛Issues","reference_display":"Issues","type":"json","base_type":"json","attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json"}},{"name":"ec369ff6-8c48-47c6-8820-dfd6626ee184.variable12","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"ec369ff6-8c48-47c6-8820-dfd6626ee184.variable3","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"a642e4a6-659c-4d96-8b74-fb2ec91e2827.item_count","label":"2➛Item Count","reference_display":"Item Count","type":"integer","base_type":"integer","attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","visible_in_ad":"false"}},{"name":"a642e4a6-659c-4d96-8b74-fb2ec91e2827.page_count","label":"2➛Page Count","reference_display":"Page Count","type":"integer","base_type":"integer","attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","visible_in_ad":"false"}},{"name":"a642e4a6-659c-4d96-8b74-fb2ec91e2827.count","label":"2➛count","reference_display":"count","type":"integer","base_type":"integer","attributes":{"visible_in_fd":"false","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer"}},{"name":"a642e4a6-659c-4d96-8b74-fb2ec91e2827.ds_count","label":"2➛ds_count","reference_display":"ds_count","type":"integer","base_type":"integer","attributes":{"visible_in_fd":"false","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer"}},{"name":"a642e4a6-659c-4d96-8b74-fb2ec91e2827.item","label":"2➛item","reference_display":"item","type":"string","base_type":"string","attributes":{"visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"a642e4a6-659c-4d96-8b74-fb2ec91e2827.ds_output_page_variables","label":"2➛ds_output_page_variables","reference_display":"ds_output_page_variables","type":"string","base_type":"string","attributes":{"visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"a642e4a6-659c-4d96-8b74-fb2ec91e2827.jiraIssues","label":"2➛Jira Issues","type":"array.object","base_type":"array.object","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDabee25412ddbe850f6db5e046f82ee19","child_label":"Issue","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"issue","child_uiUniqueId":"4e1f93f2-875f-4932-a054-a942570d48d2","uiUniqueId":"31689f64-d681-4712-8350-778c7367f952"}},{"name":"a642e4a6-659c-4d96-8b74-fb2ec91e2827.ds_parsed_stream","label":"2➛ds_parsed_stream","reference_display":"ds_parsed_stream","type":"string","base_type":"string","attributes":{"visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"d479b9b1-b2d5-4c73-a88f-01b7b4d3f3ad.item","label":"1➛Issue","reference_display":"Issue","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.targetobject","label":"1➛targetObject","reference_display":"targetObject","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FD17d86482ba161010b68c70ec8d6a2190","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ffdc0ef-8bce-4813-9e1f-878347f6994b"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.item_count","label":"1➛Item Count","reference_display":"Item Count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","visible_in_ad":"false","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.page_count","label":"1➛Page Count","reference_display":"Page Count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","visible_in_ad":"false","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.count","label":"1➛count","reference_display":"count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","visible_in_fd":"false","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.ds_count","label":"1➛ds_count","reference_display":"ds_count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","visible_in_fd":"false","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.item","label":"1➛item","reference_display":"item","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.ds_output_page_variables","label":"1➛ds_output_page_variables","reference_display":"ds_output_page_variables","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.response_headers","label":"1➛response_headers","reference_display":"response_headers","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.error_message","label":"1➛error_message","reference_display":"error_message","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.status_code","label":"1➛status_code","reference_display":"status_code","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.error_code","label":"1➛error_code","reference_display":"error_code","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb2f3ee9-f615-426e-89f9-3405196511bf.ds_parsed_stream","label":"1➛ds_parsed_stream","reference_display":"ds_parsed_stream","type":"string","base_type":"string","attributes":{"uiType":"string","visible_in_fd":"false","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8b7ec6d8-a4c6-425a-8c13-79d98eee0e45.variable","label":"2➛Jira Issues","reference_display":"Jira Issues","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"709ba77a-32e5-48a3-9b94-68ff78a31744"}},{"name":"0f0fb47d-e580-475d-a110-11c662102068.variable","label":"2➛Jira Issues","reference_display":"Jira Issues","type":"array.object","base_type":"array.object","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD2e277d092f1fe850cd092d04d10dc0ee","child_label":"Issue","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"issue","child_uiUniqueId":"e1af5923-5c84-4752-9a10-8c3d212f9bc9","uiUniqueId":"709ba77a-32e5-48a3-9b94-68ff78a31744"}},{"name":"ae12d9dd-462a-4143-96d5-cfcff5aaa16a.item","label":"3➛Issue","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;name&gt;Pull Jira Issue&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-02 00:33:11&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;8ef789891bd3e8508b08419ead4bcb2e&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Pull Jira Issue&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_8ef789891bd3e8508b08419ead4bcb2e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-02 04:00:57&lt;/sys_updated_on&gt;&lt;type&gt;subflow&lt;/type&gt;&lt;/sys_hub_flow&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=8ef789891bd3e8508b08419ead4bcb2e"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=8ef789891bd3e8508b08419ead4bcb2e^sys_idNOT IN1af789891bd3e8508b08419ead4bcb31"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;8ef789891bd3e8508b08419ead4bcb2e&lt;/id&gt;&lt;name&gt;Pull Jira Issue&lt;/name&gt;&lt;sys_class_name&gt;sys_flow_cat_variable_model&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-02 00:33:11&lt;/sys_created_on&gt;&lt;sys_id&gt;1af789891bd3e8508b08419ead4bcb31&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-02 00:33:11&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=8ef789891bd3e8508b08419ead4bcb2e^sys_idNOT IN8ad5bd851b1fe8508b08419ead4bcbdf"/&gt;&lt;sys_hub_flow_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=Output_child0,child_name=Output_child0,child_type=object,child_type_label=Object,child_uiUniqueId=d46cefb4-e7dc-45b9-8600-d0933a663c15,co_type_name=FD46d5bd853b1fe85082a86c2744a0bbda,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=7ced0f57-7d86-4ff4-8a26-3d46dd13f5c7&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;3&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;output&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Output&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="Pull Jira Issue"&gt;8ef789891bd3e8508b08419ead4bcb2e&lt;/model&gt;&lt;model_id&gt;8ef789891bd3e8508b08419ead4bcb2e&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_output_8ef789891bd3e8508b08419ead4bcb2e&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-02 03:53:37&lt;/sys_created_on&gt;&lt;sys_id&gt;8ad5bd851b1fe8508b08419ead4bcbdf&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-02 03:53:37&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_output&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=8ef789891bd3e8508b08419ead4bcb2e^sys_idNOT IN1187b5891b1fe8508b08419ead4bcbc8,92d5fd851b1fe8508b08419ead4bcb1a,d587f5891b1fe8508b08419ead4bcb35"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Process Jira Issues JSON"&gt;6a16b1011b1fe8508b08419ead4bcb68&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Pull Jira Issue"&gt;8ef789891bd3e8508b08419ead4bcb2e&lt;/flow&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-02 04:00:56&lt;/sys_created_on&gt;&lt;sys_id&gt;1187b5891b1fe8508b08419ead4bcbc8&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-02 04:00:56&lt;/sys_updated_on&gt;&lt;ui_id&gt;0f0fb47d-e580-475d-a110-11c662102068&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=1187b5891b1fe8508b08419ead4bcbc8"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=1187b5891b1fe8508b08419ead4bcbc8"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;issues_json&lt;/field&gt;&lt;id&gt;1187b5891b1fe8508b08419ead4bcbc8&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-02 04:00:56&lt;/sys_created_on&gt;&lt;sys_id&gt;5987b5891b1fe8508b08419ead4bcbc9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-02 04:00:56&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6a16b1011b1fe8508b08419ead4bcb68&lt;/table&gt;&lt;value&gt;{{ac347631-18f9-41aa-b0fe-a3355fcc21b3.variable1}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Lookup Records By JQL"&gt;5ada126ab7e933001fd1d818ee11a94a&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Pull Jira Issue"&gt;8ef789891bd3e8508b08419ead4bcb2e&lt;/flow&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-02 03:53:38&lt;/sys_created_on&gt;&lt;sys_id&gt;92d5fd851b1fe8508b08419ead4bcb1a&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-02 04:00:56&lt;/sys_updated_on&gt;&lt;ui_id&gt;ac347631-18f9-41aa-b0fe-a3355fcc21b3&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=92d5fd851b1fe8508b08419ead4bcb1a"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;92d5fd851b1fe8508b08419ead4bcb1a&lt;/document_key&gt;&lt;order&gt;2&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-02 03:53:38&lt;/sys_created_on&gt;&lt;sys_id&gt;16d5fd851b1fe8508b08419ead4bcb1e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-02 03:53:38&lt;/sys_updated_on&gt;&lt;value&gt;project = "SNOW Enhancements (Dev Ops)" AND updated &amp;gt;= startOfDay() AND statusCategory = "In Progress"&lt;/value&gt;&lt;variable display_value="JQL Query"&gt;1eda126ab7e933001fd1d818ee11a94b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;92d5fd851b1fe8508b08419ead4bcb1a&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-02 03:53:38&lt;/sys_created_on&gt;&lt;sys_id&gt;1ed5fd851b1fe8508b08419ead4bcb1d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-02 03:53:38&lt;/sys_updated_on&gt;&lt;value&gt;629ad2bfdb1893005963ff041d961971&lt;/value&gt;&lt;variable display_value="Connection Alias"&gt;c30e82e487400010ca8560e3d6cb0b86&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=92d5fd851b1fe8508b08419ead4bcb1a^sys_idNOT IN52d5fd851b1fe8508b08419ead4bcb1c"/&gt;&lt;sys_hub_input_scripts action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;input_name&gt;jql&lt;/input_name&gt;&lt;instance&gt;92d5fd851b1fe8508b08419ead4bcb1a&lt;/instance&gt;&lt;referenced_table&gt;sys_hub_action_instance&lt;/referenced_table&gt;&lt;script&gt;{"jql":{"scriptActive":false}}&lt;/script&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-02 03:53:38&lt;/sys_created_on&gt;&lt;sys_id&gt;52d5fd851b1fe8508b08419ead4bcb1c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-02 03:53:38&lt;/sys_updated_on&gt;&lt;/sys_hub_input_scripts&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Log"&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Pull Jira Issue"&gt;8ef789891bd3e8508b08419ead4bcb2e&lt;/flow&gt;&lt;order&gt;4&lt;/order&gt;&lt;parent_ui_id&gt;ae12d9dd-462a-4143-96d5-cfcff5aaa16a&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-02 04:00:56&lt;/sys_created_on&gt;&lt;sys_id&gt;d587f5891b1fe8508b08419ead4bcb35&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-02 04:00:56&lt;/sys_updated_on&gt;&lt;ui_id&gt;9149fcbe-6816-4569-baec-3c45651d6e45&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=d587f5891b1fe8508b08419ead4bcb35"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=d587f5891b1fe8508b08419ead4bcb35"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;log_message&lt;/field&gt;&lt;id&gt;d587f5891b1fe8508b08419ead4bcb35&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-02 04:00:56&lt;/sys_created_on&gt;&lt;sys_id&gt;9d87f5891b1fe8508b08419ead4bcb36&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-02 04:00:56&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4&lt;/table&gt;&lt;value&gt;{{ae12d9dd-462a-4143-96d5-cfcff5aaa16a.item}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_flow_logic action="delete_multiple" query="flow=8ef789891bd3e8508b08419ead4bcb2e^sys_idNOT IN5d87b5891b1fe8508b08419ead4bcbca"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;9187b5891b1fe8508b08419ead4bcbca&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Pull Jira Issue"&gt;8ef789891bd3e8508b08419ead4bcb2e&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="For Each"&gt;098e1dc5c3e232002841b63b12d3ae33&lt;/logic_definition&gt;&lt;order&gt;3&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-02 04:00:56&lt;/sys_created_on&gt;&lt;sys_id&gt;5d87b5891b1fe8508b08419ead4bcbca&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-02 04:00:56&lt;/sys_updated_on&gt;&lt;ui_id&gt;ae12d9dd-462a-4143-96d5-cfcff5aaa16a&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=5d87b5891b1fe8508b08419ead4bcbca"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=5d87b5891b1fe8508b08419ead4bcbca"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;items&lt;/field&gt;&lt;id&gt;5d87b5891b1fe8508b08419ead4bcbca&lt;/id&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-02 04:00:56&lt;/sys_created_on&gt;&lt;sys_id&gt;d187b5891b1fe8508b08419ead4bcbce&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-02 04:00:56&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33&lt;/table&gt;&lt;value&gt;{{0f0fb47d-e580-475d-a110-11c662102068.variable}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_8ef789891bd3e8508b08419ead4bcb2e^sys_idNOT IN5ed5bd851b1fe8508b08419ead4bcbed"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;output&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Output&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_output_8ef789891bd3e8508b08419ead4bcb2e&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-02 03:53:37&lt;/sys_created_on&gt;&lt;sys_id&gt;5ed5bd851b1fe8508b08419ead4bcbed&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-02 03:53:37&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-330504294</payload_hash>
+        <record_name>Pull Jira Issue</record_name>
+        <reverted_from/>
+        <source>926e5be61bcbe01031264159cc4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 04:00:57</sys_created_on>
+        <sys_id>2587f5891b1fe8508b08419ead4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17890bdbed40000001</sys_recorded_at>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 04:00:57</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>a987f589c11fe850a85651558831f4ca</update_guid>
+        <update_guid_history>a987f589c11fe850a85651558831f4ca:-330504294,22d5fd85c41fe850f26318fefa67823e:44143104,4f4171895bdbe85053c2b735836423c1:211545670,60d56d81f85be85081413b1282952ae9:313000017,8244e18d2e1be850d49a3517506f0061:1256799954,ded2a9c9d91be8508e19785dbb8d1db3:1946597653,d09261c9471be850417af0a88eb4cf32:1311575216,9a059d05cd97e850d525b173c7f19594:-972758534,d6f7898914d3e850fb64da20f4e82137:920468105</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-02 23:32:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>0409e333819f401f801aceab4233c039</sys_id>
+        <sys_metadata>8ef789891bd3e8508b08419ead4bcb2e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pull Jira Issue</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_scope_delete display_value="">4d6c253b4e124d31af4e500594e86541</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_8ef789891bd3e8508b08419ead4bcb2e</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_8ef789891bd3e8508b08419ead4bcb2e">2587f5891b1fe8508b08419ead4bcbcb</sys_update_version>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-02 23:32:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

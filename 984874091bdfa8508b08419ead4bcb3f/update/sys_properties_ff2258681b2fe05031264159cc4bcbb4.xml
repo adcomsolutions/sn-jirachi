@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>The default credential alias Sys ID to use for the Jira Integration</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>jira_integration.default_credential</name>
+        <read_roles/>
+        <suffix/>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-12 17:37:42</sys_created_on>
+        <sys_id>ff2258681b2fe05031264159cc4bcbb4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>jira_integration.default_credential</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_properties_ff2258681b2fe05031264159cc4bcbb4</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-12 17:38:59</sys_updated_on>
+        <type>string</type>
+        <value>629ad2bfdb1893005963ff041d961971</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=ff2258681b2fe05031264159cc4bcbb4"/>
+</record_update>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="ignore_delete_children=true" audit="true" extends="rm_release" label="Sprint" max_length="40" name="rm_sprint" sizeclass="45" type="collection"/>
+</database>

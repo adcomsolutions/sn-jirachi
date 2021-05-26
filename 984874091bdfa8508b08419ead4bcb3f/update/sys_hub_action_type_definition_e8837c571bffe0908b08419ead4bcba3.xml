@@ -1,0 +1,2150 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>true</ih_action>
+        <internal_name>get_status_data_for_project</internal_name>
+        <label_cache>[{"name":"{{action.connection_alias}}","label":"action➛Connection Alias","type":"action","ref":""},{"name":"{{action.jira_project}}","label":"action➛Jira Project","type":"action","ref":""},{"name":"{{action.jira_project.u_jira_id}}","label":"action➛Jira Project➛Jira ID","type":"action","ref":""},{"name":"{{action.projectidorkey}}","label":"action➛projectIdOrKey","type":"action","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].Issue_Types}}","label":"step➛JSON Parser step➛Issue Types","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array}}","label":"step➛JSON Parser step➛root➛root_array","type":"step","ref":""},{"name":"{{step[6645dec3-a687-42e4-9ed7-686878f33b9a].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object._.statuses_object.iconUrl}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛statuses_object➛iconUrl","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object.self}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛Self URL","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object.id}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛ID","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object.name}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛Name","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object.subtask}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛Is Subtask?","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object._.statuses_object.self}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛statuses_object➛Self URL","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object._.statuses_object.description}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛statuses_object➛Description","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object._.statuses_object.name}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛statuses_object➛Name","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object._.statuses_object.id}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛statuses_object➛ID","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object._}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object.statuses.statuses_object.iconUrl}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛statuses➛statuses_object➛iconUrl","type":"step","ref":""},{"name":"{{step[b9c7462c-ab27-40dc-ae74-1e38839d9ac5].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[b9c7462c-ab27-40dc-ae74-1e38839d9ac5]._}}","label":"step➛Script step➛","type":"step","ref":""},{"name":"{{step[b9c7462c-ab27-40dc-ae74-1e38839d9ac5].status_data}}","label":"step➛Script step➛Status Data","type":"step","ref":""},{"name":"{{step[b9c7462c-ab27-40dc-ae74-1e38839d9ac5].Task_Status_Data}}","label":"step➛Script step➛Task Status Data","type":"step","ref":""},{"name":"{{step[b9c7462c-ab27-40dc-ae74-1e38839d9ac5].statusData._}}","label":"step➛Script step➛Task Status Data","type":"step","ref":""},{"name":"{{step[b9c7462c-ab27-40dc-ae74-1e38839d9ac5].statusData.Task_Type}}","label":"step➛Script step➛Task Status Data➛Task Type➛Task Type","type":"step","ref":""},{"name":"{{step[b9c7462c-ab27-40dc-ae74-1e38839d9ac5].statusData}}","label":"step➛Script step➛Task Status Data","type":"step","ref":""}]</label_cache>
+        <master_snapshot>9e3ab4171b3324908b08419ead4bcb64</master_snapshot>
+        <name>Get Status Data for Project</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:21:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e8837c571bffe0908b08419ead4bcba3</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>Get Status Data for Project</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_e8837c571bffe0908b08419ead4bcba3</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 18:28:20</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_variable_value action="delete_multiple" query="document_key=e8837c571bffe0908b08419ead4bcba3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>e8837c571bffe0908b08419ead4bcba3</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:31</sys_created_on>
+        <sys_id>a1b63cdb1bffe0908b08419ead4bcb7a</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 18:28:13</sys_updated_on>
+        <value/>
+        <variable display_value="Task Status Data">a1b63cdb1bffe0908b08419ead4bcb63</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e8837c571bffe0908b08419ead4bcba3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_data</field>
+        <id>e8837c571bffe0908b08419ead4bcba3</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:31</sys_created_on>
+        <sys_id>21b63cdb1bffe0908b08419ead4bcb7a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 18:28:13</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e8837c571bffe0908b08419ead4bcba3</table>
+        <value>{{step[b9c7462c-ab27-40dc-ae74-1e38839d9ac5].statusData}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=e8837c571bffe0908b08419ead4bcba3^sys_idNOT INd5b6f8db1bffe0908b08419ead4bcbc8,ee88789f1bffe0908b08419ead4bcb23"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Status Data for Project">e8837c571bffe0908b08419ead4bcba3</action>
+        <cid>6645dec3-a687-42e4-9ed7-686878f33b9a</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:29</sys_created_on>
+        <sys_id>d5b6f8db1bffe0908b08419ead4bcbc8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d5b6f8db1bffe0908b08419ead4bcbc8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d5b6f8db1bffe0908b08419ead4bcbc8</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>25b63cdb1bffe0908b08419ead4bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d5b6f8db1bffe0908b08419ead4bcbc8</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>29b63cdb1bffe0908b08419ead4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <value>from_openapi</value>
+        <variable display_value="Build Request">bb61fcd3c7312300a150effeeb97638e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d5b6f8db1bffe0908b08419ead4bcbc8</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>61b63cdb1bffe0908b08419ead4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <value>517cb4691ba32c508b08419ead4bcb65</value>
+        <variable display_value="API Source">c346f4d7c7312300a150effeeb976366</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d5b6f8db1bffe0908b08419ead4bcbc8</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>61b63cdb1bffe0908b08419ead4bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Accept","value":"application/json"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d5b6f8db1bffe0908b08419ead4bcbc8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>6db63cdb1bffe0908b08419ead4bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <value>{"projectidorkey":{"name":"projectIdOrKey","allowEmptyValue":false,"allowReserved":false,"explode":false,"required":true,"style":"simple","schema":{"glideType":"string","deprecated":false,"name":"projectIdOrKey1390359939","type":"string"}}}</value>
+        <variable display_value="REST Metadata">3c4d7367c7d32300a150effeeb9763a4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d5b6f8db1bffe0908b08419ead4bcbc8</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>a9b63cdb1bffe0908b08419ead4bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d5b6f8db1bffe0908b08419ead4bcbc8</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>adb63cdb1bffe0908b08419ead4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enable Retry Policy">321e31fd87803300a8cc7d5e27cb0b7a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d5b6f8db1bffe0908b08419ead4bcbc8</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>e5b63cdb1bffe0908b08419ead4bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d5b6f8db1bffe0908b08419ead4bcbc8</document_key>
+        <order>16</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>e9b63cdb1bffe0908b08419ead4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <value>fc9cf4a91ba32c508b08419ead4bcbee</value>
+        <variable display_value="API Operation">29c75782c7822300a150effeeb976338</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d5b6f8db1bffe0908b08419ead4bcbc8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>api_operation</field>
+        <id>d5b6f8db1bffe0908b08419ead4bcbc8</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>e5b63cdb1bffe0908b08419ead4bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>api_source</field>
+        <id>d5b6f8db1bffe0908b08419ead4bcbc8</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>6db63cdb1bffe0908b08419ead4bcb13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>d5b6f8db1bffe0908b08419ead4bcbc8</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>69b63cdb1bffe0908b08419ead4bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>build_request</field>
+        <id>d5b6f8db1bffe0908b08419ead4bcbc8</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>25b63cdb1bffe0908b08419ead4bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>d5b6f8db1bffe0908b08419ead4bcbc8</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>a5b63cdb1bffe0908b08419ead4bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>d5b6f8db1bffe0908b08419ead4bcbc8</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>6db63cdb1bffe0908b08419ead4bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{action.connection_alias}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>enable_retry_policy</field>
+        <id>d5b6f8db1bffe0908b08419ead4bcbc8</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>a9b63cdb1bffe0908b08419ead4bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>d5b6f8db1bffe0908b08419ead4bcbc8</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>e1b63cdb1bffe0908b08419ead4bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>d5b6f8db1bffe0908b08419ead4bcbc8</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>2db63cdb1bffe0908b08419ead4bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>d5b6f8db1bffe0908b08419ead4bcbc8</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>21b63cdb1bffe0908b08419ead4bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>/rest/api/2/project/{{action.jira_project.u_jira_id}}/statuses</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>rest_metadata</field>
+        <id>d5b6f8db1bffe0908b08419ead4bcbc8</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>edb63cdb1bffe0908b08419ead4bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=d5b6f8db1bffe0908b08419ead4bcbc8^sys_idNOT INd5b6f8db1bffe0908b08419ead4bcbe1"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=9029dae4-eafc-4b56-bca4-bfae96def5f7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">d5b6f8db1bffe0908b08419ead4bcbc8</model>
+        <model_id>d5b6f8db1bffe0908b08419ead4bcbc8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_d5b6f8db1bffe0908b08419ead4bcbc8</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>d5b6f8db1bffe0908b08419ead4bcbe1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:36:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Status Data for Project">e8837c571bffe0908b08419ead4bcba3</action>
+        <cid>b9c7462c-ab27-40dc-ae74-1e38839d9ac5</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:43:30</sys_created_on>
+        <sys_id>ee88789f1bffe0908b08419ead4bcb23</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:44:33</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ee88789f1bffe0908b08419ead4bcb23"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ee88789f1bffe0908b08419ead4bcb23</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:44:33</sys_created_on>
+        <sys_id>4ec8b0df1bffe0908b08419ead4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:44:33</sys_updated_on>
+        <value/>
+        <variable display_value="Select MID Server">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ee88789f1bffe0908b08419ead4bcb23</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:44:33</sys_created_on>
+        <sys_id>8ac8b0df1bffe0908b08419ead4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:44:33</sys_updated_on>
+        <value/>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ee88789f1bffe0908b08419ead4bcb23</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:44:08</sys_created_on>
+        <sys_id>8cb83c9f1bffe0908b08419ead4bcbe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:44:08</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+	outputs.statusData = JSON.parse(inputs.rawBody);
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ee88789f1bffe0908b08419ead4bcb23</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:44:33</sys_created_on>
+        <sys_id>c6c8b0df1bffe0908b08419ead4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:44:33</sys_updated_on>
+        <value/>
+        <variable display_value="MID Selection">cbd1070373531010791f94596bf6a776</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ee88789f1bffe0908b08419ead4bcb23"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>ee88789f1bffe0908b08419ead4bcb23</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:44:33</sys_created_on>
+        <sys_id>82c8b0df1bffe0908b08419ead4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:44:33</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection</field>
+        <id>ee88789f1bffe0908b08419ead4bcb23</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:44:33</sys_created_on>
+        <sys_id>cec8b0df1bffe0908b08419ead4bcba2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:44:33</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection_type</field>
+        <id>ee88789f1bffe0908b08419ead4bcb23</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:44:33</sys_created_on>
+        <sys_id>46c8b0df1bffe0908b08419ead4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:44:33</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>rawBody</field>
+        <id>ee88789f1bffe0908b08419ead4bcb23</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:44:09</sys_created_on>
+        <sys_id>8cb83c9f1bffe0908b08419ead4bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:44:09</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_ee88789f1bffe0908b08419ead4bcb23</table>
+        <value>{{step[6645dec3-a687-42e4-9ed7-686878f33b9a].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>ee88789f1bffe0908b08419ead4bcb23</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:44:08</sys_created_on>
+        <sys_id>08b83c9f1bffe0908b08419ead4bcbe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:44:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=ee88789f1bffe0908b08419ead4bcb23^sys_idNOT IN2288789f1bffe0908b08419ead4bcb2b"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>rawBody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">ee88789f1bffe0908b08419ead4bcb23</model>
+        <model_id>ee88789f1bffe0908b08419ead4bcb23</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_ee88789f1bffe0908b08419ead4bcb23</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:43:30</sys_created_on>
+        <sys_id>2288789f1bffe0908b08419ead4bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:43:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=ee88789f1bffe0908b08419ead4bcb23^sys_idNOT IN0cb83c9f1bffe0908b08419ead4bcbd9"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Task Type,child_name=Task_Type,child_type=object,child_type_label=Object,child_uiUniqueId=dc9db36f-cbce-462b-97d9-6139f9d54fcd,co_type_name=FDccb83c9f73ffe0901c3d57ccdc5607ca,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b5c98671-e682-45b3-84c1-e4ef6a55eddd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>statusData</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Task Status Data</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Script step">ee88789f1bffe0908b08419ead4bcb23</model>
+        <model_id>ee88789f1bffe0908b08419ead4bcb23</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ee88789f1bffe0908b08419ead4bcb23</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:44:08</sys_created_on>
+        <sys_id>0cb83c9f1bffe0908b08419ead4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:44:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=e8837c571bffe0908b08419ead4bcba3^sys_idNOT IN55b6f8db1bffe0908b08419ead4bcb98,59b6f8db1bffe0908b08419ead4bcbb2"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=a65f90c2-68f1-4aa7-accc-acd333bc474d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_alias</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>{"display":"sn_jira_spoke.Jira","value":"629ad2bfdb1893005963ff041d961971"}</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>connection_alias</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Connection Alias</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Get Status Data for Project">e8837c571bffe0908b08419ead4bcba3</model>
+        <model_id>e8837c571bffe0908b08419ead4bcba3</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_e8837c571bffe0908b08419ead4bcba3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_alias">sys_alias</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:29</sys_created_on>
+        <sys_id>55b6f8db1bffe0908b08419ead4bcb98</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=29da1ca4-30c8-4a98-bc71-d6dfbec8c56c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>u_jira_project</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>jira_project</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Jira Project</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Get Status Data for Project">e8837c571bffe0908b08419ead4bcba3</model>
+        <model_id>e8837c571bffe0908b08419ead4bcba3</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_e8837c571bffe0908b08419ead4bcba3</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="u_jira_project">u_jira_project</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:29</sys_created_on>
+        <sys_id>59b6f8db1bffe0908b08419ead4bcbb2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=e8837c571bffe0908b08419ead4bcba3^sys_idNOT INa1b63cdb1bffe0908b08419ead4bcb63"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Task Type,child_name=task_type,child_type=object,child_type_label=Object,child_uiUniqueId=db1334df-cbfe-4083-b565-763f22b97f96,co_type_name=FD69b63cdbf0ffe090e98291110e8b9d60,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=45599a4e-8c69-4557-99d3-80dc844d001c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_data</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Task Status Data</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Status Data for Project">e8837c571bffe0908b08419ead4bcba3</model>
+        <model_id>e8837c571bffe0908b08419ead4bcba3</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_e8837c571bffe0908b08419ead4bcba3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:30</sys_created_on>
+        <sys_id>a1b63cdb1bffe0908b08419ead4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_e8837c571bffe0908b08419ead4bcba3^sys_idNOT IN91b6f8db1bffe0908b08419ead4bcbb1,95b6f8db1bffe0908b08419ead4bcbbd"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>connection_alias</element>
+        <help/>
+        <hint/>
+        <label>Connection Alias</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e8837c571bffe0908b08419ead4bcba3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:29</sys_created_on>
+        <sys_id>91b6f8db1bffe0908b08419ead4bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>jira_project</element>
+        <help/>
+        <hint/>
+        <label>Jira Project</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e8837c571bffe0908b08419ead4bcba3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:29</sys_created_on>
+        <sys_id>95b6f8db1bffe0908b08419ead4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_e8837c571bffe0908b08419ead4bcba3^sys_idNOT IN6db63cdb1bffe0908b08419ead4bcb76"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status_data</element>
+        <help/>
+        <hint/>
+        <label>Task Status Data</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e8837c571bffe0908b08419ead4bcba3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:35:31</sys_created_on>
+        <sys_id>6db63cdb1bffe0908b08419ead4bcb76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:35:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=e8837c571bffe0908b08419ead4bcba3^sys_idNOT IN1b3a38171b3324908b08419ead4bcb25"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Get Status Data for Project">e8837c571bffe0908b08419ead4bcba3</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"1b3a38171b3324908b08419ead4bcb25","name":"plan"}}</plan>
+        <snapshot>5fe0b1a71b33e4908b08419ead4bcb91</snapshot>
+        <sys_class_name>sys_hub_action_plan</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>1b3a38171b3324908b08419ead4bcb25</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 18:28:22</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>get_status_data_for_project</internal_name>
+        <label_cache>[{"name":"{{action.connection_alias}}","label":"action➛Connection Alias","type":"action","ref":""},{"name":"{{action.jira_project}}","label":"action➛Jira Project","type":"action","ref":""},{"name":"{{action.jira_project.u_jira_id}}","label":"action➛Jira Project➛Jira ID","type":"action","ref":""},{"name":"{{action.projectidorkey}}","label":"action➛projectIdOrKey","type":"action","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].Issue_Types}}","label":"step➛JSON Parser step➛Issue Types","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array}}","label":"step➛JSON Parser step➛root➛root_array","type":"step","ref":""},{"name":"{{step[6645dec3-a687-42e4-9ed7-686878f33b9a].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object._.statuses_object.iconUrl}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛statuses_object➛iconUrl","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object.self}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛Self URL","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object.id}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛ID","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object.name}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛Name","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object.subtask}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛Is Subtask?","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object._.statuses_object.self}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛statuses_object➛Self URL","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object._.statuses_object.description}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛statuses_object➛Description","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object._.statuses_object.name}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛statuses_object➛Name","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object._.statuses_object.id}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛statuses_object➛ID","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object._}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object","type":"step","ref":""},{"name":"{{step[83581665-df8b-4748-9f20-f3b61385cb2e].root.root_array.root_array_object.statuses.statuses_object.iconUrl}}","label":"step➛JSON Parser step➛root➛root_array➛root_array_object➛statuses➛statuses_object➛iconUrl","type":"step","ref":""},{"name":"{{step[b9c7462c-ab27-40dc-ae74-1e38839d9ac5].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[b9c7462c-ab27-40dc-ae74-1e38839d9ac5]._}}","label":"step➛Script step➛","type":"step","ref":""},{"name":"{{step[b9c7462c-ab27-40dc-ae74-1e38839d9ac5].status_data}}","label":"step➛Script step➛Status Data","type":"step","ref":""},{"name":"{{step[b9c7462c-ab27-40dc-ae74-1e38839d9ac5].Task_Status_Data}}","label":"step➛Script step➛Task Status Data","type":"step","ref":""},{"name":"{{step[b9c7462c-ab27-40dc-ae74-1e38839d9ac5].statusData._}}","label":"step➛Script step➛Task Status Data","type":"step","ref":""},{"name":"{{step[b9c7462c-ab27-40dc-ae74-1e38839d9ac5].statusData.Task_Type}}","label":"step➛Script step➛Task Status Data➛Task Type➛Task Type","type":"step","ref":""},{"name":"{{step[b9c7462c-ab27-40dc-ae74-1e38839d9ac5].statusData}}","label":"step➛Script step➛Task Status Data","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Get Status Data for Project</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Get Status Data for Project">e8837c571bffe0908b08419ead4bcba3</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>9e3ab4171b3324908b08419ead4bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:51</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=9e3ab4171b3324908b08419ead4bcb64"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>9e3ab4171b3324908b08419ead4bcb64</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 20:30:04</sys_created_on>
+        <sys_id>f83309db1b7324908b08419ead4bcb79</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 18:28:20</sys_updated_on>
+        <value/>
+        <variable display_value="Task Status Data">ba3af4171b3324908b08419ead4bcb1c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9e3ab4171b3324908b08419ead4bcb64"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_data</field>
+        <id>9e3ab4171b3324908b08419ead4bcb64</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:53</sys_created_on>
+        <sys_id>323af4171b3324908b08419ead4bcb33</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 18:28:20</sys_updated_on>
+        <table>var__m_sys_hub_action_output_9e3ab4171b3324908b08419ead4bcb64</table>
+        <value>{{step[b9c7462c-ab27-40dc-ae74-1e38839d9ac5].statusData}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=9e3ab4171b3324908b08419ead4bcb64^sys_idNOT IN263ab4171b3324908b08419ead4bcb97,6e3ab4171b3324908b08419ead4bcbbf"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Status Data for Project">9e3ab4171b3324908b08419ead4bcb64</action>
+        <cid>6645dec3-a687-42e4-9ed7-686878f33b9a</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>263ab4171b3324908b08419ead4bcb97</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=263ab4171b3324908b08419ead4bcb97"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>263ab4171b3324908b08419ead4bcb97</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>263ab4171b3324908b08419ead4bcbad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <value>517cb4691ba32c508b08419ead4bcb65</value>
+        <variable display_value="API Source">c346f4d7c7312300a150effeeb976366</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>263ab4171b3324908b08419ead4bcb97</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>263ab4171b3324908b08419ead4bcbbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>263ab4171b3324908b08419ead4bcb97</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>2a3ab4171b3324908b08419ead4bcbba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enable Retry Policy">321e31fd87803300a8cc7d5e27cb0b7a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>263ab4171b3324908b08419ead4bcb97</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>623ab4171b3324908b08419ead4bcbbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>263ab4171b3324908b08419ead4bcb97</document_key>
+        <order>16</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>663ab4171b3324908b08419ead4bcbba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <value>fc9cf4a91ba32c508b08419ead4bcbee</value>
+        <variable display_value="API Operation">29c75782c7822300a150effeeb976338</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>263ab4171b3324908b08419ead4bcb97</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>a23ab4171b3324908b08419ead4bcbba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <value>from_openapi</value>
+        <variable display_value="Build Request">bb61fcd3c7312300a150effeeb97638e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>263ab4171b3324908b08419ead4bcb97</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>ae3ab4171b3324908b08419ead4bcbba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>263ab4171b3324908b08419ead4bcb97</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>e63ab4171b3324908b08419ead4bcbbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <value>{"projectidorkey":{"name":"projectIdOrKey","allowEmptyValue":false,"allowReserved":false,"explode":false,"required":true,"style":"simple","schema":{"glideType":"string","deprecated":false,"name":"projectIdOrKey1390359939","type":"string"}}}</value>
+        <variable display_value="REST Metadata">3c4d7367c7d32300a150effeeb9763a4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>263ab4171b3324908b08419ead4bcb97</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>ea3ab4171b3324908b08419ead4bcbba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Accept","value":"application/json"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=263ab4171b3324908b08419ead4bcb97"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>api_operation</field>
+        <id>263ab4171b3324908b08419ead4bcb97</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>aa3ab4171b3324908b08419ead4bcbab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>api_source</field>
+        <id>263ab4171b3324908b08419ead4bcb97</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>223ab4171b3324908b08419ead4bcbab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>263ab4171b3324908b08419ead4bcb97</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>2e3ab4171b3324908b08419ead4bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>build_request</field>
+        <id>263ab4171b3324908b08419ead4bcb97</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>e63ab4171b3324908b08419ead4bcbab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>263ab4171b3324908b08419ead4bcb97</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>6a3ab4171b3324908b08419ead4bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>263ab4171b3324908b08419ead4bcb97</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>223ab4171b3324908b08419ead4bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{action.connection_alias}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>enable_retry_policy</field>
+        <id>263ab4171b3324908b08419ead4bcb97</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>6e3ab4171b3324908b08419ead4bcbab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>263ab4171b3324908b08419ead4bcb97</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>a63ab4171b3324908b08419ead4bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>263ab4171b3324908b08419ead4bcb97</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>ee3ab4171b3324908b08419ead4bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>263ab4171b3324908b08419ead4bcb97</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>e23ab4171b3324908b08419ead4bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>/rest/api/2/project/{{action.jira_project.u_jira_id}}/statuses</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>rest_metadata</field>
+        <id>263ab4171b3324908b08419ead4bcb97</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>a23ab4171b3324908b08419ead4bcbad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=263ab4171b3324908b08419ead4bcb97^sys_idNOT INa23ab4171b3324908b08419ead4bcb9e"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=9029dae4-eafc-4b56-bca4-bfae96def5f7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">263ab4171b3324908b08419ead4bcb97</model>
+        <model_id>263ab4171b3324908b08419ead4bcb97</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_263ab4171b3324908b08419ead4bcb97</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>a23ab4171b3324908b08419ead4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Status Data for Project">9e3ab4171b3324908b08419ead4bcb64</action>
+        <cid>b9c7462c-ab27-40dc-ae74-1e38839d9ac5</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>6e3ab4171b3324908b08419ead4bcbbf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:53</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6e3ab4171b3324908b08419ead4bcbbf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6e3ab4171b3324908b08419ead4bcbbf</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:53</sys_created_on>
+        <sys_id>363af4171b3324908b08419ead4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:53</sys_updated_on>
+        <value/>
+        <variable display_value="MID Selection">cbd1070373531010791f94596bf6a776</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6e3ab4171b3324908b08419ead4bcbbf</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:53</sys_created_on>
+        <sys_id>7e3af4171b3324908b08419ead4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:53</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+	outputs.statusData = JSON.parse(inputs.rawBody);
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6e3ab4171b3324908b08419ead4bcbbf</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:53</sys_created_on>
+        <sys_id>ba3af4171b3324908b08419ead4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:53</sys_updated_on>
+        <value/>
+        <variable display_value="Select MID Server">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6e3ab4171b3324908b08419ead4bcbbf</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:53</sys_created_on>
+        <sys_id>f63af4171b3324908b08419ead4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:53</sys_updated_on>
+        <value/>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6e3ab4171b3324908b08419ead4bcbbf"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>6e3ab4171b3324908b08419ead4bcbbf</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:53</sys_created_on>
+        <sys_id>3e3af4171b3324908b08419ead4bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection</field>
+        <id>6e3ab4171b3324908b08419ead4bcbbf</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:53</sys_created_on>
+        <sys_id>7a3af4171b3324908b08419ead4bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection_type</field>
+        <id>6e3ab4171b3324908b08419ead4bcbbf</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:53</sys_created_on>
+        <sys_id>fe3af4171b3324908b08419ead4bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>rawBody</field>
+        <id>6e3ab4171b3324908b08419ead4bcbbf</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:53</sys_created_on>
+        <sys_id>7a3af4171b3324908b08419ead4bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:53</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_6e3ab4171b3324908b08419ead4bcbbf</table>
+        <value>{{step[6645dec3-a687-42e4-9ed7-686878f33b9a].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>6e3ab4171b3324908b08419ead4bcbbf</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:53</sys_created_on>
+        <sys_id>b23af4171b3324908b08419ead4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=6e3ab4171b3324908b08419ead4bcbbf^sys_idNOT IN623ab4171b3324908b08419ead4bcbc3"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>rawBody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>rawBody</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">6e3ab4171b3324908b08419ead4bcbbf</model>
+        <model_id>6e3ab4171b3324908b08419ead4bcbbf</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_6e3ab4171b3324908b08419ead4bcbbf</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>623ab4171b3324908b08419ead4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=6e3ab4171b3324908b08419ead4bcbbf^sys_idNOT INfe3ab4171b3324908b08419ead4bcbfe"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Task Type,child_name=Task_Type,child_type=object,child_type_label=Object,child_uiUniqueId=dc9db36f-cbce-462b-97d9-6139f9d54fcd,co_type_name=FD763ab417ac332490b68959a1b53dc4fc,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b5c98671-e682-45b3-84c1-e4ef6a55eddd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>statusData</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Task Status Data</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Script step">6e3ab4171b3324908b08419ead4bcbbf</model>
+        <model_id>6e3ab4171b3324908b08419ead4bcbbf</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_6e3ab4171b3324908b08419ead4bcbbf</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>fe3ab4171b3324908b08419ead4bcbfe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=9e3ab4171b3324908b08419ead4bcb64^sys_idNOT IN6a3ab4171b3324908b08419ead4bcb75,d23ab4171b3324908b08419ead4bcb68"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=29da1ca4-30c8-4a98-bc71-d6dfbec8c56c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>u_jira_project</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>jira_project</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Jira Project</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Get Status Data for Project">9e3ab4171b3324908b08419ead4bcb64</model>
+        <model_id>9e3ab4171b3324908b08419ead4bcb64</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_9e3ab4171b3324908b08419ead4bcb64</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="u_jira_project">u_jira_project</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:51</sys_created_on>
+        <sys_id>6a3ab4171b3324908b08419ead4bcb75</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=a65f90c2-68f1-4aa7-accc-acd333bc474d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_alias</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>{"display":"sn_jira_spoke.Jira","value":"629ad2bfdb1893005963ff041d961971"}</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>connection_alias</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Connection Alias</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Get Status Data for Project">9e3ab4171b3324908b08419ead4bcb64</model>
+        <model_id>9e3ab4171b3324908b08419ead4bcb64</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_9e3ab4171b3324908b08419ead4bcb64</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_alias">sys_alias</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:51</sys_created_on>
+        <sys_id>d23ab4171b3324908b08419ead4bcb68</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=9e3ab4171b3324908b08419ead4bcb64^sys_idNOT INba3af4171b3324908b08419ead4bcb1c"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Task Type,child_name=task_type,child_type=object,child_type_label=Object,child_uiUniqueId=db1334df-cbfe-4083-b565-763f22b97f96,co_type_name=FD363af4170a332490e7b2b72557bba21a,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=45599a4e-8c69-4557-99d3-80dc844d001c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_data</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Task Status Data</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Status Data for Project">9e3ab4171b3324908b08419ead4bcb64</model>
+        <model_id>9e3ab4171b3324908b08419ead4bcb64</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_9e3ab4171b3324908b08419ead4bcb64</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:53</sys_created_on>
+        <sys_id>ba3af4171b3324908b08419ead4bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_9e3ab4171b3324908b08419ead4bcb64^sys_idNOT INaa3ab4171b3324908b08419ead4bcb8c,e23ab4171b3324908b08419ead4bcb74"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>jira_project</element>
+        <help/>
+        <hint/>
+        <label>Jira Project</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_9e3ab4171b3324908b08419ead4bcb64</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:52</sys_created_on>
+        <sys_id>aa3ab4171b3324908b08419ead4bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>connection_alias</element>
+        <help/>
+        <hint/>
+        <label>Connection Alias</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_9e3ab4171b3324908b08419ead4bcb64</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:51</sys_created_on>
+        <sys_id>e23ab4171b3324908b08419ead4bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_9e3ab4171b3324908b08419ead4bcb64^sys_idNOT IN723af4171b3324908b08419ead4bcb30"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status_data</element>
+        <help/>
+        <hint/>
+        <label>Task Status Data</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_9e3ab4171b3324908b08419ead4bcb64</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:50:53</sys_created_on>
+        <sys_id>723af4171b3324908b08419ead4bcb30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:50:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>e8837c571bffe0908b08419ead4bcba3</sys_id>
+        <latest_snapshot>9e3ab4171b3324908b08419ead4bcb64</latest_snapshot>
+    </sys_hub_action_type_definition>
+</record_update>

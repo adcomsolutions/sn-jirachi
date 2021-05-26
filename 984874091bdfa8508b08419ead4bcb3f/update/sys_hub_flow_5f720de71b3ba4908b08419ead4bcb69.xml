@@ -1,0 +1,1724 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>set_project_issue_types</internal_name>
+        <label_cache>[{"name":"subflow.jira_project","label":"Input➛Jira Project","reference":"u_jira_project","reference_display":"Jira Project","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"48fa7a90-ea59-4545-ace8-ad97f471fa6d","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"380b89da-f781-432c-882d-0306c62ee72b.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"380b89da-f781-432c-882d-0306c62ee72b.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"380b89da-f781-432c-882d-0306c62ee72b.table_name","label":"3➛M2m Jira Project Issue Type Table","reference":"u_m2m_jira_project_issue_type","reference_display":"M2m Jira Project Issue Type","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"380b89da-f781-432c-882d-0306c62ee72b.record","label":"3➛M2m Jira Project Issue Type Record","reference":"u_m2m_jira_project_issue_type","reference_display":"M2m Jira Project Issue Type","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"afc80fb6-786d-4363-bf9e-674442340a74.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"afc80fb6-786d-4363-bf9e-674442340a74.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"afc80fb6-786d-4363-bf9e-674442340a74.table_name","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name"}},{"name":"afc80fb6-786d-4363-bf9e-674442340a74.record","label":"3➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id"}},{"name":"511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.subtask","label":"1➛Jira Project Issue Type Data➛Is Subtrask?","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","attributes":{"uiUniqueId":"b8e7f163-9cb6-4543-9a26-e51e42f051da","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.description","label":"1➛Jira Project Issue Type Data➛Description","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiUniqueId":"dae31d4d-138e-4a51-8381-a1ad49d83ff4","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.name","label":"1➛Jira Project Issue Type Data➛Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiUniqueId":"b32ea210-837d-43d7-a02b-db163e10731c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.id","label":"1➛Jira Project Issue Type Data➛ID","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiUniqueId":"bad36616-4c61-4f52-9bb2-7d086a66a174","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"5f822d02-44e7-4880-a54a-568d5e0bb1d6.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f822d02-44e7-4880-a54a-568d5e0bb1d6.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f822d02-44e7-4880-a54a-568d5e0bb1d6.table_name","label":"2➛Jira Issue Type Table","reference":"u_jira_issue_type","reference_display":"Jira Issue Type","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f822d02-44e7-4880-a54a-568d5e0bb1d6.record","label":"2➛Jira Issue Type Record","reference":"u_jira_issue_type","reference_display":"Jira Issue Type","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.jira_project_issue_types_data","label":"Input➛Jira Project Issue Types Data","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD58d381abd93ba490040715f4a3384560","child_label":"Jira Project Issue Type Data","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"Jira_Project_Issue_Type_Data","child_uiUniqueId":"7abffccb-f366-4b2f-914a-542686b43ea4","uiUniqueId":"c89c8583-416f-42eb-8531-2e913e0106f9","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"511bb465-bcf1-4932-bdfe-b0b0f162fa55.item","label":"1➛Jira Project Issue Type Data","reference_display":"Jira Project Issue Type Data","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"e0426375-0d1f-42f6-b6fb-c0f9aa6d4a14.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id"}},{"name":"e0426375-0d1f-42f6-b6fb-c0f9aa6d4a14.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name"}},{"name":"e0426375-0d1f-42f6-b6fb-c0f9aa6d4a14.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"e0426375-0d1f-42f6-b6fb-c0f9aa6d4a14.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"75fd058b-5560-46b0-86e5-56f1ffbc7073.Records","label":"5➛Jira Issue Type Records","reference":"u_jira_issue_type","reference_display":"Jira Issue Type","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"75fd058b-5560-46b0-86e5-56f1ffbc7073.Table","label":"5➛Jira Issue Type Table","reference":"u_jira_issue_type","reference_display":"Jira Issue Type","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"75fd058b-5560-46b0-86e5-56f1ffbc7073.Count","label":"5➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"21b09662-3ac5-420d-a330-1134147d07e2.item","label":"5➛Jira Issue Type Record","reference":"u_jira_issue_type","reference_display":"Jira Issue Type","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"eded84ed-9ec8-4a08-8517-020f27e885b8.Records","label":"5➛M2m Jira Project Issue Type Records","reference":"u_m2m_jira_project_issue_type","reference_display":"M2m Jira Project Issue Type","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eded84ed-9ec8-4a08-8517-020f27e885b8.Table","label":"5➛M2m Jira Project Issue Type Table","reference":"u_m2m_jira_project_issue_type","reference_display":"M2m Jira Project Issue Type","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eded84ed-9ec8-4a08-8517-020f27e885b8.Count","label":"5➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0d915845-c33b-4edd-b37c-5463c205e6c4.item","label":"6➛M2m Jira Project Issue Type Record","reference":"u_m2m_jira_project_issue_type","reference_display":"M2m Jira Project Issue Type","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
+        <master_snapshot>a30cc1e71bbba4908b08419ead4bcb79</master_snapshot>
+        <name>Set Project Issue Types</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:05:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5f720de71b3ba4908b08419ead4bcb69</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Set Project Issue Types</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_hub_flow_5f720de71b3ba4908b08419ead4bcb69</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:18</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=5f720de71b3ba4908b08419ead4bcb69"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=5f720de71b3ba4908b08419ead4bcb69^sys_idNOT INd3720de71b3ba4908b08419ead4bcb6b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>5f720de71b3ba4908b08419ead4bcb69</id>
+        <name>Set Project Issue Types</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:05:27</sys_created_on>
+        <sys_id>d3720de71b3ba4908b08419ead4bcb6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:05:27</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=5f720de71b3ba4908b08419ead4bcb69^sys_idNOT IN54d381ab1b3ba4908b08419ead4bcb63,8914c56f1b3ba4908b08419ead4bcb5c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Jira Project Issue Type Data,child_name=Jira_Project_Issue_Type_Data,child_type=object,child_type_label=Object,child_uiUniqueId=7abffccb-f366-4b2f-914a-542686b43ea4,co_type_name=FD58d381abd93ba490040715f4a3384560,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=c89c8583-416f-42eb-8531-2e913e0106f9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>jira_project_issue_types_data</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Jira Project Issue Types Data</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Set Project Issue Types">5f720de71b3ba4908b08419ead4bcb69</model>
+        <model_id>5f720de71b3ba4908b08419ead4bcb69</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5f720de71b3ba4908b08419ead4bcb69</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:11:14</sys_created_on>
+        <sys_id>54d381ab1b3ba4908b08419ead4bcb63</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:12:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=48fa7a90-ea59-4545-ace8-ad97f471fa6d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>u_jira_project</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>jira_project</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Jira Project</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Set Project Issue Types">5f720de71b3ba4908b08419ead4bcb69</model>
+        <model_id>5f720de71b3ba4908b08419ead4bcb69</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5f720de71b3ba4908b08419ead4bcb69</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="u_jira_project">u_jira_project</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:12:23</sys_created_on>
+        <sys_id>8914c56f1b3ba4908b08419ead4bcb5c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:12:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=5f720de71b3ba4908b08419ead4bcb69^sys_idNOT IN4eb98daf1b7ba4908b08419ead4bcbd6,5b1685271b7ba4908b08419ead4bcbc3,a31685271b7ba4908b08419ead4bcbcb,f5b98daf1b7ba4908b08419ead4bcbcd"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Delete Record">a8f274c8c3c232002841b63b12d3aee9</action_type>
+        <action_type_parent/>
+        <comment>When an issue type's last M2M link is deleted, a BR will automatically delete it</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Set Project Issue Types">5f720de71b3ba4908b08419ead4bcb69</flow>
+        <order>7</order>
+        <parent_ui_id>0d915845-c33b-4edd-b37c-5463c205e6c4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:37:02</sys_created_on>
+        <sys_id>4eb98daf1b7ba4908b08419ead4bcbd6</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:18</sys_updated_on>
+        <ui_id>6ee66778-6356-4b21-afd0-dfcba9a78d58</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4eb98daf1b7ba4908b08419ead4bcbd6"/>
+    <sys_element_mapping action="delete_multiple" query="id=4eb98daf1b7ba4908b08419ead4bcbd6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4eb98daf1b7ba4908b08419ead4bcbd6</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:13</sys_created_on>
+        <sys_id>df0c81e71bbba4908b08419ead4bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a8f274c8c3c232002841b63b12d3aee9</table>
+        <value>{{0d915845-c33b-4edd-b37c-5463c205e6c4.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4eb98daf1b7ba4908b08419ead4bcbd6</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:37:02</sys_created_on>
+        <sys_id>c2b98daf1b7ba4908b08419ead4bcbd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:37:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c3e09916c31332002841b63b12d3aedf</table>
+        <value>{{0d915845-c33b-4edd-b37c-5463c205e6c4.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Set Project Issue Types">5f720de71b3ba4908b08419ead4bcb69</flow>
+        <order>2</order>
+        <parent_ui_id>511bb465-bcf1-4932-bdfe-b0b0f162fa55</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:21:17</sys_created_on>
+        <sys_id>5b1685271b7ba4908b08419ead4bcbc3</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:18</sys_updated_on>
+        <ui_id>5f822d02-44e7-4880-a54a-568d5e0bb1d6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5b1685271b7ba4908b08419ead4bcbc3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5b1685271b7ba4908b08419ead4bcbc3</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:21:17</sys_created_on>
+        <sys_id>271685271b7ba4908b08419ead4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:21:17</sys_updated_on>
+        <value>u_jira_issue_type</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5b1685271b7ba4908b08419ead4bcbc3</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:13</sys_created_on>
+        <sys_id>df0c81e71bbba4908b08419ead4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:13</sys_updated_on>
+        <value>u_jira_issue_type</value>
+        <variable display_value="Table Name">ec571ae253b3230034c6ddeeff7b127d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5b1685271b7ba4908b08419ead4bcbc3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>5b1685271b7ba4908b08419ead4bcbc3</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:21:17</sys_created_on>
+        <sys_id>eb1685271b7ba4908b08419ead4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:21:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>u_jira_id={{511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.id}}^u_jira_name={{511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.name}}^u_jira_description={{511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.description}}^u_jira_subtask={{511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.subtask}}^coalesce_fields=u_jira_id</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>5b1685271b7ba4908b08419ead4bcbc3</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:13</sys_created_on>
+        <sys_id>970c81e71bbba4908b08419ead4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e057d2e253b3230034c6ddeeff7b1261</table>
+        <value>u_jira_id={{511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.id}}^u_jira_name={{511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.name}}^u_jira_description={{511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.description}}^u_jira_subtask={{511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.subtask}}^coalesce_fields=u_jira_id</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>5b1685271b7ba4908b08419ead4bcbc3</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:21:17</sys_created_on>
+        <sys_id>a31685271b7ba4908b08419ead4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:21:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>5b1685271b7ba4908b08419ead4bcbc3</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:13</sys_created_on>
+        <sys_id>5f0c81e71bbba4908b08419ead4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e057d2e253b3230034c6ddeeff7b1261</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Set Project Issue Types">5f720de71b3ba4908b08419ead4bcb69</flow>
+        <order>3</order>
+        <parent_ui_id>511bb465-bcf1-4932-bdfe-b0b0f162fa55</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:21:17</sys_created_on>
+        <sys_id>a31685271b7ba4908b08419ead4bcbcb</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:18</sys_updated_on>
+        <ui_id>380b89da-f781-432c-882d-0306c62ee72b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a31685271b7ba4908b08419ead4bcbcb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a31685271b7ba4908b08419ead4bcbcb</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:13</sys_created_on>
+        <sys_id>5f0c81e71bbba4908b08419ead4bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:13</sys_updated_on>
+        <value>u_m2m_jira_project_issue_type</value>
+        <variable display_value="Table Name">ec571ae253b3230034c6ddeeff7b127d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a31685271b7ba4908b08419ead4bcbcb</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:21:17</sys_created_on>
+        <sys_id>a71685271b7ba4908b08419ead4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:21:17</sys_updated_on>
+        <value>u_m2m_jira_project_issue_type</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a31685271b7ba4908b08419ead4bcbcb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>a31685271b7ba4908b08419ead4bcbcb</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:21:17</sys_created_on>
+        <sys_id>631685271b7ba4908b08419ead4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:21:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>u_jira_project={{subflow.jira_project}}^u_jira_issue_type={{5f822d02-44e7-4880-a54a-568d5e0bb1d6.record}}^coalesce_fields=u_jira_project,u_jira_issue_type</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>a31685271b7ba4908b08419ead4bcbcb</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:13</sys_created_on>
+        <sys_id>1b0c81e71bbba4908b08419ead4bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e057d2e253b3230034c6ddeeff7b1261</table>
+        <value>u_jira_project={{subflow.jira_project}}^u_jira_issue_type={{5f822d02-44e7-4880-a54a-568d5e0bb1d6.record}}^coalesce_fields=u_jira_project,u_jira_issue_type</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>a31685271b7ba4908b08419ead4bcbcb</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:21:17</sys_created_on>
+        <sys_id>271685271b7ba4908b08419ead4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:21:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>a31685271b7ba4908b08419ead4bcbcb</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:13</sys_created_on>
+        <sys_id>db0c81e71bbba4908b08419ead4bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e057d2e253b3230034c6ddeeff7b1261</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type>
+        <action_type_parent/>
+        <comment>Find any unused M2M project/issue type M2M links</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Set Project Issue Types">5f720de71b3ba4908b08419ead4bcb69</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:37:01</sys_created_on>
+        <sys_id>f5b98daf1b7ba4908b08419ead4bcbcd</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:18</sys_updated_on>
+        <ui_id>eded84ed-9ec8-4a08-8517-020f27e885b8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f5b98daf1b7ba4908b08419ead4bcbcd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f5b98daf1b7ba4908b08419ead4bcbcd</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:37:01</sys_created_on>
+        <sys_id>02b98daf1b7ba4908b08419ead4bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:37:01</sys_updated_on>
+        <value>u_m2m_jira_project_issue_type</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f5b98daf1b7ba4908b08419ead4bcbcd</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:13</sys_created_on>
+        <sys_id>930c81e71bbba4908b08419ead4bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:13</sys_updated_on>
+        <value>u_m2m_jira_project_issue_type</value>
+        <variable display_value="Table">3807ee090b30030085c083eb37673a08</variable>
+    </sys_variable_value>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f5b98daf1b7ba4908b08419ead4bcbcd^sys_idNOT IN7db98daf1b7ba4908b08419ead4bcbce"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>conditions</input_name>
+        <instance>f5b98daf1b7ba4908b08419ead4bcbcd</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"conditions":{"scriptActive":true,"script":"var projectQuery \u003d \u0027u_jira_project\u003d\u0027 + fd_data.subflow_inputs.jira_project.sys_id;\nvar oldM2mQuery \u003d \u0027sys_idNOT IN\u0027 + fd_data.flow_var.m2ms_to_keep;\n\nreturn [projectQuery, oldM2mQuery].join(\u0027^\u0027);"}}</script>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:37:01</sys_created_on>
+        <sys_id>7db98daf1b7ba4908b08419ead4bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:37:01</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=5f720de71b3ba4908b08419ead4bcb69^sys_idNOT IN3db98daf1b7ba4908b08419ead4bcbc4,42b98daf1b7ba4908b08419ead4bcbd1,bf4405af1b3ba4908b08419ead4bcb02"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">71b98daf1b7ba4908b08419ead4bcbc4</block>
+        <comment>Remember to not delete these M2M links later on</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Set Project Issue Types">5f720de71b3ba4908b08419ead4bcb69</flow>
+        <flow_variable/>
+        <flow_variables_assigned>m2ms_to_keep</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>511bb465-bcf1-4932-bdfe-b0b0f162fa55</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:37:01</sys_created_on>
+        <sys_id>3db98daf1b7ba4908b08419ead4bcbc4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:18</sys_updated_on>
+        <ui_id>ed7cc422-1178-4c5b-b5aa-2e7ac41f3a92</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3db98daf1b7ba4908b08419ead4bcbc4"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3db98daf1b7ba4908b08419ead4bcbc4^sys_idNOT IN7db98daf1b7ba4908b08419ead4bcbc5"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>m2ms_to_keep</input_name>
+        <instance>3db98daf1b7ba4908b08419ead4bcbc4</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"m2ms_to_keep":{"scriptActive":true,"script":"var m2mId \u003d fd_data._3__create_or_update_record.record.sys_id;\nvar myVar \u003d fd_data.flow_var.m2ms_to_keep;\n\nreturn myVar ? myVar + \u0027,\u0027 + m2mId : m2mId;"}}</script>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:37:01</sys_created_on>
+        <sys_id>7db98daf1b7ba4908b08419ead4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:37:01</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8ab98daf1b7ba4908b08419ead4bcbd0</block>
+        <comment>Delete the unused M2M links</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Set Project Issue Types">5f720de71b3ba4908b08419ead4bcb69</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:37:01</sys_created_on>
+        <sys_id>42b98daf1b7ba4908b08419ead4bcbd1</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:18</sys_updated_on>
+        <ui_id>0d915845-c33b-4edd-b37c-5463c205e6c4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=42b98daf1b7ba4908b08419ead4bcbd1"/>
+    <sys_element_mapping action="delete_multiple" query="id=42b98daf1b7ba4908b08419ead4bcbd1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>42b98daf1b7ba4908b08419ead4bcbd1</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:37:01</sys_created_on>
+        <sys_id>0eb98daf1b7ba4908b08419ead4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:37:01</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{eded84ed-9ec8-4a08-8517-020f27e885b8.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ff4405af1b3ba4908b08419ead4bcb01</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Set Project Issue Types">5f720de71b3ba4908b08419ead4bcb69</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:13:24</sys_created_on>
+        <sys_id>bf4405af1b3ba4908b08419ead4bcb02</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:18</sys_updated_on>
+        <ui_id>511bb465-bcf1-4932-bdfe-b0b0f162fa55</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=bf4405af1b3ba4908b08419ead4bcb02"/>
+    <sys_element_mapping action="delete_multiple" query="id=bf4405af1b3ba4908b08419ead4bcb02"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>bf4405af1b3ba4908b08419ead4bcb02</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:13:24</sys_created_on>
+        <sys_id>774405af1b3ba4908b08419ead4bcb06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:13:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{subflow.jira_project_issue_types_data}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_variable action="delete_multiple" query="model=5f720de71b3ba4908b08419ead4bcb69^sys_idNOT IN1f1685271b7ba4908b08419ead4bcb8c,971685271b7ba4908b08419ead4bcb85"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=942500df-9c01-4f52-bf60-6b0494f339f4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>m2ms_to_keep</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>M2Ms to keep</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Set Project Issue Types">5f720de71b3ba4908b08419ead4bcb69</model>
+        <model_id>5f720de71b3ba4908b08419ead4bcb69</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_5f720de71b3ba4908b08419ead4bcb69</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:21:17</sys_created_on>
+        <sys_id>1f1685271b7ba4908b08419ead4bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>M2Ms to keep</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_1f1685271b7ba4908b08419ead4bcb8c</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:21:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c0e939f8-8e61-438a-bbb4-c4f89d4e1475</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>issue_types_to_keep</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Issue types to keep</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Set Project Issue Types">5f720de71b3ba4908b08419ead4bcb69</model>
+        <model_id>5f720de71b3ba4908b08419ead4bcb69</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_5f720de71b3ba4908b08419ead4bcb69</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:21:17</sys_created_on>
+        <sys_id>971685271b7ba4908b08419ead4bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Issue types to keep</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_971685271b7ba4908b08419ead4bcb85</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:21:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_5f720de71b3ba4908b08419ead4bcb69^sys_idNOT IN0514c56f1b3ba4908b08419ead4bcb67,18d3092f1b3ba4908b08419ead4bcbb2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>jira_project</element>
+        <help/>
+        <hint/>
+        <label>Jira Project</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5f720de71b3ba4908b08419ead4bcb69</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:12:23</sys_created_on>
+        <sys_id>0514c56f1b3ba4908b08419ead4bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:12:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>jira_project_issue_types_data</element>
+        <help/>
+        <hint/>
+        <label>Jira Project Issue Types Data</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5f720de71b3ba4908b08419ead4bcb69</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:11:14</sys_created_on>
+        <sys_id>18d3092f1b3ba4908b08419ead4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:11:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=5f720de71b3ba4908b08419ead4bcb69^sys_idNOT IN541c05e71bbba4908b08419ead4bcbf9"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"541c05e71bbba4908b08419ead4bcbf9","name":"plan"}}</plan>
+        <plan_id display_value="Set Project Issue Types">5f720de71b3ba4908b08419ead4bcb69</plan_id>
+        <snapshot>a30cc1e71bbba4908b08419ead4bcb79</snapshot>
+        <sys_class_name>sys_flow_subflow_plan</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>541c05e71bbba4908b08419ead4bcbf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:17</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>set_project_issue_types</internal_name>
+        <label_cache>[{"name":"subflow.jira_project","label":"Input➛Jira Project","reference":"u_jira_project","reference_display":"Jira Project","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"48fa7a90-ea59-4545-ace8-ad97f471fa6d","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"380b89da-f781-432c-882d-0306c62ee72b.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"380b89da-f781-432c-882d-0306c62ee72b.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"380b89da-f781-432c-882d-0306c62ee72b.table_name","label":"3➛M2m Jira Project Issue Type Table","reference":"u_m2m_jira_project_issue_type","reference_display":"M2m Jira Project Issue Type","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"380b89da-f781-432c-882d-0306c62ee72b.record","label":"3➛M2m Jira Project Issue Type Record","reference":"u_m2m_jira_project_issue_type","reference_display":"M2m Jira Project Issue Type","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"afc80fb6-786d-4363-bf9e-674442340a74.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"afc80fb6-786d-4363-bf9e-674442340a74.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"afc80fb6-786d-4363-bf9e-674442340a74.table_name","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name"}},{"name":"afc80fb6-786d-4363-bf9e-674442340a74.record","label":"3➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id"}},{"name":"511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.subtask","label":"1➛Jira Project Issue Type Data➛Is Subtrask?","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","attributes":{"uiUniqueId":"b8e7f163-9cb6-4543-9a26-e51e42f051da","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.description","label":"1➛Jira Project Issue Type Data➛Description","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiUniqueId":"dae31d4d-138e-4a51-8381-a1ad49d83ff4","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.name","label":"1➛Jira Project Issue Type Data➛Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiUniqueId":"b32ea210-837d-43d7-a02b-db163e10731c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.id","label":"1➛Jira Project Issue Type Data➛ID","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiUniqueId":"bad36616-4c61-4f52-9bb2-7d086a66a174","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"5f822d02-44e7-4880-a54a-568d5e0bb1d6.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f822d02-44e7-4880-a54a-568d5e0bb1d6.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f822d02-44e7-4880-a54a-568d5e0bb1d6.table_name","label":"2➛Jira Issue Type Table","reference":"u_jira_issue_type","reference_display":"Jira Issue Type","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f822d02-44e7-4880-a54a-568d5e0bb1d6.record","label":"2➛Jira Issue Type Record","reference":"u_jira_issue_type","reference_display":"Jira Issue Type","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.jira_project_issue_types_data","label":"Input➛Jira Project Issue Types Data","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD58d381abd93ba490040715f4a3384560","child_label":"Jira Project Issue Type Data","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"Jira_Project_Issue_Type_Data","child_uiUniqueId":"7abffccb-f366-4b2f-914a-542686b43ea4","uiUniqueId":"c89c8583-416f-42eb-8531-2e913e0106f9","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"511bb465-bcf1-4932-bdfe-b0b0f162fa55.item","label":"1➛Jira Project Issue Type Data","reference_display":"Jira Project Issue Type Data","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"e0426375-0d1f-42f6-b6fb-c0f9aa6d4a14.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id"}},{"name":"e0426375-0d1f-42f6-b6fb-c0f9aa6d4a14.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name"}},{"name":"e0426375-0d1f-42f6-b6fb-c0f9aa6d4a14.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"e0426375-0d1f-42f6-b6fb-c0f9aa6d4a14.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"75fd058b-5560-46b0-86e5-56f1ffbc7073.Records","label":"5➛Jira Issue Type Records","reference":"u_jira_issue_type","reference_display":"Jira Issue Type","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"75fd058b-5560-46b0-86e5-56f1ffbc7073.Table","label":"5➛Jira Issue Type Table","reference":"u_jira_issue_type","reference_display":"Jira Issue Type","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"75fd058b-5560-46b0-86e5-56f1ffbc7073.Count","label":"5➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"21b09662-3ac5-420d-a330-1134147d07e2.item","label":"5➛Jira Issue Type Record","reference":"u_jira_issue_type","reference_display":"Jira Issue Type","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"eded84ed-9ec8-4a08-8517-020f27e885b8.Records","label":"5➛M2m Jira Project Issue Type Records","reference":"u_m2m_jira_project_issue_type","reference_display":"M2m Jira Project Issue Type","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eded84ed-9ec8-4a08-8517-020f27e885b8.Table","label":"5➛M2m Jira Project Issue Type Table","reference":"u_m2m_jira_project_issue_type","reference_display":"M2m Jira Project Issue Type","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eded84ed-9ec8-4a08-8517-020f27e885b8.Count","label":"5➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0d915845-c33b-4edd-b37c-5463c205e6c4.item","label":"6➛M2m Jira Project Issue Type Record","reference":"u_m2m_jira_project_issue_type","reference_display":"M2m Jira Project Issue Type","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
+        <master>true</master>
+        <name>Set Project Issue Types</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Set Project Issue Types">5f720de71b3ba4908b08419ead4bcb69</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a30cc1e71bbba4908b08419ead4bcb79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:14</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=a30cc1e71bbba4908b08419ead4bcb79"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=a30cc1e71bbba4908b08419ead4bcb79^sys_idNOT INeb0cc1e71bbba4908b08419ead4bcb7a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>a30cc1e71bbba4908b08419ead4bcb79</id>
+        <name>Set Project Issue Types</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:14</sys_created_on>
+        <sys_id>eb0cc1e71bbba4908b08419ead4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:14</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=a30cc1e71bbba4908b08419ead4bcb79^sys_idNOT IN270cc1e71bbba4908b08419ead4bcb7e,370cc1e71bbba4908b08419ead4bcbd7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=48fa7a90-ea59-4545-ace8-ad97f471fa6d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>u_jira_project</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>jira_project</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Jira Project</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Set Project Issue Types">a30cc1e71bbba4908b08419ead4bcb79</model>
+        <model_id>a30cc1e71bbba4908b08419ead4bcb79</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_a30cc1e71bbba4908b08419ead4bcb79</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="u_jira_project">u_jira_project</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:14</sys_created_on>
+        <sys_id>270cc1e71bbba4908b08419ead4bcb7e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Jira Project Issue Type Data,child_name=Jira_Project_Issue_Type_Data,child_type=object,child_type_label=Object,child_uiUniqueId=7abffccb-f366-4b2f-914a-542686b43ea4,co_type_name=FD2f0cc1e7a6bba490a8e978643809bc7b,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=c89c8583-416f-42eb-8531-2e913e0106f9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>jira_project_issue_types_data</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Jira Project Issue Types Data</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Set Project Issue Types">a30cc1e71bbba4908b08419ead4bcb79</model>
+        <model_id>a30cc1e71bbba4908b08419ead4bcb79</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_a30cc1e71bbba4908b08419ead4bcb79</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:15</sys_created_on>
+        <sys_id>370cc1e71bbba4908b08419ead4bcbd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=a30cc1e71bbba4908b08419ead4bcb79^sys_idNOT IN441c05e71bbba4908b08419ead4bcb85,7f0c05e71bbba4908b08419ead4bcb3e,801c05e71bbba4908b08419ead4bcb72,c01c05e71bbba4908b08419ead4bcb56"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Delete Record">a8f274c8c3c232002841b63b12d3aee9</action_type>
+        <action_type_parent/>
+        <comment>When an issue type's last M2M link is deleted, a BR will automatically delete it</comment>
+        <compiled_snapshot>a8f274c8c3c232002841b63b12d3aee9</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Set Project Issue Types">a30cc1e71bbba4908b08419ead4bcb79</flow>
+        <order>7</order>
+        <parent_ui_id>0d915845-c33b-4edd-b37c-5463c205e6c4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:16</sys_created_on>
+        <sys_id>441c05e71bbba4908b08419ead4bcb85</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:16</sys_updated_on>
+        <ui_id>6ee66778-6356-4b21-afd0-dfcba9a78d58</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=441c05e71bbba4908b08419ead4bcb85"/>
+    <sys_element_mapping action="delete_multiple" query="id=441c05e71bbba4908b08419ead4bcb85"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>441c05e71bbba4908b08419ead4bcb85</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:16</sys_created_on>
+        <sys_id>801c05e71bbba4908b08419ead4bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a8f274c8c3c232002841b63b12d3aee9</table>
+        <value>{{0d915845-c33b-4edd-b37c-5463c205e6c4.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>e057d2e253b3230034c6ddeeff7b1261</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Set Project Issue Types">a30cc1e71bbba4908b08419ead4bcb79</flow>
+        <order>2</order>
+        <parent_ui_id>511bb465-bcf1-4932-bdfe-b0b0f162fa55</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:16</sys_created_on>
+        <sys_id>7f0c05e71bbba4908b08419ead4bcb3e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:16</sys_updated_on>
+        <ui_id>5f822d02-44e7-4880-a54a-568d5e0bb1d6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7f0c05e71bbba4908b08419ead4bcb3e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7f0c05e71bbba4908b08419ead4bcb3e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:16</sys_created_on>
+        <sys_id>481c05e71bbba4908b08419ead4bcb40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:16</sys_updated_on>
+        <value>u_jira_issue_type</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7f0c05e71bbba4908b08419ead4bcb3e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>7f0c05e71bbba4908b08419ead4bcb3e</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:16</sys_created_on>
+        <sys_id>041c05e71bbba4908b08419ead4bcb40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>u_jira_id={{511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.id}}^u_jira_name={{511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.name}}^u_jira_description={{511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.description}}^u_jira_subtask={{511bb465-bcf1-4932-bdfe-b0b0f162fa55.item.subtask}}^coalesce_fields=u_jira_id</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>7f0c05e71bbba4908b08419ead4bcb3e</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:16</sys_created_on>
+        <sys_id>c41c05e71bbba4908b08419ead4bcb40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment>Find any unused M2M project/issue type M2M links</comment>
+        <compiled_snapshot>d1c56ec50b30030085c083eb37673a50</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Set Project Issue Types">a30cc1e71bbba4908b08419ead4bcb79</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:16</sys_created_on>
+        <sys_id>801c05e71bbba4908b08419ead4bcb72</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:16</sys_updated_on>
+        <ui_id>eded84ed-9ec8-4a08-8517-020f27e885b8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=801c05e71bbba4908b08419ead4bcb72"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>801c05e71bbba4908b08419ead4bcb72</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:16</sys_created_on>
+        <sys_id>001c05e71bbba4908b08419ead4bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:16</sys_updated_on>
+        <value>u_m2m_jira_project_issue_type</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=801c05e71bbba4908b08419ead4bcb72^sys_idNOT INc01c05e71bbba4908b08419ead4bcb73"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>conditions</input_name>
+        <instance>801c05e71bbba4908b08419ead4bcb72</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"conditions":{"scriptActive":true,"script":"var projectQuery \u003d \u0027u_jira_project\u003d\u0027 + fd_data.subflow_inputs.jira_project.sys_id;\nvar oldM2mQuery \u003d \u0027sys_idNOT IN\u0027 + fd_data.flow_var.m2ms_to_keep;\n\nreturn [projectQuery, oldM2mQuery].join(\u0027^\u0027);"}}</script>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:16</sys_created_on>
+        <sys_id>c01c05e71bbba4908b08419ead4bcb73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:16</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>e057d2e253b3230034c6ddeeff7b1261</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Set Project Issue Types">a30cc1e71bbba4908b08419ead4bcb79</flow>
+        <order>3</order>
+        <parent_ui_id>511bb465-bcf1-4932-bdfe-b0b0f162fa55</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:16</sys_created_on>
+        <sys_id>c01c05e71bbba4908b08419ead4bcb56</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:16</sys_updated_on>
+        <ui_id>380b89da-f781-432c-882d-0306c62ee72b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c01c05e71bbba4908b08419ead4bcb56"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c01c05e71bbba4908b08419ead4bcb56</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:16</sys_created_on>
+        <sys_id>c41c05e71bbba4908b08419ead4bcb57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:16</sys_updated_on>
+        <value>u_m2m_jira_project_issue_type</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c01c05e71bbba4908b08419ead4bcb56"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>c01c05e71bbba4908b08419ead4bcb56</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:16</sys_created_on>
+        <sys_id>801c05e71bbba4908b08419ead4bcb57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>u_jira_project={{subflow.jira_project}}^u_jira_issue_type={{5f822d02-44e7-4880-a54a-568d5e0bb1d6.record}}^coalesce_fields=u_jira_project,u_jira_issue_type</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>c01c05e71bbba4908b08419ead4bcb56</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:16</sys_created_on>
+        <sys_id>441c05e71bbba4908b08419ead4bcb57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=a30cc1e71bbba4908b08419ead4bcb79^sys_idNOT IN3b0c05e71bbba4908b08419ead4bcb10,f30c05e71bbba4908b08419ead4bcb18,fb0c05e71bbba4908b08419ead4bcb14"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ff4405af1b3ba4908b08419ead4bcb01</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Set Project Issue Types">a30cc1e71bbba4908b08419ead4bcb79</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:15</sys_created_on>
+        <sys_id>3b0c05e71bbba4908b08419ead4bcb10</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:15</sys_updated_on>
+        <ui_id>511bb465-bcf1-4932-bdfe-b0b0f162fa55</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3b0c05e71bbba4908b08419ead4bcb10"/>
+    <sys_element_mapping action="delete_multiple" query="id=3b0c05e71bbba4908b08419ead4bcb10"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>3b0c05e71bbba4908b08419ead4bcb10</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:15</sys_created_on>
+        <sys_id>bf0c05e71bbba4908b08419ead4bcb13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{subflow.jira_project_issue_types_data}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8ab98daf1b7ba4908b08419ead4bcbd0</block>
+        <comment>Delete the unused M2M links</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Set Project Issue Types">a30cc1e71bbba4908b08419ead4bcb79</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:15</sys_created_on>
+        <sys_id>f30c05e71bbba4908b08419ead4bcb18</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:16</sys_updated_on>
+        <ui_id>0d915845-c33b-4edd-b37c-5463c205e6c4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f30c05e71bbba4908b08419ead4bcb18"/>
+    <sys_element_mapping action="delete_multiple" query="id=f30c05e71bbba4908b08419ead4bcb18"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>f30c05e71bbba4908b08419ead4bcb18</id>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:16</sys_created_on>
+        <sys_id>bb0c05e71bbba4908b08419ead4bcb1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:16</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{eded84ed-9ec8-4a08-8517-020f27e885b8.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">71b98daf1b7ba4908b08419ead4bcbc4</block>
+        <comment>Remember to not delete these M2M links later on</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Set Project Issue Types">a30cc1e71bbba4908b08419ead4bcb79</flow>
+        <flow_variable/>
+        <flow_variables_assigned>m2ms_to_keep</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>511bb465-bcf1-4932-bdfe-b0b0f162fa55</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:15</sys_created_on>
+        <sys_id>fb0c05e71bbba4908b08419ead4bcb14</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:15</sys_updated_on>
+        <ui_id>ed7cc422-1178-4c5b-b5aa-2e7ac41f3a92</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=fb0c05e71bbba4908b08419ead4bcb14"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fb0c05e71bbba4908b08419ead4bcb14^sys_idNOT INbf0c05e71bbba4908b08419ead4bcb15"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>m2ms_to_keep</input_name>
+        <instance>fb0c05e71bbba4908b08419ead4bcb14</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"m2ms_to_keep":{"scriptActive":true,"script":"var m2mId \u003d fd_data._3__create_or_update_record.record.sys_id;\nvar myVar \u003d fd_data.flow_var.m2ms_to_keep;\n\nreturn myVar ? myVar + \u0027,\u0027 + m2mId : m2mId;"}}</script>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:15</sys_created_on>
+        <sys_id>bf0c05e71bbba4908b08419ead4bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:15</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_variable action="delete_multiple" query="model=a30cc1e71bbba4908b08419ead4bcb79^sys_idNOT IN7f0c05e71bbba4908b08419ead4bcb08,f30c05e71bbba4908b08419ead4bcb02"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c0e939f8-8e61-438a-bbb4-c4f89d4e1475</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>issue_types_to_keep</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Issue types to keep</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Set Project Issue Types">a30cc1e71bbba4908b08419ead4bcb79</model>
+        <model_id>a30cc1e71bbba4908b08419ead4bcb79</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_a30cc1e71bbba4908b08419ead4bcb79</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:15</sys_created_on>
+        <sys_id>7f0c05e71bbba4908b08419ead4bcb08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Issue types to keep</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_7f0c05e71bbba4908b08419ead4bcb08</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=942500df-9c01-4f52-bf60-6b0494f339f4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>m2ms_to_keep</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>M2Ms to keep</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Set Project Issue Types">a30cc1e71bbba4908b08419ead4bcb79</model>
+        <model_id>a30cc1e71bbba4908b08419ead4bcb79</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_a30cc1e71bbba4908b08419ead4bcb79</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:15</sys_created_on>
+        <sys_id>f30c05e71bbba4908b08419ead4bcb02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>M2Ms to keep</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_f30c05e71bbba4908b08419ead4bcb02</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_a30cc1e71bbba4908b08419ead4bcb79^sys_idNOT IN7f0cc1e71bbba4908b08419ead4bcbd2,f70cc1e71bbba4908b08419ead4bcbde"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>jira_project</element>
+        <help/>
+        <hint/>
+        <label>Jira Project</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a30cc1e71bbba4908b08419ead4bcb79</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:15</sys_created_on>
+        <sys_id>7f0cc1e71bbba4908b08419ead4bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>jira_project_issue_types_data</element>
+        <help/>
+        <hint/>
+        <label>Jira Project Issue Types Data</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a30cc1e71bbba4908b08419ead4bcb79</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 15:47:15</sys_created_on>
+        <sys_id>f70cc1e71bbba4908b08419ead4bcbde</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 15:47:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_flow action="update">
+        <sys_id>5f720de71b3ba4908b08419ead4bcb69</sys_id>
+        <latest_snapshot>a30cc1e71bbba4908b08419ead4bcb79</latest_snapshot>
+    </sys_hub_flow>
+</record_update>

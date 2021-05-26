@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>ProjectInputBean</name>
+        <namespace>TheJiraCloudplatformRESTAPI100100SNAPSHOT</namespace>
+        <scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name>
+        <serialized_content>{"TheJiraCloudplatformRESTAPI100100SNAPSHOT:ProjectInputBean":{"notificationScheme":"Integer","description":"String","leadAccountId":"String","leadAccountId.$field_facets":{"SimpleMapFacet":"{\"max_length\":\"128\"}"},"lead":"String","url":"String","avatarId":"Integer","issueSecurityScheme":"Integer","projectTemplateKey":"String","projectTemplateKey.$field_facets":{"SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"com.atlassian.jira-core-project-templates:jira-core-simplified-lead-tracking\":\"com.atlassian.jira-core-project-templates:jira-core-simplified-lead-tracking\",\"com.atlassian.jira-core-project-templates:jira-core-simplified-process-control\":\"com.atlassian.jira-core-project-templates:jira-core-simplified-process-control\",\"com.pyxis.greenhopper.jira:gh-simplified-basic\":\"com.pyxis.greenhopper.jira:gh-simplified-basic\",\"com.atlassian.servicedesk:simplified-facilities-service-desk\":\"com.atlassian.servicedesk:simplified-facilities-service-desk\",\"com.atlassian.jira-core-project-templates:jira-core-simplified-procurement\":\"com.atlassian.jira-core-project-templates:jira-core-simplified-procurement\",\"com.atlassian.servicedesk:simplified-it-service-desk\":\"com.atlassian.servicedesk:simplified-it-service-desk\",\"com.atlassian.jira-core-project-templates:jira-core-simplified-task-\":\"com.atlassian.jira-core-project-templates:jira-core-simplified-task-\",\"com.atlassian.servicedesk:simplified-external-service-desk\":\"com.atlassian.servicedesk:simplified-external-service-desk\",\"com.atlassian.jira-core-project-templates:jira-core-simplified-document-approval\":\"com.atlassian.jira-core-project-templates:jira-core-simplified-document-approval\",\"com.atlassian.jira-core-project-templates:jira-core-simplified-recruitment\":\"com.atlassian.jira-core-project-templates:jira-core-simplified-recruitment\",\"com.pyxis.greenhopper.jira:gh-simplified-kanban-classic\":\"com.pyxis.greenhopper.jira:gh-simplified-kanban-classic\",\"com.atlassian.jira-core-project-templates:jira-core-simplified-project-management\":\"com.atlassian.jira-core-project-templates:jira-core-simplified-project-management\",\"com.pyxis.greenhopper.jira:gh-simplified-agility-kanban\":\"com.pyxis.greenhopper.jira:gh-simplified-agility-kanban\",\"com.pyxis.greenhopper.jira:gh-simplified-agility-scrum\":\"com.pyxis.greenhopper.jira:gh-simplified-agility-scrum\",\"com.atlassian.jira-core-project-templates:jira-core-simplified-content-management\":\"com.atlassian.jira-core-project-templates:jira-core-simplified-content-management\",\"com.atlassian.servicedesk:simplified-hr-service-desk\":\"com.atlassian.servicedesk:simplified-hr-service-desk\",\"com.atlassian.servicedesk:simplified-internal-service-desk\":\"com.atlassian.servicedesk:simplified-internal-service-desk\",\"com.pyxis.greenhopper.jira:gh-simplified-scrum-classic\":\"com.pyxis.greenhopper.jira:gh-simplified-scrum-classic\"}}"},"name":"String","permissionScheme":"Integer","assigneeType":"String","assigneeType.$field_facets":{"SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"UNASSIGNED\":\"UNASSIGNED\",\"PROJECT_LEAD\":\"PROJECT_LEAD\"}}"},"projectTypeKey":"String","projectTypeKey.$field_facets":{"SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"software\":\"software\",\"business\":\"business\",\"service_desk\":\"service_desk\"}}"},"categoryId":"Integer","key":"String"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-15 23:15:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>327c30a91ba32c508b08419ead4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ProjectInputBean</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_complex_object_327c30a91ba32c508b08419ead4bcb9e</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-15 23:15:40</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

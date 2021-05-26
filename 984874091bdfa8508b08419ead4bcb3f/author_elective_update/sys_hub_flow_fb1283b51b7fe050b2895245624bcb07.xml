@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>set_project_issues</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Set Project Issues</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-29 13:53:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>fb1283b51b7fe050b2895245624bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Project Issues</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_hub_flow_fb1283b51b7fe050b2895245624bcb07</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-29 13:53:42</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="DELETE" query="document_key=fb1283b51b7fe050b2895245624bcb07"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=fb1283b51b7fe050b2895245624bcb07^sys_idNOT INff1283b51b7fe050b2895245624bcb09"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>fb1283b51b7fe050b2895245624bcb07</id>
+        <name>Set Project Issues</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-29 13:53:42</sys_created_on>
+        <sys_id>ff1283b51b7fe050b2895245624bcb09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-29 13:53:42</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</application>
+        <file_path/>
+        <instance_id>0338d1bbdbe39b041ddcf22ebf9619b4</instance_id>
+        <instance_name>adcomsolutionsdev</instance_name>
+        <name>sys_hub_flow_fb1283b51b7fe050b2895245624bcb07</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from/><copied_from_name/><description/><internal_name>set_project_issues</internal_name><label_cache>[]</label_cache><latest_snapshot/><master_snapshot/><name>Set Project Issues</name><natlang/><outputs/><remote_trigger_id/><run_as>system</run_as><run_with_roles/><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>chris.crockett</sys_created_by><sys_created_on>2021-04-29 13:53:42</sys_created_on><sys_domain>global</sys_domain><sys_id>fb1283b51b7fe050b2895245624bcb07</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Set Project Issues</sys_name><sys_overrides/><sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package><sys_policy/><sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope><sys_update_name>sys_hub_flow_fb1283b51b7fe050b2895245624bcb07</sys_update_name><sys_updated_by>chris.crockett</sys_updated_by><sys_updated_on>2021-04-29 13:53:42</sys_updated_on><type>subflow</type></sys_hub_flow><sys_variable_value action="delete_multiple" query="document_key=fb1283b51b7fe050b2895245624bcb07"/><sys_flow_cat_variable_model action="delete_multiple" query="id=fb1283b51b7fe050b2895245624bcb07^sys_idNOT INff1283b51b7fe050b2895245624bcb09"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>fb1283b51b7fe050b2895245624bcb07</id><name>Set Project Issues</name><sys_class_name>sys_flow_cat_variable_model</sys_class_name><sys_created_by>chris.crockett</sys_created_by><sys_created_on>2021-04-29 13:53:42</sys_created_on><sys_id>ff1283b51b7fe050b2895245624bcb09</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package/><sys_policy/><sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope><sys_update_name/><sys_updated_by>chris.crockett</sys_updated_by><sys_updated_on>2021-04-29 13:53:42</sys_updated_on></sys_flow_cat_variable_model></record_update>]]></payload>
+        <payload_hash>-238576929</payload_hash>
+        <record_name>Set Project Issues</record_name>
+        <reverted_from/>
+        <source>09329f3edb4303008648d2984b9619c4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-29 13:53:43</sys_created_on>
+        <sys_id>371247f51b7fe050b2895245624bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1791de822d40000001</sys_recorded_at>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-29 13:53:43</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>771283b58c7fe0502c4a512c3523e40e</update_guid>
+        <update_guid_history>771283b58c7fe0502c4a512c3523e40e:-238576929</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-29 13:54:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>301fdbba7a78489498ad6618b21dfb41</sys_id>
+        <sys_metadata>fb1283b51b7fe050b2895245624bcb07</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Project Issues</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_scope_delete display_value="">4d6c253b4e124d31af4e500594e86541</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_fb1283b51b7fe050b2895245624bcb07</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_fb1283b51b7fe050b2895245624bcb07">371247f51b7fe050b2895245624bcb8a</sys_update_version>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-29 13:54:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="rm_sprint" label="Jira Sprint" max_length="40" name="u_jira_sprint" sizeclass="45" type="collection">
+        <element attributes="format=none" label="Jira ID" mandatory="true" max_length="40" name="u_jira_id" read_only="true" type="integer" unique="true"/>
+        <element label="Jira Project" mandatory="true" max_length="32" name="u_jira_project" read_only="true" reference="u_jira_project" type="reference"/>
+    </element>
+</database>

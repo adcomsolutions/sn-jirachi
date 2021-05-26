@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.getUserSuperiorsForJiraIssue</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Get the sys_ids of all direct managers/direct group managers/department heads for the given user ID&#13;
+This is used with some ACL rules to allow stakeholder managers to interact with any issues that their subordinates are stakeholders on</description>
+        <name>getUserSuperiorsForJiraIssue</name>
+        <script><![CDATA[function getUserSuperiorsForJiraIssue(userId){
+	return (function(){
+		var userGr = new GlideRecord('sys_user');
+		userGr.get(userId);
+		if (!userGr.isValidRecord()) return [];
+
+		// Get the stakeholder's manager
+		var managerId =
+			userGr.manager &&
+			userGr.manager.sys_id && 
+			userGr.manager.sys_id.toString();
+
+		// Get the stakeholder's department head
+		var departmentHeadId =
+			userGr.department &&
+			userGr.department.dept_head &&
+			userGr.department.dept_head.sys_id &&
+			userGr.department.dept_head.sys_id.toString();
+
+		// Get the managers for all groups that the user directly belongs to
+		var groupManagerIds = [];
+		var userGroupsGr = new GlideRecord('sys_user_group');
+		userGroupsGr.addQuery('manager', '!=', '');
+		userGroupsGr.addQuery('mtm.sys_user_grmember.user', userGr.sys_id);
+		userGroupsGr.query();
+		while(userGroupsGr.next()){
+			groupManagerIds.push(userGroupsGr.manager.sys_id.toString());
+		}
+
+		// Return a combined list of all results
+		return ArrayUtil.prototype.unique( // Avoid duplicates
+			groupManagerIds
+				.concat(departmentHeadId, managerId)
+				.filter(Boolean) // Avoid empty values
+		);
+	}());
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-11 15:52:47</sys_created_on>
+        <sys_id>e8cec5791b08f0508b08419ead4bcb66</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>getUserSuperiorsForJiraIssue</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_script_include_e8cec5791b08f0508b08419ead4bcb66</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-11 15:58:14</sys_updated_on>
+    </sys_script_include>
+</record_update>

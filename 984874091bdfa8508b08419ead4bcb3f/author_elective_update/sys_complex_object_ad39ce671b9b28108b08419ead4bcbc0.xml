@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="DELETE">
+        <label/>
+        <name>ProjectRoleDetails</name>
+        <namespace>TheJiraCloudplatformRESTAPI100100SNAPSHOT</namespace>
+        <scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name>
+        <serialized_content>{"TheJiraCloudplatformRESTAPI100100SNAPSHOT:ProjectRoleDetails":{"default":"Boolean","default.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"roleConfigurable":"Boolean","roleConfigurable.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"scope":{"project":{"simplified":"Boolean","simplified.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"avatarUrls":{"x32":"String","x24":"String","x16":"String","x48":"String"},"avatarUrls.$type_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"avatarUrls.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"projectCategory":{},"projectCategory.$type_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"projectCategory.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"self":"String","self.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"id":"String","projectTypeKey":"String","projectTypeKey.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"software\":\"software\",\"business\":\"business\",\"service_desk\":\"service_desk\"}}"},"key":"String","key.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"}},"project.$type_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"project.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"PROJECT\":\"PROJECT\",\"TEMPLATE\":\"TEMPLATE\"}}"}},"scope.$type_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"scope.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"name":"String","admin":"Boolean","admin.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"self":"String","self.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"id":"Integer","id.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"translatedName":"String"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-09 23:43:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>ad39ce671b9b28108b08419ead4bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ProjectRoleDetails</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_complex_object_ad39ce671b9b28108b08419ead4bcbc0</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-09 23:43:03</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</application>
+        <file_path/>
+        <instance_id>0338d1bbdbe39b041ddcf22ebf9619b4</instance_id>
+        <instance_name>adcomsolutionsdev</instance_name>
+        <name>sys_complex_object_ad39ce671b9b28108b08419ead4bcbc0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object"><sys_complex_object action="INSERT_OR_UPDATE"><label/><name>ProjectRoleDetails</name><namespace>TheJiraCloudplatformRESTAPI100100SNAPSHOT</namespace><scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name><serialized_content>{"TheJiraCloudplatformRESTAPI100100SNAPSHOT:ProjectRoleDetails":{"default":"Boolean","default.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"roleConfigurable":"Boolean","roleConfigurable.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"scope":{"project":{"simplified":"Boolean","simplified.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"avatarUrls":{"x32":"String","x24":"String","x16":"String","x48":"String"},"avatarUrls.$type_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"avatarUrls.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"projectCategory":{},"projectCategory.$type_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"projectCategory.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"self":"String","self.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"id":"String","projectTypeKey":"String","projectTypeKey.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"software\":\"software\",\"business\":\"business\",\"service_desk\":\"service_desk\"}}"},"key":"String","key.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"}},"project.$type_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"project.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"PROJECT\":\"PROJECT\",\"TEMPLATE\":\"TEMPLATE\"}}"}},"scope.$type_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"scope.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"name":"String","admin":"Boolean","admin.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"self":"String","self.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"id":"Integer","id.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"translatedName":"String"}}</serialized_content><sys_class_name>sys_complex_object</sys_class_name><sys_created_by>chris.crockett</sys_created_by><sys_created_on>2021-04-09 23:43:03</sys_created_on><sys_domain>global</sys_domain><sys_id>ad39ce671b9b28108b08419ead4bcbc0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ProjectRoleDetails</sys_name><sys_overrides/><sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package><sys_policy/><sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope><sys_update_name>sys_complex_object_ad39ce671b9b28108b08419ead4bcbc0</sys_update_name><sys_updated_by>chris.crockett</sys_updated_by><sys_updated_on>2021-04-09 23:43:03</sys_updated_on><type>complex_object_schema</type></sys_complex_object></record_update>]]></payload>
+        <payload_hash>-1582546568</payload_hash>
+        <record_name>ProjectRoleDetails</record_name>
+        <reverted_from/>
+        <source>926e5be61bcbe01031264159cc4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-09 23:43:03</sys_created_on>
+        <sys_id>e139ce671b9b28108b08419ead4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178b9047fa00000001</sys_recorded_at>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-09 23:43:03</sys_updated_on>
+        <type>Complex Object</type>
+        <update_guid>e939ce67af9b28101477727ebc736ac2</update_guid>
+        <update_guid_history>e939ce67af9b28101477727ebc736ac2:-1582546568</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-15 23:12:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_complex_object">sys_complex_object</sys_db_object>
+        <sys_id>019326f27378410c81848105b97cb284</sys_id>
+        <sys_metadata>ad39ce671b9b28108b08419ead4bcbc0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ProjectRoleDetails</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_scope_delete display_value="">4d6c253b4e124d31af4e500594e86541</sys_scope_delete>
+        <sys_update_name>sys_complex_object_ad39ce671b9b28108b08419ead4bcbc0</sys_update_name>
+        <sys_update_version display_value="sys_complex_object_ad39ce671b9b28108b08419ead4bcbc0">e139ce671b9b28108b08419ead4bcbc3</sys_update_version>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-15 23:12:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

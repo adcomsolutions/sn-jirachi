@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDb6b70ef60f9f20100b8a5a4a6fb3802e</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name>
+        <serialized_content>{"FlowDesigner:FDb6b70ef60f9f20100b8a5a4a6fb3802e":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDb6b70ef60f9f20100b8a5a4a6fb3802e.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Deleted Issue Type Choice IDs\",\"mandatory\":\"false\",\"child_name\":\"deletedIssueTypeId\",\"uiUniqueId\":\"32496966-8c31-474e-beec-153964a9e14f\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FDb6b70ef60f9f20100b8a5a4a6fb3802e\",\"child_label\":\"Deleted Issue Type Choice ID\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a8a65e21-57ae-42df-a09d-391a03a1ac8f\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-07 15:41:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7ab70ef61b9f20108b08419ead4bcb2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDb6b70ef60f9f20100b8a5a4a6fb3802e</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_complex_object_7ab70ef61b9f20108b08419ead4bcb2e</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-07 15:41:08</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

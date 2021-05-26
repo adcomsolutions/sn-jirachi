@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD15a9967a59136010d16eac4b9ace80b9</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name>
+        <serialized_content>{"FlowDesigner:FD15a9967a59136010d16eac4b9ace80b9":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD15a9967a59136010d16eac4b9ace80b9.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Project Issue Type Choice IDs\",\"mandatory\":\"false\",\"child_name\":\"IssueTypeId\",\"uiUniqueId\":\"4f22d3a7-10fc-4cea-ab7b-df4d1657b134\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD15a9967a59136010d16eac4b9ace80b9\",\"child_label\":\"Issue Type Choice ID\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"27d8087e-35e2-424a-9d76-21336ea80ad3\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-07 16:59:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>d5a9967a1b1360108b08419ead4bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD15a9967a59136010d16eac4b9ace80b9</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_complex_object_d5a9967a1b1360108b08419ead4bcbb9</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-07 16:59:24</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

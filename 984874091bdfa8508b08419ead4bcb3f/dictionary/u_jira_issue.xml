@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="rm_story" label="Jira Issue" max_length="40" name="u_jira_issue" sizeclass="1270" type="collection">
+        <element attributes="format=none" label="Jira ID" mandatory="true" max_length="40" name="u_jira_id" read_only="true" type="integer" unique="true"/>
+        <element attributes="ref_auto_completer=AJAXReferenceChoice" choice="1" label="Jira Issue Type" mandatory="true" max_length="40" name="u_jira_issue_type" read_only="true" reference="u_jira_issue_type" reference_qual="javascript: 'mtm.u_m2m_jira_project_issue_type.u_jira_project=' + current.theme" type="reference" use_reference_qualifier="advanced">
+            <choice/>
+        </element>
+        <element display="true" label="Jira Number" mandatory="true" max_length="40" name="u_jira_key" read_only="true" type="string"/>
+        <element attributes="ref_auto_completer=AJAXReferenceChoice" choice="3" label="Jira Status" mandatory="true" max_length="32" name="u_jira_status" read_only="true" reference="u_jira_status" reference_qual="javascript: '^RLQUERYu_m2m_jira_issue_type_status.u_jira_status,&gt;=1,m2m^u_jira_projectsLIKE' + current.theme + '^ENDRLQUERY'" type="reference" use_reference_qualifier="advanced">
+            <choice/>
+        </element>
+        <element label="Stakeholder" max_length="32" name="u_stakeholder" reference="sys_user" reference_qual="javascript: 'user_nameISNOTEMPTY^company=' + gs.getProperty('jira_integration.stakeholder_company')" type="reference" use_reference_qualifier="advanced"/>
+    </element>
+</database>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="System Import Sets">import_sets</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Jira Sprints Import</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>u_jira_sprints</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-29 01:00:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>b81118bd1b3b6050b2895245624bcb10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Jira Sprints Import</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_app_module_b81118bd1b3b6050b2895245624bcb10</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-29 01:00:11</sys_updated_on>
+        <timeline_page/>
+        <title>Jira Sprints Import</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</application>
+        <file_path/>
+        <instance_id>0338d1bbdbe39b041ddcf22ebf9619b4</instance_id>
+        <instance_name>adcomsolutionsdev</instance_name>
+        <name>sys_app_module_b81118bd1b3b6050b2895245624bcb10</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Import Sets">import_sets</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Jira Sprints Import</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_jira_sprints</name><order>1100</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>chris.crockett</sys_created_by><sys_created_on>2021-04-29 01:00:11</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>b81118bd1b3b6050b2895245624bcb10</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Jira Sprints Import</sys_name><sys_overrides/><sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package><sys_policy/><sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope><sys_update_name>sys_app_module_b81118bd1b3b6050b2895245624bcb10</sys_update_name><sys_updated_by>chris.crockett</sys_updated_by><sys_updated_on>2021-04-29 01:00:11</sys_updated_on><timeline_page/><title>Jira Sprints Import</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-331419394</payload_hash>
+        <record_name>Jira Sprints Import</record_name>
+        <reverted_from/>
+        <source>09329f3edb4303008648d2984b9619c4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-29 01:00:11</sys_created_on>
+        <sys_id>741118bd1b3b6050b2895245624bcb20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1791b23f27e0000001</sys_recorded_at>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-29 01:00:11</sys_updated_on>
+        <type>Module</type>
+        <update_guid>7c1118bd353b60501e00e81d7a9f5f1f</update_guid>
+        <update_guid_history>7c1118bd353b60501e00e81d7a9f5f1f:-331419394</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2021-04-30 17:36:34">7da5b1561bbfa8508b08419ead4bcb39</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-30 21:36:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>471422c67d3a43a8989461d3d5c27640</sys_id>
+        <sys_metadata>b81118bd1b3b6050b2895245624bcb10</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Jira Sprints Import</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_scope_delete display_value="">4d6c253b4e124d31af4e500594e86541</sys_scope_delete>
+        <sys_update_name>sys_app_module_b81118bd1b3b6050b2895245624bcb10</sys_update_name>
+        <sys_update_version display_value="sys_app_module_b81118bd1b3b6050b2895245624bcb10">741118bd1b3b6050b2895245624bcb20</sys_update_version>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-30 21:36:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

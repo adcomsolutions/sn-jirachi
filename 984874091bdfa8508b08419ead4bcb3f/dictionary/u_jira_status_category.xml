@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Jira Status Category" max_length="40" name="u_jira_status_category" sizeclass="3" type="collection">
+        <element attributes="format=none" label="Jira ID" mandatory="true" max_length="40" name="u_jira_id" read_only="true" type="integer" unique="true"/>
+        <element label="Jira Project Key" mandatory="true" max_length="255" name="u_jira_key" read_only="true" type="string"/>
+        <element display="true" label="Name" mandatory="true" max_length="255" name="u_jira_name" read_only="true" type="string"/>
+        <element choice="1" choice_field="state" choice_table="u_jira_issue" hint="This is the task-based state value that the Jira statuses in this status category will be mapped to" label="Linked State" mandatory="true" max_length="40" name="u_state" type="integer">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="u_jira_id"/>
+        </index>
+    </element>
+</database>

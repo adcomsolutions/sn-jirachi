@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_m2m">
+    <sys_m2m action="INSERT_OR_UPDATE">
+        <from_table>u_jira_project</from_table>
+        <m2m_from_field>u_jira_project</m2m_from_field>
+        <m2m_from_label>Jira Project Keys</m2m_from_label>
+        <m2m_table>u_m2m_jira_project_jira_key</m2m_table>
+        <m2m_to_field>u_jira_project_key</m2m_to_field>
+        <m2m_to_label>Jira Projects</m2m_to_label>
+        <sys_class_name>sys_m2m</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-05 17:55:41</sys_created_on>
+        <sys_id>0f13d4161b5728108b08419ead4bcb0d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>u_m2m_jira_project_jira_key</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_m2m_0f13d4161b5728108b08419ead4bcb0d</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-05 19:57:30</sys_updated_on>
+        <to_table>u_jira_key</to_table>
+    </sys_m2m>
+</record_update>

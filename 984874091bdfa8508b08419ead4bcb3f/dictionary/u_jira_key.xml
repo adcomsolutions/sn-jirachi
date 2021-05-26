@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Jira Project Key" max_length="40" name="u_jira_key" sizeclass="8" type="collection">
+        <element display="true" label="Name" max_length="40" name="u_name" type="string" unique="true"/>
+        <index name="index">
+            <element name="u_name"/>
+        </index>
+    </element>
+</database>

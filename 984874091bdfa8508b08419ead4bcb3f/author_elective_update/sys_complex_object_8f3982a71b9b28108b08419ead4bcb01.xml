@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="DELETE">
+        <label/>
+        <name>UserPermission</name>
+        <namespace>TheJiraCloudplatformRESTAPI100100SNAPSHOT</namespace>
+        <scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name>
+        <serialized_content>{"TheJiraCloudplatformRESTAPI100100SNAPSHOT:UserPermission":{"havePermission":"Boolean","name":"String","description":"String","deprecatedKey":"Boolean","id":"String","type":"String","type.$field_facets":{"SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"PROJECT\":\"PROJECT\",\"GLOBAL\":\"GLOBAL\"}}"},"key":"String"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-09 23:43:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8f3982a71b9b28108b08419ead4bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>UserPermission</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_complex_object_8f3982a71b9b28108b08419ead4bcb01</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-09 23:43:09</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</application>
+        <file_path/>
+        <instance_id>0338d1bbdbe39b041ddcf22ebf9619b4</instance_id>
+        <instance_name>adcomsolutionsdev</instance_name>
+        <name>sys_complex_object_8f3982a71b9b28108b08419ead4bcb01</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object"><sys_complex_object action="INSERT_OR_UPDATE"><label/><name>UserPermission</name><namespace>TheJiraCloudplatformRESTAPI100100SNAPSHOT</namespace><scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name><serialized_content>{"TheJiraCloudplatformRESTAPI100100SNAPSHOT:UserPermission":{"havePermission":"Boolean","name":"String","description":"String","deprecatedKey":"Boolean","id":"String","type":"String","type.$field_facets":{"SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"PROJECT\":\"PROJECT\",\"GLOBAL\":\"GLOBAL\"}}"},"key":"String"}}</serialized_content><sys_class_name>sys_complex_object</sys_class_name><sys_created_by>chris.crockett</sys_created_by><sys_created_on>2021-04-09 23:43:09</sys_created_on><sys_domain>global</sys_domain><sys_id>8f3982a71b9b28108b08419ead4bcb01</sys_id><sys_mod_count>0</sys_mod_count><sys_name>UserPermission</sys_name><sys_overrides/><sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package><sys_policy/><sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope><sys_update_name>sys_complex_object_8f3982a71b9b28108b08419ead4bcb01</sys_update_name><sys_updated_by>chris.crockett</sys_updated_by><sys_updated_on>2021-04-09 23:43:09</sys_updated_on><type>complex_object_schema</type></sys_complex_object></record_update>]]></payload>
+        <payload_hash>-1392348668</payload_hash>
+        <record_name>UserPermission</record_name>
+        <reverted_from/>
+        <source>926e5be61bcbe01031264159cc4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-09 23:43:09</sys_created_on>
+        <sys_id>c33982a71b9b28108b08419ead4bcb04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178b90496ec0000001</sys_recorded_at>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-09 23:43:09</sys_updated_on>
+        <type>Complex Object</type>
+        <update_guid>cb3982a7569b2810545b630edd8ba503</update_guid>
+        <update_guid_history>cb3982a7569b2810545b630edd8ba503:-1392348668</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-15 23:12:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_complex_object">sys_complex_object</sys_db_object>
+        <sys_id>65a3974bed484a9eb20427e3410d62d1</sys_id>
+        <sys_metadata>8f3982a71b9b28108b08419ead4bcb01</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>UserPermission</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_scope_delete display_value="">4d6c253b4e124d31af4e500594e86541</sys_scope_delete>
+        <sys_update_name>sys_complex_object_8f3982a71b9b28108b08419ead4bcb01</sys_update_name>
+        <sys_update_version display_value="sys_complex_object_8f3982a71b9b28108b08419ead4bcb01">c33982a71b9b28108b08419ead4bcb04</sys_update_version>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-15 23:12:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

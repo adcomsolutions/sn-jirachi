@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cert_instance">
+    <cert_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <assign_to/>
+        <assign_to_empty>Create Unassigned Task</assign_to_empty>
+        <assign_to_group>certification_group</assign_to_group>
+        <assignment_type>User Field</assignment_type>
+        <audit_type>data_cert</audit_type>
+        <business_calendar/>
+        <cert_audit_instance/>
+        <cert_condition/>
+        <cert_schedule display_value="Certify Generated Email Domain Whitelists">ba3e50941bff14108b08419ead4bcb62</cert_schedule>
+        <complete_by>2021-05-08 14:00:01</complete_by>
+        <completed/>
+        <condition/>
+        <conditional>false</conditional>
+        <create_tasks>false</create_tasks>
+        <display_fields>sys_created_on,source,domain</display_fields>
+        <entered_time/>
+        <fields>company,blacklisted,description</fields>
+        <filter display_value="Last month's generated email domain whitelist entr">a27c1d221b0ae090e0a0dac2cd4bcb0e</filter>
+        <group display_value="NOC Leadership" name="NOC Leadership">7ccf6f16db62f7408648d2984b961982</group>
+        <health_window>7</health_window>
+        <health_window_unit>days</health_window_unit>
+        <instructions><![CDATA[<p>Every month, we must review any newly whitelisted email domains that were created by automation. Keeping this list accurate and well documented is <em>critical</em> to the security of our ticketing system and <span style="text-decoration: underline;">must</span> be handled in a timely manner.</p>
+<p>Observe the following process when certifying the new entries:</p>
+<ul style="list-style-position: inside;">
+<li>Any domain that is&nbsp;<em>not</em> private should be immediately <em>Blacklisted</em>&nbsp;
+<ul style="list-style-position: inside;">
+<li>Should be blacklisted: Gmail, Hotmail, AOL, etc.</li>
+<li>Should&nbsp;<strong>not</strong> be blacklisted: AT&amp;T Support, Meraki Support, Dispatch Vendors</li>
+</ul>
+</li>
+<li>The <em>Description</em> must be updated to reflect the purpose of the domain
+<ul style="list-style-position: inside;">
+<li>e.g.: "Customer engineering group" or "AT&amp;T Service Management" or "Gmail New Zealand"</li>
+</ul>
+</li>
+<li>If inaccurate, the <em>Associated Company</em> should be updated as well
+<ul style="list-style-position: inside;">
+<li>This will usually be necessary for carrier/vendor email domains, since these are usually learned from customer email threads</li>
+</ul>
+</li>
+</ul>]]></instructions>
+        <is_building>false</is_building>
+        <last_run_date>2021-04-01 14:00:02</last_run_date>
+        <name>Certify Generated Email Domain Whitelists</name>
+        <next_scheduled_run/>
+        <number>CRTINST0010008</number>
+        <offset/>
+        <offset_type>0</offset_type>
+        <percent_complete>100</percent_complete>
+        <prev_last_run_date/>
+        <run_as display_value="Chris Crockett (Admin)">af638b8c1b12ccd097a6a8ecbc4bcb49</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2021-05-01 14:00:01</run_start>
+        <run_time>1970-01-01 15:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[ ]]></script>
+        <short_description/>
+        <stability_count>1</stability_count>
+        <state>3</state>
+        <sys_class_name>cert_instance</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-01 14:00:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ffb699ae1bb3e850b2895245624bcbe9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Certify Generated Email Domain Whitelists</sys_name>
+        <sys_package display_value="Inbound Email WhiteList" source="x_admso_maildomain">76ae83ae1ba714908b08419ead4bcbaf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>cert_instance_ffb699ae1bb3e850b2895245624bcbe9</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-01 14:00:02</sys_updated_on>
+        <table>x_admso_maildomain_whitelist</table>
+        <task_description>Remedy the discrepancies listed in the Audit Results below</task_description>
+        <template/>
+        <threshold_count>5</threshold_count>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+        <user/>
+    </cert_instance>
+</record_update>

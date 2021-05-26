@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_m2m">
+    <sys_m2m action="DELETE">
+        <from_table>u_jira_status</from_table>
+        <m2m_from_field>u_jira_issue_status</m2m_from_field>
+        <m2m_from_label>Jira Projects</m2m_from_label>
+        <m2m_table>u_m2m_jira_project_issue_status</m2m_table>
+        <m2m_to_field>u_jira_project</m2m_to_field>
+        <m2m_to_label>Issue Statuses</m2m_to_label>
+        <sys_class_name>sys_m2m</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 14:18:42</sys_created_on>
+        <sys_id>648774a31bf7a4908b08419ead4bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_m2m_jira_project_issue_status</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_m2m_648774a31bf7a4908b08419ead4bcbc0</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 14:18:42</sys_updated_on>
+        <to_table>u_jira_project</to_table>
+    </sys_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</application>
+        <file_path/>
+        <instance_id>0338d1bbdbe39b041ddcf22ebf9619b4</instance_id>
+        <instance_name>adcomsolutionsdev</instance_name>
+        <name>sys_m2m_648774a31bf7a4908b08419ead4bcbc0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_m2m"><sys_m2m action="INSERT_OR_UPDATE"><from_table>u_jira_status</from_table><m2m_from_field>u_jira_issue_status</m2m_from_field><m2m_from_label>Jira Projects</m2m_from_label><m2m_table>u_m2m_jira_project_issue_status</m2m_table><m2m_to_field>u_jira_project</m2m_to_field><m2m_to_label>Issue Statuses</m2m_to_label><sys_class_name>sys_m2m</sys_class_name><sys_created_by>chris.crockett</sys_created_by><sys_created_on>2021-05-04 14:18:42</sys_created_on><sys_id>648774a31bf7a4908b08419ead4bcbc0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_m2m_jira_project_issue_status</sys_name><sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package><sys_policy/><sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope><sys_update_name>sys_m2m_648774a31bf7a4908b08419ead4bcbc0</sys_update_name><sys_updated_by>chris.crockett</sys_updated_by><sys_updated_on>2021-05-04 14:18:42</sys_updated_on><to_table>u_jira_project</to_table></sys_m2m></record_update>]]></payload>
+        <payload_hash>-190229515</payload_hash>
+        <record_name>u_m2m_jira_project_issue_status</record_name>
+        <reverted_from/>
+        <source>926e5be61bcbe01031264159cc4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 14:18:43</sys_created_on>
+        <sys_id>8bc73ca31bf7a4908b08419ead4bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17937bed5330000001</sys_recorded_at>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 14:18:43</sys_updated_on>
+        <type>Many to Many Definition</type>
+        <update_guid>83c73ca3d1f7a49096e39429c47913d2</update_guid>
+        <update_guid_history>83c73ca3d1f7a49096e39429c47913d2:-190229515</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 19:26:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_m2m">sys_m2m</sys_db_object>
+        <sys_id>c6d5dcdd30cf4d51a942d6f3c3103ea1</sys_id>
+        <sys_metadata>648774a31bf7a4908b08419ead4bcbc0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_m2m_jira_project_issue_status</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_scope_delete display_value="">4d6c253b4e124d31af4e500594e86541</sys_scope_delete>
+        <sys_update_name>sys_m2m_648774a31bf7a4908b08419ead4bcbc0</sys_update_name>
+        <sys_update_version display_value="sys_m2m_648774a31bf7a4908b08419ead4bcbc0">8bc73ca31bf7a4908b08419ead4bcbd2</sys_update_version>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 19:26:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

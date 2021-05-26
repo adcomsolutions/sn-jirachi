@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-11 16:59:55</sys_created_on>
+        <sys_id>10dfd9f11bc8f0508b08419ead4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_jira_sprint.u_jira_project.snc_internal</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_security_acl display_value="u_jira_sprint.u_jira_project">50dfd9f11bc8f0508b08419ead4bcbca</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_10dfd9f11bc8f0508b08419ead4bcbcb</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-11 16:59:55</sys_updated_on>
+        <sys_user_role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</sys_user_role>
+        <transaction_id>d8df11f51bc8f0508b08419ead4bcb3a</transaction_id>
+    </sys_security_acl_role>
+</record_update>

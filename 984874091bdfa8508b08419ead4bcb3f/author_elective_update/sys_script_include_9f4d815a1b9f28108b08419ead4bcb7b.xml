@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>global.getUserFromJiraUser</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Gets the actual sys_user GlideRecord from the u_jira_user GlideRecord's Sys ID</description>
+        <name>getUserFromJiraUser</name>
+        <script><![CDATA[function getUserFromJiraUserId(jiraUserId){
+	// Use the Jira User table to convert the Jira User ID to a SN User
+	var jiraUserGr = new GlideRecord('u_jira_user');
+	jiraUserGr.get(jiraUserId);
+	
+	// Abort if there is no matching Jira User record
+	// Also abort if the Jira User record is not mapped to an SN user
+	if (!jiraUserGr.isValidRecord() || !jiraUserGr.u_user) return null;
+	
+	var outGr = jiraUserGr.u_user.getRefRecord();
+	
+	// Abort if the mapped SN User record cannot be gotten for some reason
+	if (!outGr.isValidRecord()) return null;
+	
+	// Return a sys_user record based on the Jira User record's link
+	return outGr;
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-05 22:15:16</sys_created_on>
+        <sys_id>9f4d815a1b9f28108b08419ead4bcb7b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>getUserFromJiraUser</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_script_include_9f4d815a1b9f28108b08419ead4bcb7b</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-27 19:40:19</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</application>
+        <file_path/>
+        <instance_id>0338d1bbdbe39b041ddcf22ebf9619b4</instance_id>
+        <instance_name>adcomsolutionsdev</instance_name>
+        <name>sys_script_include_9f4d815a1b9f28108b08419ead4bcb7b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.getUserFromJiraUser&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Gets the actual sys_user GlideRecord from the u_jira_user GlideRecord's Sys ID&lt;/description&gt;&lt;name&gt;getUserFromJiraUser&lt;/name&gt;&lt;script&gt;&lt;![CDATA[function getUserFromJiraUserId(jiraUserId){
+	// Use the Jira User table to convert the Jira User ID to a SN User
+	var jiraUserGr = new GlideRecord('u_jira_user');
+	jiraUserGr.get(jiraUserId);
+	
+	// Abort if there is no matching Jira User record
+	// Also abort if the Jira User record is not mapped to an SN user
+	if (!jiraUserGr.isValidRecord() || !jiraUserGr.u_user) return null;
+	
+	var outGr = jiraUserGr.u_user.getRefRecord();
+	
+	// Abort if the mapped SN User record cannot be gotten for some reason
+	if (!outGr.isValidRecord()) return null;
+	
+	// Return a sys_user record based on the Jira User record's link
+	return outGr;
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.crockett&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-05 22:15:16&lt;/sys_created_on&gt;&lt;sys_id&gt;9f4d815a1b9f28108b08419ead4bcb7b&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;getUserFromJiraUser&lt;/sys_name&gt;&lt;sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Integration"&gt;984874091bdfa8508b08419ead4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_9f4d815a1b9f28108b08419ead4bcb7b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.crockett&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-27 19:40:19&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1086052654</payload_hash>
+        <record_name>getUserFromJiraUser</record_name>
+        <reverted_from/>
+        <source>926e5be61bcbe01031264159cc4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-27 19:40:19</sys_created_on>
+        <sys_id>614eb9d91b3360508b08419ead4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17914d8bdcd0000001</sys_recorded_at>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-27 19:40:19</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>e54eb9d98b33605026fcff303e005b79</update_guid>
+        <update_guid_history>e54eb9d98b33605026fcff303e005b79:-1086052654,70ce81da9a9f28100b3748e063c6c213:-655000767</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-27 19:48:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>774f1c6feb054000ae92a9579b001240</sys_id>
+        <sys_metadata>9f4d815a1b9f28108b08419ead4bcb7b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getUserFromJiraUser</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_scope_delete display_value="">4d6c253b4e124d31af4e500594e86541</sys_scope_delete>
+        <sys_update_name>sys_script_include_9f4d815a1b9f28108b08419ead4bcb7b</sys_update_name>
+        <sys_update_version display_value="sys_script_include_9f4d815a1b9f28108b08419ead4bcb7b">614eb9d91b3360508b08419ead4bcb7a</sys_update_version>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-27 19:48:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

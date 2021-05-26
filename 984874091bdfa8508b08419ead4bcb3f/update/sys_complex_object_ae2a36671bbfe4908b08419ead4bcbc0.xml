@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDea2a36679abfe49001e2956fa59240c0</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name>
+        <serialized_content>{"FlowDesigner:FDea2a36679abfe49001e2956fa59240c0":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDea2a36679abfe49001e2956fa59240c0.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"User Ids\",\"mandatory\":\"false\",\"child_name\":\"User_ID\",\"uiUniqueId\":\"9f0168a0-3b58-43d4-8259-27339b509293\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FDea2a36679abfe49001e2956fa59240c0\",\"child_label\":\"User ID\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"array.string\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"7703dac9-0ebf-4384-b41f-9f6745d0806e\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 23:48:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>ae2a36671bbfe4908b08419ead4bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDea2a36679abfe49001e2956fa59240c0</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_complex_object_ae2a36671bbfe4908b08419ead4bcbc0</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 23:48:19</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

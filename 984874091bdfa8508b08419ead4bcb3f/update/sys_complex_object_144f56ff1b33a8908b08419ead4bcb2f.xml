@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD504f56ff3c33a890852b693e1c20702f</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name>
+        <serialized_content>{"FlowDesigner:FD504f56ff3c33a890852b693e1c20702f":{"options":[{"$1187_options":{"disabled":"Boolean","disabled.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"True/False\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"boolean\",\"default_value\":\"\",\"label\":\"disabled\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"optionId":"String","optionId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"optionId\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"true\",\"order\":\"3\",\"max_length\":\"0\"}"}}}],"options.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"options\",\"mandatory\":\"false\",\"child_name\":\"options_child0\",\"uiTypeLabel\":\"Array.Object\",\"child_type_label\":\"Object\",\"child_label\":\"options_child0\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"5577fbd9-da98-41d8-b569-b805a6953162\"}"}},"FlowDesigner:FD504f56ff3c33a890852b693e1c20702f.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"BulkCustomFieldOptionCreateRequest\",\"mandatory\":\"false\",\"uiUniqueId\":\"ce393d81-e685-40a7-a678-ee953bd062f0\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD504f56ff3c33a890852b693e1c20702f\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"5\",\"max_length\":\"0\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-05 16:29:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>144f56ff1b33a8908b08419ead4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD504f56ff3c33a890852b693e1c20702f</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_complex_object_144f56ff1b33a8908b08419ead4bcb2f</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-05 16:29:13</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

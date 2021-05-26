@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>User</name>
+        <namespace>TheJiraCloudplatformRESTAPI100100SNAPSHOT</namespace>
+        <scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name>
+        <serialized_content>{"TheJiraCloudplatformRESTAPI100100SNAPSHOT:User":{"avatarUrls":{"x32":"String","x24":"String","x16":"String","x48":"String"},"avatarUrls.$type_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"avatarUrls.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"displayName":"String","displayName.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"accountType":"String","accountType.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"app\":\"app\",\"atlassian\":\"atlassian\",\"customer\":\"customer\",\"unknown\":\"unknown\"}}"},"active":"Boolean","active.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"groups":{"pagingCallback":{},"size":"Integer","size.$field_facets":{"SimpleMapFacet":"{\"xml-as-attribute\":\"true\"}"},"max-results":"Integer","max-results.$field_facets":{"SimpleMapFacet":"{\"xml-element-name\":\"max-results\",\"xml-as-attribute\":\"true\"}"},"callback":{},"items":[{"items":{"name":"String","self":"String","self.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"}}}]},"groups.$type_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"groups.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"timeZone":"String","timeZone.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"locale":"String","locale.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"accountId":"String","accountId.$field_facets":{"SimpleMapFacet":"{\"max_length\":\"128\"}"},"emailAddress":"String","emailAddress.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"expand":"String","expand.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\",\"xml-as-attribute\":\"true\"}"},"name":"String","self":"String","self.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"key":"String","applicationRoles":{"pagingCallback":{},"size":"Integer","size.$field_facets":{"SimpleMapFacet":"{\"xml-as-attribute\":\"true\"}"},"max-results":"Integer","max-results.$field_facets":{"SimpleMapFacet":"{\"xml-element-name\":\"max-results\",\"xml-as-attribute\":\"true\"}"},"callback":{},"items":[{"items":{"numberOfSeats":"Integer","userCount":"Integer","userCountDescription":"String","defaultGroups":["String"],"hasUnlimitedSeats":"Boolean","name":"String","groups":["String"],"remainingSeats":"Integer","defined":"Boolean","key":"String","platform":"Boolean","selectedByDefault":"Boolean"}}]},"applicationRoles.$type_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"applicationRoles.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"}},"TheJiraCloudplatformRESTAPI100100SNAPSHOT:User.$type_facets":{"SimpleMapFacet":"{\"xml-element-name\":\"user\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-15 23:15:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f17cfc691ba32c508b08419ead4bcb3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>User</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_complex_object_f17cfc691ba32c508b08419ead4bcb3b</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-15 23:15:35</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_entry">
+    <sys_transform_entry action="INSERT_OR_UPDATE">
+        <choice_action>reject</choice_action>
+        <coalesce>false</coalesce>
+        <coalesce_case_sensitive>false</coalesce_case_sensitive>
+        <coalesce_empty_fields>false</coalesce_empty_fields>
+        <date_format>yyyy-MM-dd HH:mm:ss</date_format>
+        <map display_value="Import Jira Issues">51a60ac51b132c508b08419ead4bcbe1</map>
+        <reference_value_field/>
+        <source_field>[Script]</source_field>
+        <source_script><![CDATA[answer = (function transformEntry(source) {
+	
+	// Look for a link between the issue's key and one of our projects
+	var m2mKeyProjectQuery = new GlideQuery('u_m2m_jira_project_jira_key');
+	var maybeProjectKeyLink = m2mKeyProjectQuery.getBy({
+		'u_jira_project.u_jira_disabled': false,
+		'u_jira_project_key.u_name': getJiraPrefixFromKey(source.u_key)
+	}, ['u_jira_project']);
+	
+	// Return the linked project if a valid link was found
+	// Otherwise return a nonsense value to force the transformation to abort
+	return maybeProjectKeyLink
+		.map(function(keyLinkObj){ return keyLinkObj.u_jira_project; })
+		.orElse('No project with active Jira connection for ' + source.u_key);
+
+})(source);]]></source_script>
+        <source_table>u_jira_issues</source_table>
+        <sys_class_name>sys_transform_entry</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-05 21:46:38</sys_created_on>
+        <sys_id>54708d5a1b1f28108b08419ead4bcb81</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>[Script]</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_transform_entry_54708d5a1b1f28108b08419ead4bcb81</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-09 20:58:56</sys_updated_on>
+        <target_field>theme</target_field>
+        <target_table>u_jira_issue</target_table>
+        <use_source_script>true</use_source_script>
+    </sys_transform_entry>
+</record_update>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="DELETE">
+        <access/>
+        <actions_access>true</actions_access>
+        <alter_access>true</alter_access>
+        <caller_access/>
+        <client_scripts_access>true</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>true</create_access>
+        <create_access_controls>false</create_access_controls>
+        <delete_access>false</delete_access>
+        <extension_model/>
+        <is_extendable>false</is_extendable>
+        <label>M2m Jira Users Jira Projects</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>u_m2m_jira_users_jira_projects</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class/>
+        <sys_class_code/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_class_path/>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-09 23:32:54</sys_created_on>
+        <sys_id>4de642af1b5b28108b08419ead4bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>M2m Jira Users Jira Projects</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_db_object_4de642af1b5b28108b08419ead4bcbec</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-09 23:32:54</sys_updated_on>
+        <update_access>true</update_access>
+        <user_role/>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</application>
+        <file_path/>
+        <instance_id>0338d1bbdbe39b041ddcf22ebf9619b4</instance_id>
+        <instance_name>adcomsolutionsdev</instance_name>
+        <name>sys_db_object_4de642af1b5b28108b08419ead4bcbec</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access/><actions_access>true</actions_access><alter_access>true</alter_access><caller_access/><client_scripts_access>true</client_scripts_access><configuration_access>false</configuration_access><create_access>true</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>M2m Jira Users Jira Projects</label><live_feed_enabled>false</live_feed_enabled><name>u_m2m_jira_users_jira_projects</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class/><sys_class_code/><sys_class_name>sys_db_object</sys_class_name><sys_class_path/><sys_created_by>chris.crockett</sys_created_by><sys_created_on>2021-04-09 23:32:54</sys_created_on><sys_id>4de642af1b5b28108b08419ead4bcbec</sys_id><sys_mod_count>0</sys_mod_count><sys_name>M2m Jira Users Jira Projects</sys_name><sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package><sys_policy/><sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope><sys_update_name>sys_db_object_4de642af1b5b28108b08419ead4bcbec</sys_update_name><sys_updated_by>chris.crockett</sys_updated_by><sys_updated_on>2021-04-09 23:32:54</sys_updated_on><update_access>true</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+        <payload_hash>1186155875</payload_hash>
+        <record_name>M2m Jira Users Jira Projects</record_name>
+        <reverted_from/>
+        <source>926e5be61bcbe01031264159cc4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-09 23:32:55</sys_created_on>
+        <sys_id>45e6caaf1b5b28108b08419ead4bcb1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178b8fb39010000001</sys_recorded_at>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-09 23:32:55</sys_updated_on>
+        <type>Table</type>
+        <update_guid>cde6caafca5b28107e1a45a74bc36e1e</update_guid>
+        <update_guid_history>cde6caafca5b28107e1a45a74bc36e1e:1186155875</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-04 14:07:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_object">sys_db_object</sys_db_object>
+        <sys_id>57571b38c01b4104816aefa185fc9964</sys_id>
+        <sys_metadata>4de642af1b5b28108b08419ead4bcbec</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>M2m Jira Users Jira Projects</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_scope_delete display_value="">4d6c253b4e124d31af4e500594e86541</sys_scope_delete>
+        <sys_update_name>sys_db_object_4de642af1b5b28108b08419ead4bcbec</sys_update_name>
+        <sys_update_version display_value="sys_db_object_4de642af1b5b28108b08419ead4bcbec">45e6caaf1b5b28108b08419ead4bcb1f</sys_update_version>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 14:07:51</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</claim_owner_scope>
+        <claim_timestamp>179a8a1f3070000001</claim_timestamp>
+        <metadata_update_name>sys_db_object_4de642af1b5b28108b08419ead4bcbec</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Jira Integration</previous_claim_name>
+        <previous_claim_scope>984874091bdfa8508b08419ead4bcb3f</previous_claim_scope>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-26 12:24:16</sys_created_on>
+        <sys_id>2490752e1b183c508b08419ead4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-26 12:24:16</sys_updated_on>
+    </sys_claim>
+</record_update>

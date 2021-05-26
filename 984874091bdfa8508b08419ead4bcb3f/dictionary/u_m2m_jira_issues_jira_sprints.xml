@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="M2m Jira Issues Jira Sprints" max_length="40" name="u_m2m_jira_issues_jira_sprints" sizeclass="845" type="collection">
+        <element default="true" label="Historical" max_length="40" name="u_historical" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Jira Issue" max_length="32" name="u_jira_issue" reference="u_jira_issue" type="reference"/>
+        <element attributes="encode_utf8=false" label="Jira Sprint" max_length="32" name="u_jira_sprint" reference="u_jira_sprint" type="reference"/>
+        <index name="index">
+            <element name="u_jira_issue"/>
+        </index>
+        <index name="index2">
+            <element name="u_jira_sprint"/>
+        </index>
+    </element>
+</database>

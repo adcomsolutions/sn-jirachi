@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_designer_co_template">
+    <sys_hub_flow_designer_co_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <complex_definition>FD8a38fc9b4dffe0903c70bdae1a037ff3</complex_definition>
+        <sys_class_name>sys_hub_flow_designer_co_template</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-03 19:42:06</sys_created_on>
+        <sys_id>4e38fc9b1bffe0908b08419ead4bcbf5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Project Per-Task Status Data</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_hub_flow_designer_co_template_4e38fc9b1bffe0908b08419ead4bcbf5</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-03 19:42:06</sys_updated_on>
+        <template_label>Project Per-Task Status Data</template_label>
+        <template_name>project_per_task_status_data</template_name>
+    </sys_hub_flow_designer_co_template>
+</record_update>

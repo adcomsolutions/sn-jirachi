@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="Jira Integration Properties">e7e2d38e1b887850b2895245624bcb2d</category>
+        <order>500</order>
+        <property display_value="jira_integration.stakeholder_field_id" name="jira_integration.stakeholder_field_id">a60032271b7fe4908b08419ead4bcbd5</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-05-12 20:02:19</sys_created_on>
+        <sys_id>c223d78e1b887850b2895245624bcb34</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>jira_integration.stakeholder_field_id.Jira Integration Properties</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_c223d78e1b887850b2895245624bcb34</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-12 20:12:01</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>

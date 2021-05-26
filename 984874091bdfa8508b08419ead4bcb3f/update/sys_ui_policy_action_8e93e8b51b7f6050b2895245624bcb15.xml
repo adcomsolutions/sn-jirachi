@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>u_default_assignment_group</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-29 02:21:23</sys_created_on>
+        <sys_id>8e93e8b51b7f6050b2895245624bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_default_assignment_group</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_ui_policy_action_8e93e8b51b7f6050b2895245624bcb15</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-29 02:21:23</sys_updated_on>
+        <table>u_jira_project</table>
+        <ui_policy display_value="Require specifying a default assignment group for the jira project if integration is enabled">075360b51b7f6050b2895245624bcbd2</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

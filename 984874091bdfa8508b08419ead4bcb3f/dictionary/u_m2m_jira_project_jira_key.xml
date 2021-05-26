@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="M2m Jira Project Jira Key" max_length="40" name="u_m2m_jira_project_jira_key" sizeclass="6" type="collection">
+        <element attributes="encode_utf8=false" label="Jira Project" max_length="32" name="u_jira_project" reference="u_jira_project" type="reference"/>
+        <element attributes="encode_utf8=false" label="Jira Project Key" max_length="32" name="u_jira_project_key" reference="u_jira_key" type="reference"/>
+        <index name="index">
+            <element name="u_jira_project"/>
+        </index>
+        <index name="index2">
+            <element name="u_jira_project_key"/>
+        </index>
+    </element>
+</database>

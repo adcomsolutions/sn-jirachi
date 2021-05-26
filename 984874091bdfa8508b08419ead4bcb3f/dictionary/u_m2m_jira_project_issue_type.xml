@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="M2m Jira Project Issue Type" max_length="40" name="u_m2m_jira_project_issue_type" sizeclass="14" type="collection">
+        <element attributes="encode_utf8=false" label="Jira Issue Type" max_length="32" name="u_jira_issue_type" reference="u_jira_issue_type" type="reference"/>
+        <element attributes="encode_utf8=false" label="Jira Project" max_length="32" name="u_jira_project" reference="u_jira_project" type="reference"/>
+        <index name="index">
+            <element name="u_jira_issue_type"/>
+        </index>
+        <index name="index2">
+            <element name="u_jira_project"/>
+        </index>
+    </element>
+</database>

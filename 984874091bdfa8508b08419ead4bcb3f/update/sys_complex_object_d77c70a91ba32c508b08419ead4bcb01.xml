@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>NotificationRecipients</name>
+        <namespace>TheJiraCloudplatformRESTAPI100100SNAPSHOT</namespace>
+        <scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name>
+        <serialized_content>{"TheJiraCloudplatformRESTAPI100100SNAPSHOT:NotificationRecipients":{"voters":"Boolean","groups":[{"groups":{"name":"String","self":"String","self.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"}}}],"watchers":"Boolean","reporter":"Boolean","assignee":"Boolean","users":[{"users":{"accountId":"String","accountId.$field_facets":{"SimpleMapFacet":"{\"max_length\":\"128\"}"},"emailAddress":"String","emailAddress.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"avatarUrls":{"x32":"String","x24":"String","x16":"String","x48":"String"},"avatarUrls.$type_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"avatarUrls.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"displayName":"String","displayName.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"accountType":"String","accountType.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"active":"Boolean","active.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"self":"String","self.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"timeZone":"String","timeZone.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"},"key":"String","key.$field_facets":{"SimpleMapFacet":"{\"read_only\":\"true\"}"}}}]}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-15 23:15:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>d77c70a91ba32c508b08419ead4bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NotificationRecipients</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_complex_object_d77c70a91ba32c508b08419ead4bcb01</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-15 23:15:41</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

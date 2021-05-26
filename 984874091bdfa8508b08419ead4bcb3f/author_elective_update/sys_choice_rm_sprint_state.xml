@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="rm_sprint" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>rm_sprint</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>chris.crockett</sys_created_by>
+            <sys_created_on>2021-04-01 23:30:32</sys_created_on>
+            <sys_id>d8a930811b13e8508b08419ead4bcbfb</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="Agile Development" source="com.snc.sdlc.scrum.pp">d9a870c91bdfa8508b08419ead4bcb8e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+            <sys_update_name>sys_choice_rm_sprint_state</sys_update_name>
+            <sys_updated_by>chris.crockett</sys_updated_by>
+            <sys_updated_on>2021-04-28 18:47:33</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Draft</label>
+            <language>en</language>
+            <name>rm_sprint</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2011-07-22 10:16:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8b7e160def001000a7450fa3f8225604</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2011-07-22 10:22:44</sys_updated_on>
+            <value>-6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Planning</label>
+            <language>en</language>
+            <name>rm_sprint</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2011-07-22 10:17:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ce7e560def001000a7450fa3f8225607</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2011-07-22 10:22:48</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Current</label>
+            <language>en</language>
+            <name>rm_sprint</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2011-07-22 10:17:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>417e560def001000a7450fa3f8225638</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2011-07-22 10:22:53</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Complete</label>
+            <language>en</language>
+            <name>rm_sprint</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2011-07-22 10:17:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5c7e560def001000a7450fa3f8225630</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2011-07-22 10:22:55</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancelled</label>
+            <language>en</language>
+            <name>rm_sprint</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2011-07-22 10:18:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2a7e160def001000a7450fa3f82256a4</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2011-07-22 10:22:59</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</claim_owner_scope>
+        <claim_timestamp>17919ceca640000001</claim_timestamp>
+        <metadata_update_name>sys_choice_rm_sprint_state</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Jira Integration</previous_claim_name>
+        <previous_claim_scope>984874091bdfa8508b08419ead4bcb3f</previous_claim_scope>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-28 18:47:33</sys_created_on>
+        <sys_id>16cb7a6d1b3b2050b2895245624bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-28 18:47:33</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</claim_owner_scope>
+        <claim_timestamp>17919ceca630000001</claim_timestamp>
+        <metadata_update_name>sys_choice_rm_sprint_state</metadata_update_name>
+        <previous_claim_app_version/>
+        <previous_claim_name>com.snc.sdlc.scrum.pp</previous_claim_name>
+        <previous_claim_scope>com.snc.sdlc.scrum.pp</previous_claim_scope>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-28 18:47:33</sys_created_on>
+        <sys_id>d6cb7a6d1b3b2050b2895245624bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-28 18:47:33</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD49f798c013772c101ffbbb0fb84f88a8</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>984874091bdfa8508b08419ead4bcb3f</scope_name>
+        <serialized_content>{"FlowDesigner:FD49f798c013772c101ffbbb0fb84f88a8":{"$COCollectionField":[{"Issue_Type":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Name\",\"mandatory\":\"true\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"d1734a07-e4ac-43d9-b7d9-f76d5af26a6a\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Description\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"45e4152e-a011-4f6e-ae17-f3d86400e64a\"}"},"self":"String","self.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Self URL\",\"mandatory\":\"true\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"5adabdb6-b8c0-491b-9168-9732babbf8ef\"}"},"id":"Integer","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"ID\",\"mandatory\":\"true\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"52f0359e-e6b2-4ab7-a346-db21b8a46e96\"}"},"subtask":"Boolean","subtask.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"True/False\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"boolean\",\"default_value\":\"\",\"label\":\"Is Subtask?\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"75c069e8-65aa-4c79-bd73-3dca48127b00\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Issue Types\",\"mandatory\":\"false\",\"child_name\":\"Issue_Type\",\"uiUniqueId\":\"3209d76d-40ea-4613-91be-7e116b6a1ccf\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD49f798c013772c101ffbbb0fb84f88a8\",\"child_label\":\"Issue Type\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"2cec3885-c67e-4c40-a162-d7bce7d17426\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD49f798c013772c101ffbbb0fb84f88a8.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Issue Types\",\"mandatory\":\"false\",\"child_name\":\"Issue_Type\",\"uiUniqueId\":\"3209d76d-40ea-4613-91be-7e116b6a1ccf\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD49f798c013772c101ffbbb0fb84f88a8\",\"child_label\":\"Issue Type\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"2cec3885-c67e-4c40-a162-d7bce7d17426\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-23 15:00:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>0df798c01b772c1031264159cc4bcba8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD49f798c013772c101ffbbb0fb84f88a8</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_complex_object_0df798c01b772c1031264159cc4bcba8</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-23 15:00:52</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>true</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>u_m2m_jira_issues_jira_sprints</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="u_m2m_jira_issues_jira_sprints">u_jira_sprintISNOTEMPTY^u_jira_issueISNOTEMPTY^EQ<item endquery="false" field="u_jira_sprint" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="u_jira_issue" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Set Jira Issue sprint based on M2M</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	var issueGr = current.u_jira_issue.getRefRecord();
+	var linkedSprintQuery = new GlideQuery('u_m2m_jira_issues_jira_sprints')
+		.where('u_jira_issue', issueGr.sys_id);
+	
+	if (issueGr.active){
+		// If the issue is STILL active, that means only the non-historical sprint matters
+		// "Historical" meaning a past sprint that is now closed
+		// There can only be one current (AKA: Non-Historic) sprint for a given issue
+		var maybeActiveSprint = linkedSprintQuery
+			.where('u_historical', false)
+			.selectOne('u_jira_sprint')
+			.map(function(m2mLink){ return m2mLink.u_jira_sprint; });
+		
+		// If there is no non-historic sprint link, that means this issue is in the Jira backlog currently
+		issueGr.sprint = maybeActiveSprint.orElse('');
+	} else {
+		// If the issue is INACTIVE, the CURRENT Jira sprint field will always be empty
+		// We must instead determine the issue's FINAL sprint based on the "Historical" sprint links
+		// There can be many of these. The one closed most recently will be the last associated sprint
+		var maybeLastSprint = linkedSprintQuery
+			.where('u_historical', true)
+			.orderByDesc('u_jira_sprint.work_end')
+			.selectOne('u_jira_sprint')
+			.map(function(m2mLink){ return m2mLink.u_jira_sprint; });
+		
+		// If there is no historic sprint link, this issue was closed without ever belonging to a sprint
+		issueGr.sprint = maybeLastSprint.orElse('');
+	}
+	
+	issueGr.update();
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-30 17:20:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a65ab09e1bb3a8508b08419ead4bcbad</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Set Jira Issue sprint based on M2M</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_script_a65ab09e1bb3a8508b08419ead4bcbad</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-05-04 21:34:16</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=a65ab09e1bb3a8508b08419ead4bcbad"/>
+</record_update>

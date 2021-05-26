@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_source">
+    <sys_data_source action="INSERT_OR_UPDATE">
+        <batch_size>1000</batch_size>
+        <category/>
+        <connection_timeout>0</connection_timeout>
+        <connection_url/>
+        <connection_url_parameters/>
+        <csv_delimiter/>
+        <data_in_single_column>false</data_in_single_column>
+        <data_loader><![CDATA[(function loadData(import_set_table) {
+	// Will be -1 if there is no maximum
+	var maximumRows = import_set_table.getMaximumRows();
+	
+	var aliasId = gs.getProperty('jira_integration.default_credential');
+	var aliasGr = new GlideRecord('sys_alias');
+	aliasGr.get(aliasId);
+	if (!aliasGr.isValidRecord())
+		NiceError.raise('Bad property configured for jira_integration.default_credential');
+
+	// We can only query for sprints per-board
+	// We don't bother permanently storing board data in SN, so we need to request those first
+	var boardDataStream = sn_fd.FlowAPI.getRunner()
+		.datastream('get_all_jira_boards')
+		.addInput('connection_alias', aliasGr)
+		.inForeground()
+		.run()
+		.getDataStream();
+	
+	var boardDataList = [];
+	
+	try {
+		while (boardDataStream.hasNext()){
+			var current = boardDataStream.next();
+			boardDataList.push({
+				boardId: current.id,
+				projectId: current.projectId
+			});
+		}
+	} catch (err) {
+		throw err;
+	} finally {
+		boardDataStream.close();
+	}
+	
+	// Run our sprint getter datastream once per board
+	var remainingLoops = maximumRows;
+	boardDataList.forEach(function(boardData){
+		var sprintDataStream = sn_fd.FlowAPI.getRunner()
+			.datastream('get_sprints_for_jira_board')
+			.addInput('connection_alias', aliasGr)
+			.addInput('jira_board_id', boardData.boardId)
+			.inForeground()
+			.run()
+			.getDataStream();
+		
+		try {
+			// If running with no maximum number of loops, remaining loops will decrement below 0
+			while (sprintDataStream.hasNext() && remainingLoops !== 0){
+				remainingLoops--;
+				var projectData = sprintDataStream.next();
+				// Sneak in the project ID that we learned from the prior board query
+				projectData.projectId = boardData.projectId;
+				// The data from the rest query is flat, so just dump it into the staging table as-is
+				import_set_table.insert(projectData);
+			}
+		} catch (err) {
+			throw err;
+		} finally {
+			sprintDataStream.close();
+		}
+		
+	});
+
+})(import_set_table);]]></data_loader>
+        <data_stream_action/>
+        <data_stream_action_inputs/>
+        <database_name/>
+        <database_port/>
+        <discard_arrays>true</discard_arrays>
+        <expand_node_children>false</expand_node_children>
+        <file_path/>
+        <file_retrieval_method>Attachment</file_retrieval_method>
+        <format>CSV</format>
+        <glide_keystore>false</glide_keystore>
+        <header_row>0</header_row>
+        <import_set_table_label>Jira Sprints Import</import_set_table_label>
+        <import_set_table_name>u_jira_sprints</import_set_table_name>
+        <instance_name/>
+        <jdbc_password/>
+        <jdbc_server/>
+        <jdbc_user_name/>
+        <jpath_root_node/>
+        <last_run_database_field/>
+        <last_run_datetime/>
+        <last_success_import_time/>
+        <ldap_target/>
+        <ldapprobe_result_set_rows>200</ldapprobe_result_set_rows>
+        <limit/>
+        <maximum_rows/>
+        <mid_server/>
+        <name>Jira Sprints Import</name>
+        <offset>0</offset>
+        <oracle_port>1521</oracle_port>
+        <oracle_sid>orcl</oracle_sid>
+        <parsing_script><![CDATA[// The input value can be accessed through the variables named "line", "lineNumber" and "result"
+// The function uses result variable to return parse result back. 
+(function(line,lineNumber,result) {
+	// add code here
+})(line,lineNumber,result);]]></parsing_script>
+        <properties/>
+        <query>All Rows from Table</query>
+        <query_timeout>0</query_timeout>
+        <request_action/>
+        <scp_authentication>Username and Password</scp_authentication>
+        <scp_password/>
+        <scp_port/>
+        <scp_server/>
+        <scp_user_name/>
+        <sheet_number>0</sheet_number>
+        <sql_statement/>
+        <ssh_keyfile_path/>
+        <support_pagination>false</support_pagination>
+        <sys_class_name>sys_data_source</sys_class_name>
+        <sys_created_by>chris.crockett</sys_created_by>
+        <sys_created_on>2021-04-29 00:33:23</sys_created_on>
+        <sys_id>68e0c07d1bb76050b2895245624bcb9c</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Jira Sprints Import</sys_name>
+        <sys_package display_value="Jira Integration" source="984874091bdfa8508b08419ead4bcb3f">984874091bdfa8508b08419ead4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Integration">984874091bdfa8508b08419ead4bcb3f</sys_scope>
+        <sys_update_name>sys_data_source_68e0c07d1bb76050b2895245624bcb9c</sys_update_name>
+        <sys_updated_by>chris.crockett</sys_updated_by>
+        <sys_updated_on>2021-04-29 01:54:18</sys_updated_on>
+        <table_name/>
+        <type>CUSTOM</type>
+        <use_batch_import>false</use_batch_import>
+        <use_integrated_authentication>false</use_integrated_authentication>
+        <use_last_run_datetime>false</use_last_run_datetime>
+        <xpath_root_node/>
+        <zipped>false</zipped>
+    </sys_data_source>
+    <sys_variable_value action="delete_multiple" query="document_key=68e0c07d1bb76050b2895245624bcb9c"/>
+</record_update>

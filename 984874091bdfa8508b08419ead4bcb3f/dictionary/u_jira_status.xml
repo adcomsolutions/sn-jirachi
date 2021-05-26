@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Jira Status" max_length="40" name="u_jira_status" sizeclass="11" type="collection">
+        <element label="Description" mandatory="true" max_length="4000" name="u_jira_description" read_only="true" type="string"/>
+        <element attributes="format=none" label="Jira ID" mandatory="true" max_length="40" name="u_jira_id" read_only="true" type="integer"/>
+        <element display="true" label="Name" mandatory="true" max_length="255" name="u_jira_name" read_only="true" type="string"/>
+        <element label="Jira Status Category" mandatory="true" max_length="32" name="u_jira_status_category" read_only="true" reference="u_jira_status_category" reference_cascade_rule="delete" type="reference"/>
+        <index name="index">
+            <element name="u_jira_status_category"/>
+        </index>
+    </element>
+</database>
