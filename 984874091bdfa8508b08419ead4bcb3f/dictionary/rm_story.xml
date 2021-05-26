@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="hasLabels=true,ignore_delete_children=true" audit="true" extends="rm_feature" label="Story" max_length="40" name="rm_story" sizeclass="1272" type="collection"/>
-</database>
